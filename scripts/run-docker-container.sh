@@ -12,3 +12,5 @@ sudo docker run -t \
   -p 3001:3000 \
   -d \
   emsreact
+
+echo "Finished! Next step: container-setup.sh"

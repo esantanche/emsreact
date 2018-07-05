@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
 
+// FIXME this file is just a test, delete it
+
 const styles = theme => ({
     root: {
         textAlign: 'center',
@@ -41,7 +43,7 @@ class Index extends React.Component {
         return (
             <div className={classes.root}>
                 <Dialog open={open} onClose={this.handleClose}>
-                    <DialogTitle>Super Secret Password</DialogTitle>
+                    <DialogTitle>Just a test</DialogTitle>
                     <DialogContent>
                         <DialogContentText>1-2-3-4-5</DialogContentText>
                     </DialogContent>
@@ -58,7 +60,7 @@ class Index extends React.Component {
                     example project
                 </Typography>
                 <Button variant="contained" color="secondary" onClick={this.handleClick}>
-                    Super Secret Password
+                    Click here
                 </Button>
             </div>
         );

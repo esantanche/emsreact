@@ -11,5 +11,7 @@ echo "which gets rid of the changes create react app did (apart for node_modules
 echo "Maybe you need others things"
 echo "probably you need to do some git pull"
 
+echo "Finished! Next step: container-after-git-pull-tasks.sh"
+
 exit
 

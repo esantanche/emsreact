@@ -8,3 +8,5 @@ fi
 cd ..
 
 sudo docker build -t emsreact .
+
+echo "Finished! Net step: run-docker-container.sh"

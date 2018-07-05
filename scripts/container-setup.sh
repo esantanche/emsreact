@@ -15,6 +15,12 @@ echo "Script $0 starting"
 
 cd /srv/app
 
+chown node:node -R .
+
+if [[ -d ./emsreact ]] ; then 
+	rm -R ./emsreact
+fi
+
 # I want to install create react app, but exactly version 1.5.2. Not a newer version
 yarn global add create-react-app@1.5.2 --exact 
 
@@ -32,3 +38,6 @@ chmod +x /tmp/container-setup-script-to-run.sh
 sudo docker cp /tmp/container-setup-script-to-run.sh `sudo docker ps -q`:/
 
 sudo docker exec `sudo docker ps -q` /container-setup-script-to-run.sh
+
+echo "Finished! Next step: container-git-tasks.sh"
+
