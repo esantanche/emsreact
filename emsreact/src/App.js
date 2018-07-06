@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Button from '@material-ui/core/Button';
-import Home from './home/Home';
+//import Button from '@material-ui/core/Button';
+import HomeScreen from './home/HomeScreen';
 import theme from './MuiTheme';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 // import PropTypes from 'prop-types';
 import BodyPane from './components_library/panes/BodyPane';
+import HeaderScreen from './header/HeaderScreen';
 
 //
 // // Background color for the entire body
@@ -42,7 +43,8 @@ class App extends Component {
                 <MuiThemeProvider theme={theme}>
                     <CssBaseline />
                     <BodyPane>
-                        <Route exact path="/" component={Home} />
+                        <HeaderScreen />
+                        <Route exact path="/" component={HomeScreen} />
                         {/*<Button variant="contained" color="primary">*/}
                             {/*Hello World*/}
                         {/*</Button>*/}

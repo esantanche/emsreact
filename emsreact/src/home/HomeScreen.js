@@ -9,6 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import CardMedia from '@material-ui/core/CardMedia';
 import testimage from '../images/6747806-xsmall.jpg';
+import Button from '@material-ui/core/Button';
 
 // import BottomNavigation from '@material-ui/core/BottomNavigation';
 // import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -17,21 +18,21 @@ import testimage from '../images/6747806-xsmall.jpg';
 // import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 // FIXME TODO  https://react-styleguidist.js.org/docs/documenting.html
-class Home extends Component {
+class HomeScreen extends Component {
 
-    state = {
-        value: 0,
-    };
+    // state = {
+    //     value: 0,
+    // };
 
-    handleChange = (event, value) => {
-        this.setState({ value });
-    };
+    // handleChange = (event, value) => {
+    //     this.setState({ value });
+    // };
 
     // There are some FontIcon elements that have style={{ width: "20px" }} added. It's because the icon
     // is defective and doesn't have proper width.
     render() {
 
-        const { value } = this.state;
+        //const { value } = this.state;
 
         return (
 
@@ -70,7 +71,7 @@ class Home extends Component {
 
                             <CardMedia
                                 style={{ height: 0,
-                                          paddingTop: '56.25%' }}
+                                         paddingTop: '100%' }}
                                 image={testimage}
                                 title="this is the image"
                             />
@@ -115,6 +116,20 @@ class Home extends Component {
 
                 </Grid>
 
+                <Grid container spacing={16}>
+                    <Grid item xs={12}>
+
+                        <Button variant="contained" color="primary">
+                            Primary
+                        </Button>
+                        <Button variant="contained" color="secondary">
+                            Secondary
+                        </Button>
+
+                    </Grid>
+
+                </Grid>
+
                 {/*<BottomNavigation*/}
                     {/*value={value}*/}
                     {/*onChange={this.handleChange}*/}
@@ -132,4 +147,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default HomeScreen;
