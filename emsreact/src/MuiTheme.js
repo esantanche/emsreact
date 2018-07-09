@@ -17,6 +17,9 @@ const theme = createMuiTheme({
             main: cyan[600],
             dark: cyan[700],
         },
+        // text: {
+        //     secondary: "white"
+        // }
     },
 });
 
