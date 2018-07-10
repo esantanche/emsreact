@@ -30,18 +30,21 @@ class InnerGridPane extends Component {
 
         return (
 
+            <div style={{ marginLeft: "10px", marginRight: "10px" }}>
 
-            <Grid container spacing={8}>
+                <Grid container spacing={16}>
 
-                <Grid item xs={12} md={6} lg={6} >
-                    {this.props.leftComponent}
+                    <Grid item xs={12} sm={12} md={6} lg={6} >
+                        {this.props.leftComponent}
+                    </Grid>
+
+                    <Grid item xs={12} sm={12} md={6} lg={6} >
+                        {this.props.rightComponent}
+                    </Grid>
+
                 </Grid>
 
-                <Grid item xs={12} md={6} lg={6} >
-                    {this.props.rightComponent}
-                </Grid>
-
-            </Grid>
+            </div>
 
             // <Grid container spacing={16}>
             //
@@ -64,11 +67,6 @@ class InnerGridPane extends Component {
             //     </Hidden>
             //
             // </Grid>
-
-
-
-
-
 
         )
 

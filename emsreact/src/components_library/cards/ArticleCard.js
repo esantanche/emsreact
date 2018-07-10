@@ -21,7 +21,11 @@ import SeparatorPane from '../panes/SeparatorPane';
 
 const styles = theme => ({
     card_header: {
-        height: "6em"
+        height: "6em",
+        display: "flex",
+        alignItems: "center",
+        paddingLeft: "24px",
+        paddingRight: "24px"
     },
     container: {
         display: "flex",
@@ -32,12 +36,15 @@ const styles = theme => ({
         height: "0",
         paddingTop: '100%'
     },
-    image_fixed_size: {
-        height: "200px",
-        width: "200px"
-    },
+    // image_large_fixed_size: {
+    //     height: "200px",
+    //     width: "200px"
+    // },
     typography_when_below_image: {
         marginTop: "10px"
+    },
+    title: {
+        fontSize: "1px"
     }
 });
 
@@ -50,82 +57,113 @@ class ArticleCard extends Component {
         text_content: PropTypes.string
     };
 
+    produce_jsx_fragment_for_image_and_text_according_to_width(width, classes, image, text_content) {
+
+        const image_fixed_size_according_to_width = {
+            sm: "150px",
+            md: "150px",
+            lg: "180px",
+            xl: "200px"
+        };
+
+        if (width === 'xs') {
+
+            return (
+                <React.Fragment>
+
+                    <Grid item xs={12}>
+
+                        <CardMedia
+                            className={classes.image_responsive_size}
+                            image={image}
+                            title=""
+                        />
+
+                    </Grid>
+
+                    <SeparatorPane/>
+
+                    <Grid item xs={12}>
+
+                        <Typography variant="body2" component="p">
+
+                            {text_content}
+
+                        </Typography>
+
+                    </Grid>
+
+                </React.Fragment>
+            );
+
+        } else {
+
+            return (
+                <React.Fragment>
+
+                    <CardMedia
+                        style={{ height: image_fixed_size_according_to_width[width],
+                                 width: image_fixed_size_according_to_width[width] }}
+                        // className={classes.image_fixed_size}
+                        image={image}
+                        title=""
+                    />
+
+                    <Typography variant="body2" component="p"
+                                style={{ flex: "1", height: image_fixed_size_according_to_width[width], marginLeft: "10px" }}>
+
+                        <Dotdotdot clamp={image_fixed_size_according_to_width[width]} style={{ height: image_fixed_size_according_to_width[width] }}>
+
+                            {text_content}
+
+                        </Dotdotdot>
+
+                    </Typography>
+
+                </React.Fragment>
+            );
+
+        }
+
+    }
+
     render() {
 
+        const title_variant_according_to_width = {
+            xs: "title",
+            sm: "title",
+            md: "subheading",
+            lg: "title",
+            xl: "title"
+        };
+
+
         const { classes, title, width, image, text_content } = this.props;
+
+        const jsx_fragment_for_image_and_text_according_to_width =
+            this.produce_jsx_fragment_for_image_and_text_according_to_width(width, classes, image, text_content);
 
         return (
 
             <Card>
 
-                <CardHeader title={title}
-                            className={classes.card_header}>
+                {/*Used a div because the component CardHeader uses a headline variant of Typography while I    */}
+                {/*need the possibility to change font size*/}
+                {/*style={{ height: "6em", display: "flex", alignItems: "center", paddingLeft: "24px", paddingRight: "24px" }}*/}
 
-                </CardHeader>
+                <div className={classes.card_header}>
+
+                    <Typography variant={title_variant_according_to_width[width]}>
+                        {title}
+                    </Typography>
+
+                </div>
 
                 <CardContent>
 
-                    {/*style={{ height: "200px" }}*/}
-
                     <Grid container spacing={0} className={classes.container}>
 
-                        { width === "xs" ? (
-
-                                <React.Fragment>
-
-                                    <Grid item xs={12}>
-
-                                        <CardMedia
-                                            className={classes.image_responsive_size}
-                                            image={image}
-                                            title=""
-                                        />
-
-                                    </Grid>
-
-                                    <SeparatorPane/>
-
-                                    <Grid item xs={12}>
-
-                                        <Typography variant="body2" component="p">
-
-                                            {text_content}
-
-                                        </Typography>
-
-                                    </Grid>
-
-                                </React.Fragment>
-
-                            )
-
-                            :
-
-                            (
-
-                                <React.Fragment>
-
-                                    <CardMedia
-                                        className={classes.image_fixed_size}
-                                        image={image}
-                                        title=""
-                                    />
-
-                                    <Typography variant="body2" component="p"
-                                                style={{ flex: "1", height: "200px", marginLeft: "10px" }}>
-
-                                        <Dotdotdot clamp="200px" style={{ height: "200px" }}>
-
-                                            {text_content}
-
-                                        </Dotdotdot>
-
-                                    </Typography>
-
-                                </React.Fragment>
-
-                            )
-                        }
+                        {jsx_fragment_for_image_and_text_according_to_width}
 
                     </Grid>
 

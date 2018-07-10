@@ -26,7 +26,6 @@ class HeaderScreen extends Component {
 
         const { classes } = this.props;
 
-
         return (
 
             <React.Fragment>
@@ -41,8 +40,6 @@ class HeaderScreen extends Component {
 
                     <Grid item xs={12} md={10} lg={8} >
 
-                        {/*style={{ display: "flex", flexDirection: "row", justifyContent: "flex-end" }}*/}
-
                         <PlaygroundAppBar>
                             <Grid container spacing={0} style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                                 <Grid item xs={11}>
@@ -50,19 +47,13 @@ class HeaderScreen extends Component {
                                                 style={{ lineHeight: "3em", marginLeft: "2em", color: "white" }}
                                                 >Emanuele Santanché, Web Developer</Typography>
                                 </Grid>
-                                {/*<Grid item xs={6}>*/}
 
-                                {/*</Grid>*/}
                                 <Grid item xs={1}>
                                     <MenuIcon style={{ marginRight: "24px", float: "right" }}/>
                                 </Grid>
                             </Grid>
 
-                            {/*<Button onClick={this.toggleDrawer(!this.state.open)}>Open</Button>*/}
-
                         </PlaygroundAppBar>
-
-                        {/*<PlaygroundDrawer open={this.state.open}/>*/}
 
                     </Grid>
 
@@ -73,7 +64,6 @@ class HeaderScreen extends Component {
                     </Hidden>
 
                 </Grid>
-
 
             </React.Fragment>
 
