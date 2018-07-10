@@ -10,17 +10,20 @@ const theme = createMuiTheme({
         primary: {
             light: teal[500],
             main: teal[600],
-            dark: teal[700],
+            dark: teal[700],  // Use white text
         },
         secondary: {
             light: cyan[500],
             main: cyan[600],
-            dark: cyan[700],
-        },
+            dark: cyan[700], // use white text
+        }
         // text: {
         //     secondary: "white"
         // }
     },
+    typography: {
+        fontFamily: "\"Montserrat\", \"Helvetica\", \"Arial\", sans-serif"
+    }
 });
 
 export default theme;
