@@ -111,28 +111,9 @@ class PlaygroundAppBar extends Component {
 
         return (
 
-            <AppBar position="static"
-
-                // className={classNames(classes.appBar, {
-                //     [classes.appBarShift]: true,
-                //     [classes[`appBarShift-left`]]: true,
-                // })}
-                // className={classes.AppBar}
-            >
+            <AppBar position="sticky" style={{ borderRadius: "4px" }}>
                 {this.props.children}
-                {/*<Toolbar disableGutters={!open}>*/}
-                    {/*<IconButton*/}
-                        {/*color="inherit"*/}
-                        {/*aria-label="open drawer"*/}
-                        {/*onClick={this.handleDrawerOpen}*/}
-                        {/*className={classNames(classes.menuButton, open && classes.hide)}*/}
-                    {/*>*/}
-                        {/*<MenuIcon />*/}
-                    {/*</IconButton>*/}
-                    {/*<Typography variant="title" color="inherit" noWrap>*/}
-                        {/*Persistent drawer*/}
-                    {/*</Typography>*/}
-                {/*</Toolbar>*/}
+
             </AppBar>
 
         )
@@ -141,8 +122,4 @@ class PlaygroundAppBar extends Component {
 }
 
 export default withStyles(styles)(PlaygroundAppBar);
-//
-// classes={{
-//     paper: classes.drawerPaper,
-// }}
 

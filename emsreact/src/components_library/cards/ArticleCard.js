@@ -137,7 +137,6 @@ class ArticleCard extends Component {
             xl: "title"
         };
 
-
         const { classes, title, width, image, text_content } = this.props;
 
         const jsx_fragment_for_image_and_text_according_to_width =
@@ -182,8 +181,5 @@ class ArticleCard extends Component {
     }
 
 }
-
-// export default (HomeScreen);
-
 
 export default withWidth()(withStyles(styles)(ArticleCard));

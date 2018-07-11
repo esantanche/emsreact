@@ -6,25 +6,18 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
+import withWidth from "@material-ui/core/withWidth/index";
+import {withStyles} from "@material-ui/core/styles/index";
 
 
 class HeaderScreen extends Component {
 
-    state = {
-        open: false
-    };
-
-    toggleDrawer = (open) => () => {
-        this.setState({
-            open: open,
-        });
-    };
-
     render() {
 
-        //const { value } = this.state;
+        // const { classes } = this.props;
 
-        const { classes } = this.props;
+        const { width } = this.props;
+
 
         return (
 
@@ -43,7 +36,7 @@ class HeaderScreen extends Component {
                         <PlaygroundAppBar>
                             <Grid container spacing={0} style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                                 <Grid item xs={11}>
-                                    <Typography variant="headline"
+                                    <Typography variant={ width === "xs" ? "body2" : "headline" }
                                                 style={{ lineHeight: "3em", marginLeft: "2em", color: "white" }}
                                                 >Emanuele Santanché, Web Developer</Typography>
                                 </Grid>
@@ -72,4 +65,9 @@ class HeaderScreen extends Component {
 
 }
 
-export default HeaderScreen;
+// FIXME no styles here, move them to component library
+// withWidth shouldn't be used as well
+
+export default withWidth()(HeaderScreen);
+
+

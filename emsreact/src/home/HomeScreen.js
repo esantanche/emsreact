@@ -141,6 +141,8 @@ class HomeScreen extends Component {
 
                 </FrontGridPane>
 
+
+
             </React.Fragment>
 
         );
