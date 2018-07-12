@@ -24,9 +24,12 @@ import FrontGridPane from '../components_library/panes/FrontGridPane';
 import InnerGridPane from '../components_library/panes/InnerGridPane';
 import ArticleCard from '../components_library/cards/ArticleCard';
 
+import { injector } from 'react-services-injector'; // To use service, see services.js
+
 // import teal from "@material-ui/core/colors/teal";
 
 import theme from '../MuiTheme';
+import ArticleService from "../services/article/ArticleService";
 
 // import BottomNavigation from '@material-ui/core/BottomNavigation';
 // import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -40,11 +43,29 @@ class HomeScreen extends Component {
     // FIXME text is supposed to always have a (...) at the end possibly being cut out by the dotdotdot
     // library
 
-    // There are some FontIcon elements that have style={{ width: "20px" }} added. It's because the icon
+    constructor() {
+        super();
+
+        this.state = { articles: [] };
+    }
+
+    componentDidMount() {
+
+        const { ArticleService } = this.services;
+
+        this.ArticleService = ArticleService;
+
+        const articles = this.ArticleService.fetch_articles_for_test();
+
+        console.log(articles);
+
+    }
+
+        // There are some FontIcon elements that have style={{ width: "20px" }} added. It's because the icon
     // is defective and doesn't have proper width.
     render() {
 
-        const { width } = this.props;
+        // const { width } = this.props;
 
         //const { theme } = this.props;
 
@@ -151,5 +172,9 @@ class HomeScreen extends Component {
 
 //export default HomeScreen;
 
-export default withWidth()(HomeScreen);
+// export default withWidth()(HomeScreen);
 
+
+export default injector.connect(HomeScreen, {
+    toRender: ['ArticleService']
+});

@@ -9,6 +9,13 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import BodyPane from './components_library/panes/BodyPane';
 import HeaderScreen from './header/HeaderScreen';
 
+
+import {injector} from 'react-services-injector'; // To use service, see services.js
+import services from './services';                // To use service, see services.js
+
+injector.register(services);
+
+
 //
 // // Background color for the entire body
 // // Used in App.js

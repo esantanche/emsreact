@@ -1,0 +1,36 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+# Values for langcode: fr or en
+GET http://backend.emanuelesantanche.com/rest/view/test?_format=json
+
+###
+
+# Taxonomy Topics, all languages
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
+
+###
+
+# Taxonomy Topics, filter on language
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json&langcode=fr
+
+###
+
+# Articles all languages
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+###
+
+# Articles filtered on language
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=fr
+
+###
+
+# &field_ems_topic_target_id="How I work"&sticky=1 (with sticky=1 I get only the sticky ones
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+###

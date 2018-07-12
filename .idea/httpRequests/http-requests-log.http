@@ -1,0 +1,300 @@
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T061504.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"&sticky=0
+
+<> 2018-07-12T061451.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"&sticky=1
+
+<> 2018-07-12T061312.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"&sticky="on"
+
+<> 2018-07-12T061303.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T061243.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T061227.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T061140.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T060842.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T060742.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T060651.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T060522.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T060506.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T045948.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
+
+<> 2018-07-12T045934.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T045909.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
+
+<> 2018-07-12T045644.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T045556.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T045443.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T045244.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T045231.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T045055.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="4"
+
+<> 2018-07-12T045044.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T045030.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T045015.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
+
+<> 2018-07-12T044745.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T044431.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
+
+<> 2018-07-12T044402.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T044028.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="4"
+
+<> 2018-07-12T044016.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id=4
+
+<> 2018-07-12T044008.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T043651.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T043154.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T043054.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T042936.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T042715.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T042430.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=fr
+
+<> 2018-07-12T042217.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-12T042202.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json&langcode=fr
+
+<> 2018-07-12T042150.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
+
+<> 2018-07-12T042136.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/view/test?_format=json
+
+<> 2018-07-12T042119.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/view/articles?_format=json&langcode=fr
+
+<> 2018-07-12T041942.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/view/articles?_format=json
+
+<> 2018-07-12T041842.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/taxonomy/topics?_format=json&langcode=fr
+
+<> 2018-07-12T040904.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/taxonomy/topics?_format=json&langcode=en
+
+<> 2018-07-12T040856.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/taxonomy/topics?_format=json
+
+<> 2018-07-12T040844.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/taxonomy/topics?_format=json&langcode=en
+
+<> 2018-07-12T040738.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/taxonomy/topics?_format=json
+
+<> 2018-07-12T040720.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/taxonomy/topics?_format=json
+
+<> 2018-07-12T040634.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/taxonomy/topics?_format=json
+
+<> 2018-07-12T040605.200.json
+
+###
+
