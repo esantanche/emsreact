@@ -1,6 +1,7 @@
 // Just a test to refactor
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import striptags from 'striptags';
 
 import { withStyles } from "@material-ui/core/styles/index";
 import withWidth from '@material-ui/core/withWidth';
@@ -18,6 +19,8 @@ import MoreHoriz from '@material-ui/icons/MoreHoriz';
 import Dotdotdot from 'react-dotdotdot';
 
 import SeparatorPane from '../panes/SeparatorPane';
+
+import { title_to_slug } from '../../helpers/title_to_slug';
 
 const styles = theme => ({
     card_header: {
@@ -54,7 +57,8 @@ class ArticleCard extends Component {
         classes: PropTypes.object.isRequired,
         title: PropTypes.string,
         image: PropTypes.object,
-        text_content: PropTypes.string
+        text_content: PropTypes.string,
+        article_node_id: PropTypes.number
     };
 
     produce_jsx_fragment_for_image_and_text_according_to_width(width, classes, image, text_content) {
@@ -66,6 +70,11 @@ class ArticleCard extends Component {
             xl: "200px"
         };
 
+        const stripped_text_content = striptags(text_content);
+
+        // FIXME the url of the backend goes to parameters
+        // FIXME do I need a title for CardMedia?
+
         if (width === 'xs') {
 
             return (
@@ -75,7 +84,7 @@ class ArticleCard extends Component {
 
                         <CardMedia
                             className={classes.image_responsive_size}
-                            image={image}
+                            image={"http://backend.emanuelesantanche.com/" + image}
                             title=""
                         />
 
@@ -85,9 +94,9 @@ class ArticleCard extends Component {
 
                     <Grid item xs={12}>
 
-                        <Typography variant="body2" component="p">
+                        <Typography variant="body2" component="div">
 
-                            {text_content}
+                            {stripped_text_content}
 
                         </Typography>
 
@@ -105,16 +114,17 @@ class ArticleCard extends Component {
                         style={{ height: image_fixed_size_according_to_width[width],
                                  width: image_fixed_size_according_to_width[width] }}
                         // className={classes.image_fixed_size}
-                        image={image}
+                        image={"http://backend.emanuelesantanche.com/" + image}
                         title=""
                     />
 
-                    <Typography variant="body2" component="p"
+                    <Typography variant="body2" component="div"
                                 style={{ flex: "1", height: image_fixed_size_according_to_width[width], marginLeft: "10px" }}>
 
-                        <Dotdotdot clamp={image_fixed_size_according_to_width[width]} style={{ height: image_fixed_size_according_to_width[width] }}>
+                        <Dotdotdot clamp={image_fixed_size_according_to_width[width]}
+                                   style={{ height: image_fixed_size_according_to_width[width] }}>
 
-                            {text_content}
+                            {stripped_text_content}
 
                         </Dotdotdot>
 
@@ -137,10 +147,14 @@ class ArticleCard extends Component {
             xl: "title"
         };
 
-        const { classes, title, width, image, text_content } = this.props;
+        const { classes, title, width, image, text_content, article_node_id } = this.props;
 
         const jsx_fragment_for_image_and_text_according_to_width =
             this.produce_jsx_fragment_for_image_and_text_according_to_width(width, classes, image, text_content);
+
+        // FIXME link to article to fix
+
+        const slug_for_link_to_article = title_to_slug(title);
 
         return (
 
@@ -169,7 +183,7 @@ class ArticleCard extends Component {
                 </CardContent>
 
                 <CardActions>
-                    <IconButton style={{ marginLeft: "auto" }}>
+                    <IconButton style={{ marginLeft: "auto" }} href={"/article/" + article_node_id + "/" + slug_for_link_to_article}>
                         <MoreHoriz/>
                     </IconButton>
                 </CardActions>

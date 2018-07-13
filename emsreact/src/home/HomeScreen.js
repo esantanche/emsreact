@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
-// import Grid from '@material-ui/core/Grid';
-// import Paper from '@material-ui/core/Paper';
+
 import Typography from '@material-ui/core/Typography';
-// import Hidden from '@material-ui/core/Hidden';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
-// import CardMedia from '@material-ui/core/CardMedia';
 import testimage from '../images/6747806-xsmall.jpg';
 import testimage2 from '../images/6484991-xsmall.jpg';
 import Button from '@material-ui/core/Button';
-// import Toc from '@material-ui/icons/Toc';
-// import IconButton from '@material-ui/core/IconButton';
+
 import CardActions from '@material-ui/core/CardActions';
 // import FavoriteIcon from '@material-ui/icons/Favorite';
 // import ShareIcon from '@material-ui/icons/Share';
@@ -21,8 +17,7 @@ import CardActions from '@material-ui/core/CardActions';
 // import Dotdotdot from 'react-dotdotdot';
 import withWidth from '@material-ui/core/withWidth';
 import FrontGridPane from '../components_library/panes/FrontGridPane';
-import InnerGridPane from '../components_library/panes/InnerGridPane';
-import ArticleCard from '../components_library/cards/ArticleCard';
+import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 
 import { injector } from 'react-services-injector'; // To use service, see services.js
 
@@ -43,10 +38,17 @@ class HomeScreen extends Component {
     // FIXME text is supposed to always have a (...) at the end possibly being cut out by the dotdotdot
     // library
 
-    constructor() {
-        super();
+    // { title: "initial", body: "initial" }, {}, {}
 
-        this.state = { articles: [] };
+    constructor(props) {
+        super(props);
+
+        this.state = { articles: [ ] };
+
+        console.log('constructor state');
+        console.log(this.state);
+        // console.log(this.state.articles[0]);
+
     }
 
     componentDidMount() {
@@ -55,9 +57,22 @@ class HomeScreen extends Component {
 
         this.ArticleService = ArticleService;
 
-        const articles = this.ArticleService.fetch_articles_for_test();
+        // const articles = this.ArticleService.fetch_articles_for_test();
 
-        console.log(articles);
+        var self = this;
+
+        this.ArticleService.fetch_articles(
+            function (articles) {
+
+                console.log('componentDidMount articles');
+                console.log(articles);
+
+                self.setState({ articles: articles });
+
+            }
+
+        )
+
 
     }
 
@@ -72,10 +87,10 @@ class HomeScreen extends Component {
         // FIXME should use withTheme, but not here, this stuff should go to the component library
 
         //const color_who_am_i_message_card = theme.palette.primary.light;
-        const color_who_am_i_message_card = theme.palette.secondary.main;
+        const color_who_am_i_message_card = theme.palette.secondary.light;
 
-        console.log(theme);
-        console.log(theme.palette.primary.light);
+        // console.log(theme);
+        // console.log(theme.palette.primary.light);
 
         return (
 
@@ -119,40 +134,38 @@ class HomeScreen extends Component {
                             subheader="There is value in doing things properly first time"
                         />
 
-                        <InnerGridPane
+                        { this.state.articles.length > 0 ? (
 
-                            leftComponent={ (
 
-                                <ArticleCard image={testimage}
-                                             title="How do I protect my investment in bespoke software?"
-                                             text_content="It’s not about money only. When we create something, we would like it not to go down the sink too quickly.
+                            <ListOfArticlesScreen articles={this.state.articles}/>
 
-                                                                Sure nothing lasts forever, but if what we create shows to be useful for as long as it can, all the better.
+                            // <InnerGridPane
+                            //
+                            //     leftComponent={ (
+                            //
+                            //         <ArticleCard image={testimage}
+                            //                      title={this.state.articles[0].title}
+                            //                      text_content={this.state.articles[0].body}>
+                            //
+                            //         </ArticleCard>
+                            //
+                            //     ) }
+                            //
+                            //     rightComponent={ (
+                            //
+                            //         <ArticleCard image={testimage2}
+                            //                      title={this.state.articles[1].title}
+                            //                      text_content={this.state.articles[1].body}>
+                            //
+                            //         </ArticleCard>
+                            //
+                            //     ) }
+                            // />
 
-                                                                How to do this when technologies crop up as quickly as mushrooms after a rain storm and disappear as quickly?
-
-                                                                Software development is about problem solving. It isn’t about technologies.
-
-                                                                When you write a piece of software, you are describing a way to solve a problem.">
-
-                                </ArticleCard>
-
-                            ) }
-
-                            rightComponent={ (
-
-                                <ArticleCard image={testimage2}
-                                             title="How do I create my application?"
-                                             text_content="What if you ask for my help? I created applications for: IBM, Intel Corporation, the Olympus satellite project,
-
-                                                major telecommunication and energy companies, industrial plants, Virtual ISPs, banks and credit card companies.
-
-                                                Sure, keep in mind that the age of the requirements sculpted in stone has long gone.">
-
-                                </ArticleCard>
-
-                            ) }
-                        />
+                            )
+                            :
+                            ( <React.Fragment/> )
+                        }
 
                         <CardActions>
                             <Button size="small">More articles</Button>
@@ -162,6 +175,18 @@ class HomeScreen extends Component {
 
                 </FrontGridPane>
 
+
+
+                {/*this.state.articles[0].title*/}
+                {/*this.state.articles[0].body*/}
+
+                {/*<div dangerouslySetInnerHTML={{ __html: this.state.articles[0].body }} />*/}
+
+                {/*<ArticleCard image={testimage}*/}
+                             {/*title={this.state.articles[0].title}*/}
+                             {/*text_content={this.state.articles[0].body}>*/}
+
+                {/*</ArticleCard>*/}
 
 
             </React.Fragment>

@@ -5,17 +5,17 @@ import { Service } from 'react-services-injector';
 
 class ArticleService extends Service {
 
-    constructor() {
-        super();
-
-        // this.user_profile = {};
-        // this.id_token = "";
-
-        // this.sign_up_via_social_or_emailpwd = "";
-        // this.user_details = {};
-        // this.social_network_used_for_sign_up = "";
-
-    }
+    // constructor() {
+    //     super();
+    //
+    //     // this.user_profile = {};
+    //     // this.id_token = "";
+    //
+    //     // this.sign_up_via_social_or_emailpwd = "";
+    //     // this.user_details = {};
+    //     // this.social_network_used_for_sign_up = "";
+    //
+    // }
 
     // componentDidMount() {
     //
@@ -31,10 +31,12 @@ class ArticleService extends Service {
     //     return (id_token !== this.id_token || this.user_profile.keys().length === 0)
     // }
 
-    fetch_articles_for_test() {
+    // FIXME wiil need a parameter to fetch sticky articles only
+
+    fetch_articles(callback_to_return_articles) {
 
 
-        fetch("http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json", {
+        fetch("http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en", {
                 method: 'GET',
 
             })
@@ -44,10 +46,11 @@ class ArticleService extends Service {
             })
             .then(function(fixme_list_of_articles) {
                 //console.log('UserAuthService.js fetch_user_profile');
+                console.log("fetch_articles_for_test, fixme_list_of_articles");
                 console.log(fixme_list_of_articles);
                 // if (user_profile.code) callback_to_return_user_profile(user_profile);
                 //
-                return fixme_list_of_articles;
+                callback_to_return_articles(fixme_list_of_articles);
             })
             .catch(function(error) {
                 // FIXME here we need exception handling
@@ -56,78 +59,42 @@ class ArticleService extends Service {
                 // console.error("UserAuthService fetch_user_profile catch error");
                 // console.error(error.status + error.statusText); callback_to_return_user_profile(null, error);
                 // console.error('MailListService subscribe_to_mail_list error: ', error);
+                // FIXME should call the callback with some return value like null
                 return null;
             });
     };
 
-    fetch_user_profile(id_token, callback_to_return_success_or_error) {
 
-        var self = this;
+    fetch_article(article_node_id, callback_to_return_article) {
 
-        // const { UserAuthService } = this.services;
-
-        // this.UserAuthService = UserAuthService;
-        //
-        // const { ExceptionTrackingService } = this.services;
-        //
-        // this.ExceptionTrackingService = ExceptionTrackingService;
-
-        // if (this.must_fetch_profile_from_backend(id_token)) {
-        //
-        //     this.UserAuthService.fetch_user_profile(id_token,
-        //         function (user_profile, error) {
-        //             //console.log('player_or_coach');
-        //             //console.log(user_profile);
-        //
-        //             if (error) {
-        //
-        //                 // FIXME excpt handling
-        //
-        //                 callback_to_return_success_or_error(error);
-        //
-        //                 return;
-        //             }
-        //
-        //             // FIXME what about exceptions?
-        //
-        //             // FOXME for the stub, in local storage put the entire user profile
-        //
-        //             // FIXME now doing the stub, so replacing the user profile
-        //
-        //             // FIXME here I'll check the id of the player I created when the user gave the details
-        //             // if that id is defined, it means that they completed the profile
-        //
-        //             if (localStorage.getItem('user_profile')) {
-        //                 const local_storage_user_profile = JSON.parse(localStorage.getItem('user_profile'));
-        //                 self.user_profile = Object.assign({}, local_storage_user_profile);
-        //             } else {
-        //                 localStorage.setItem('user_profile', JSON.stringify(user_profile));
-        //                 self.user_profile = Object.assign({}, user_profile);
-        //             }
-        //
-        //             //localStorage.getItem('user_profile');
-        //
-        //             //self.user_profile.player_or_coach = localStorage.getItem('user_profile:player_or_coach');
-        //
-        //             // FIXME player_or_coach in user profile
-        //
-        //             //         this.email_of_user_who_is_signing_up = localStorage.getItem('email_of_user_who_is_signing_up');
-        //
-        //             // FIXME this is a stub
-        //             //user_profile.player_or_coach = localStorage.getItem('user_profile:player_or_coach');
-        //             // self.setState({ user_profile_from_backend: user_profile });
-        //             // self.setState({ firstname: user_profile.givenName, lastname: user_profile.familyName })
-        //             callback_to_return_success_or_error('success');
-        //         }
-        //     );
-        //
-        // } else {
-        //
-        //     callback_to_return_success_or_error('success');
-        //
-        // }
+        fetch("http://backend.emanuelesantanche.com/node/" + article_node_id + "/?_format=json", {
+            method: 'GET',
+        })
+            .then((response) => {
+                if (!response.ok) { throw response }
+                return response.json()
+            })
+            .then(function(fixme_list_of_articles_maybe_or_only_one) {
+                //console.log('UserAuthService.js fetch_user_profile');
+                // console.log("fetch_articles_for_test, fixme_list_of_articles");
+                // console.log(fixme_list_of_articles);
+                // if (user_profile.code) callback_to_return_user_profile(user_profile);
+                //
+                callback_to_return_article(fixme_list_of_articles_maybe_or_only_one);
+            })
+            .catch(function(error) {
+                // FIXME here we need exception handling
+                console.error("Error fetching article (one)");
+                console.error(error);
+                // console.error("UserAuthService fetch_user_profile catch error");
+                // console.error(error.status + error.statusText); callback_to_return_user_profile(null, error);
+                // console.error('MailListService subscribe_to_mail_list error: ', error);
+                // FIXME should call the callback with some return value like null
+                return null;
+            });
 
     }
+
 
 
 

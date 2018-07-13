@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 //import Button from '@material-ui/core/Button';
 import HomeScreen from './home/HomeScreen';
+import ArticleScreen from './article/ArticleScreen';
 import theme from './MuiTheme';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 // import PropTypes from 'prop-types';
@@ -52,6 +53,8 @@ class App extends Component {
                     <BodyPane>
                         <HeaderScreen />
                         <Route exact path="/" component={HomeScreen} />
+                        <Route path="/article/" component={ArticleScreen} />
+
                         {/*<Button variant="contained" color="primary">*/}
                             {/*Hello World*/}
                         {/*</Button>*/}
