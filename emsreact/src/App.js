@@ -53,7 +53,7 @@ class App extends Component {
                     <BodyPane>
                         <HeaderScreen />
                         <Route exact path="/" component={HomeScreen} />
-                        <Route path="/article/" component={ArticleScreen} />
+                        <Route path="/article/:articlenid" component={ArticleScreen} />
 
                         {/*<Button variant="contained" color="primary">*/}
                             {/*Hello World*/}

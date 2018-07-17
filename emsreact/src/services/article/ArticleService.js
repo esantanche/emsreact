@@ -33,10 +33,27 @@ class ArticleService extends Service {
 
     // FIXME wiil need a parameter to fetch sticky articles only
 
-    fetch_articles(callback_to_return_articles) {
+    fetch_articles(filters, callback_to_return_articles) {
 
+        let filter_query_string = "";
 
-        fetch("http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en", {
+        if (filters) {
+
+            if (filters.nid)
+                filter_query_string += "&nid=" + filters.nid;
+
+            if (filters.topic)
+                filter_query_string += "&field_ems_topic_target_id=" + filters.topic;
+
+            if (filters.sticky)
+                filter_query_string += "&sticky=1";
+
+        }
+
+        // console.log()
+        // field_ems_topic_target_id="How I work"
+
+        fetch("http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en" + filter_query_string, {
                 method: 'GET',
 
             })

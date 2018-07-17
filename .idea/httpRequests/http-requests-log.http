@@ -1,3 +1,45 @@
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en
+
+<> 2018-07-17T115904.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-17T115842.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json&langcode=en
+
+<> 2018-07-17T115736.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=6&langcode=en
+
+<> 2018-07-17T114457.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=6
+
+<> 2018-07-17T114414.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
+
+<> 2018-07-17T114352.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=4
+
+<> 2018-07-17T114333.200.json
+
+###
+
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 
 <> 2018-07-13T071843.200.json
@@ -253,48 +295,6 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 
 <> 2018-07-12T043054.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T042936.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T042715.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T042430.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=fr
-
-<> 2018-07-12T042217.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T042202.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json&langcode=fr
-
-<> 2018-07-12T042150.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-12T042136.200.json
 
 ###
 

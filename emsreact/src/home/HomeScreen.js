@@ -61,7 +61,10 @@ class HomeScreen extends Component {
 
         var self = this;
 
-        this.ArticleService.fetch_articles(
+        // The tools I use
+        // How I work
+
+        this.ArticleService.fetch_articles({ topic: "The tools I use", sticky: 1 },
             function (articles) {
 
                 console.log('componentDidMount articles');
@@ -73,10 +76,9 @@ class HomeScreen extends Component {
 
         )
 
-
     }
 
-        // There are some FontIcon elements that have style={{ width: "20px" }} added. It's because the icon
+    // There are some FontIcon elements that have style={{ width: "20px" }} added. It's because the icon
     // is defective and doesn't have proper width.
     render() {
 
@@ -135,7 +137,6 @@ class HomeScreen extends Component {
                         />
 
                         { this.state.articles.length > 0 ? (
-
 
                             <ListOfArticlesScreen articles={this.state.articles}/>
 

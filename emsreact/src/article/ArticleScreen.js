@@ -4,7 +4,14 @@ import PropTypes from 'prop-types';
 import InnerGridPane from '../components_library/panes/InnerGridPane';
 import ArticleCard from '../components_library/cards/ArticleCard';
 import Card from '@material-ui/core/Card';
+import FrontGridPane from '../components_library/panes/FrontGridPane';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import Clear from '@material-ui/icons/Clear';
+import IconButton from '@material-ui/core/IconButton';
 
+import { injector } from 'react-services-injector'; // To use service, see services.js
 
 // import striptags from 'striptags';
 
@@ -16,39 +23,18 @@ import testimage from '../images/6747806-xsmall.jpg';
 
 // import Dotdotdot from 'react-dotdotdot';
 
-// import SeparatorPane from '../panes/SeparatorPane';
-
-//FIXME need these?
-const styles = theme => ({
-    card_header: {
-        height: "6em",
-        display: "flex",
-        alignItems: "center",
-        paddingLeft: "24px",
-        paddingRight: "24px"
-    },
-    container: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "stretch"
-    },
-    image_responsive_size: {
-        height: "0",
-        paddingTop: '100%'
-    },
-    // image_large_fixed_size: {
-    //     height: "200px",
-    //     width: "200px"
-    // },
-    typography_when_below_image: {
-        marginTop: "10px"
-    },
-    title: {
-        fontSize: "1px"
-    }
-});
-
 class ArticleScreen extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = { article: [ { } ] };
+
+        // console.log('constructor state');
+        // console.log(this.state);
+        // console.log(this.state.articles[0]);
+
+    }
 
     // FIXME need these?
     // static propTypes = {
@@ -58,25 +44,82 @@ class ArticleScreen extends Component {
     //     // text_content: PropTypes.string
     // };
 
+    componentDidMount() {
+
+        const { ArticleService } = this.services;
+
+        this.ArticleService = ArticleService;
+
+        // const articles = this.ArticleService.fetch_articles_for_test();
+
+        var self = this;
+
+        // The tools I use
+        // How I work
+
+        // FIXME excpt what if articlenid is not defined?
+
+        this.ArticleService.fetch_articles({ nid: this.props.match.params.articlenid },
+            function (article) {
+
+                console.log('componentDidMount article');
+                console.log(article);
+
+                self.setState({ article: article });
+
+            }
+
+        )
+
+    }
+
     render() {
-
-
-
-        // const { classes, title, width, image, text_content } = this.props;
-        //
-        // const jsx_fragment_for_image_and_text_according_to_width =
-        //     this.produce_jsx_fragment_for_image_and_text_according_to_width(width, classes, image, text_content);
 
         return (
 
-            <Card>
+            <React.Fragment>
 
-                this is article sinlg one
-                should show the url here
+                <FrontGridPane>
 
+                    {/*FIXME this card should become a component in component library*/}
 
-            </Card>
+                    <Card>
 
+                        <CardHeader title={this.state.article[0].title}
+                                    action={
+                                        <IconButton href="/">
+                                            <Clear />
+                                        </IconButton>
+                                    }/>
+
+                        <CardContent>
+
+                            <Typography variant="body1" component="div">
+
+                                <div dangerouslySetInnerHTML={{ __html: this.state.article[0].body }} />
+
+                            </Typography>
+
+                            {/*<Typography variant="title" >*/}
+
+                                {/*Hello, my name is Emanuele Santanché. I am a Web Developer and build websites and web applications*/}
+                                {/*using JavaScript, React, Angular, WordPress, Drupal, HTML5, CSS3, CSSinJS.*/}
+
+                            {/*</Typography>*/}
+
+                        </CardContent>
+
+                    </Card>
+
+                </FrontGridPane>
+
+                {/*<Card>*/}
+
+                    {/*Title: { this.state.article[0] ? this.state.article[0].title : "" }*/}
+
+                {/*</Card>*/}
+
+            </React.Fragment>
 
         )
 
@@ -87,38 +130,8 @@ class ArticleScreen extends Component {
 
 }
 
-export default ArticleScreen;
 
-// export default withWidth()(withStyles(styles)(ListOfArticlesScreen));
+export default injector.connect(ArticleScreen, {
+    toRender: ['ArticleService']
+});
 
-// {  this.props.articles.map((article, index) =>
-//     {
-//
-//
-//     }
-//
-// ) }
-
-//
-// {/*<InnerGridPane*/}
-//
-// {/*leftComponent={ (*/}
-//
-// {/*<ArticleCard image={testimage}*/}
-// {/*title={this.props.articles[0].title}*/}
-// {/*text_content={this.props.articles[0].body}>*/}
-//
-// {/*</ArticleCard>*/}
-//
-// {/*) }*/}
-//
-// {/*rightComponent={ (*/}
-//
-// {/*<ArticleCard image={testimage}*/}
-// {/*title={this.props.articles[1].title}*/}
-// {/*text_content={this.props.articles[1].body}>*/}
-//
-// {/*</ArticleCard>*/}
-//
-// {/*) }*/}
-// {/*/>*/}

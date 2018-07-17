@@ -18,7 +18,6 @@ class HeaderScreen extends Component {
 
         const { width } = this.props;
 
-
         return (
 
             <React.Fragment>
@@ -36,9 +35,11 @@ class HeaderScreen extends Component {
                         <PlaygroundAppBar>
                             <Grid container spacing={0} style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                                 <Grid item xs={11}>
-                                    <Typography variant={ width === "xs" ? "body2" : "headline" }
-                                                style={{ lineHeight: "3em", marginLeft: "2em", color: "white" }}
-                                                >Emanuele Santanché, Web Developer</Typography>
+                                    <Button href="/">
+                                        <Typography variant={ width === "xs" ? "body2" : "headline" }
+                                                    style={{ lineHeight: "3em", marginLeft: "2em", color: "white" }}
+                                                    >Emanuele Santanché, Web Developer</Typography>
+                                    </Button>
                                 </Grid>
 
                                 <Grid item xs={1}>
