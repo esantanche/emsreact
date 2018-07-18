@@ -63,8 +63,8 @@ class ArticleService extends Service {
             })
             .then(function(fixme_list_of_articles) {
                 //console.log('UserAuthService.js fetch_user_profile');
-                console.log("fetch_articles_for_test, fixme_list_of_articles");
-                console.log(fixme_list_of_articles);
+                // console.log("fetch_articles_for_test, fixme_list_of_articles");
+                // console.log(fixme_list_of_articles);
                 // if (user_profile.code) callback_to_return_user_profile(user_profile);
                 //
                 callback_to_return_articles(fixme_list_of_articles);

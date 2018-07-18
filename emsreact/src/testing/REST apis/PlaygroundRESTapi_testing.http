@@ -11,11 +11,13 @@ GET http://backend.emanuelesantanche.com/rest/view/test?_format=json
 ###
 
 # Taxonomy Topics, all languages
+# FIXME now disabled, maybe I don't use it
 GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
 
 ###
 
 # Taxonomy Topics, filter on language
+# FIXME now disabled, maybe I don't use it
 GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json&langcode=en
 
 ###

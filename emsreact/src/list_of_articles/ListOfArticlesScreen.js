@@ -1,10 +1,12 @@
-// Just a test to refactor
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import InnerGridPane from '../components_library/panes/InnerGridPane';
 import ArticleCard from '../components_library/cards/ArticleCard';
 import Card from '@material-ui/core/Card';
+import red from "@material-ui/core/colors/red";
+import lightBlue from "@material-ui/core/colors/lightBlue";
 
+import { injector } from 'react-services-injector'; // To use service, see services.js
 
 // import striptags from 'striptags';
 
@@ -12,51 +14,51 @@ import Card from '@material-ui/core/Card';
 // import withWidth from '@material-ui/core/withWidth';
 
 
-import testimage from '../images/6747806-xsmall.jpg';
-
-// import Dotdotdot from 'react-dotdotdot';
 
 // import SeparatorPane from '../panes/SeparatorPane';
 
-//FIXME need these?
-const styles = theme => ({
-    card_header: {
-        height: "6em",
-        display: "flex",
-        alignItems: "center",
-        paddingLeft: "24px",
-        paddingRight: "24px"
-    },
-    container: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "stretch"
-    },
-    image_responsive_size: {
-        height: "0",
-        paddingTop: '100%'
-    },
-    // image_large_fixed_size: {
-    //     height: "200px",
-    //     width: "200px"
-    // },
-    typography_when_below_image: {
-        marginTop: "10px"
-    },
-    title: {
-        fontSize: "1px"
-    }
-});
 
 class ListOfArticlesScreen extends Component {
+
+    constructor() {
+        super();
+
+        this.state = { articles: [] }
+
+    }
+
 
     // FIXME need these?
     static propTypes = {
         // classes: PropTypes.object.isRequired,
-        articles: PropTypes.array
+        // articles: PropTypes.array
         // image: PropTypes.object,
         // text_content: PropTypes.string
+        topic: PropTypes.string,
+        sticky: PropTypes.boolean
     };
+
+    componentDidMount() {
+
+        const { ArticleService } = this.services;
+
+        this.ArticleService = ArticleService;
+
+        var self = this;
+
+        this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
+            function (articles) {
+
+                // console.log('componentDidMount articles');
+                // console.log(articles);
+
+                self.setState({ articles: articles });
+
+            }
+
+        )
+
+    }
 
     render() {
 
@@ -72,7 +74,7 @@ class ListOfArticlesScreen extends Component {
         // let article = {};
         // let index = 0;
 
-        const articles_pairs = this.props.articles.reduce((articles_pairs, article, index, articles) => {
+        const articles_pairs = this.state.articles.reduce((articles_pairs, article, index, articles) => {
 
             if (index % 2 === 0)
                 articles_pairs.push(articles.slice(index, index + 2));
@@ -81,8 +83,8 @@ class ListOfArticlesScreen extends Component {
 
         }, []);
 
-        console.log("ListOfArticlesScreen");
-        console.log(articles_pairs);
+        // console.log("ListOfArticlesScreen");
+        // console.log(articles_pairs);
 
         // const { classes, title, width, image, text_content } = this.props;
         //
@@ -100,7 +102,7 @@ class ListOfArticlesScreen extends Component {
                             <ArticleCard image={pair_of_articles[0].field_image}
                                          title={pair_of_articles[0].title}
                                          text_content={pair_of_articles[0].body}
-                                         article_node_id={pair_of_articles[0].nid}>
+                                         article_node_id={Number(pair_of_articles[0].nid)}>
 
                             </ArticleCard>
 
@@ -111,7 +113,7 @@ class ListOfArticlesScreen extends Component {
                             <ArticleCard image={pair_of_articles[1].field_image}
                                          title={pair_of_articles[1].title}
                                          text_content={pair_of_articles[1].body}
-                                         article_node_id={pair_of_articles[1].nid}>
+                                         article_node_id={Number(pair_of_articles[1].nid)}>
 
                             </ArticleCard>
 
@@ -121,12 +123,9 @@ class ListOfArticlesScreen extends Component {
 
                     )}
 
-
                 />
 
-
             )
-
 
         })
 
@@ -134,38 +133,9 @@ class ListOfArticlesScreen extends Component {
 
 }
 
-export default ListOfArticlesScreen;
 
-// export default withWidth()(withStyles(styles)(ListOfArticlesScreen));
+export default injector.connect(ListOfArticlesScreen, {
+    toRender: ['ArticleService']
+});
 
-// {  this.props.articles.map((article, index) =>
-//     {
-//
-//
-//     }
-//
-// ) }
-
-//
-// {/*<InnerGridPane*/}
-//
-// {/*leftComponent={ (*/}
-//
-// {/*<ArticleCard image={testimage}*/}
-// {/*title={this.props.articles[0].title}*/}
-// {/*text_content={this.props.articles[0].body}>*/}
-//
-// {/*</ArticleCard>*/}
-//
-// {/*) }*/}
-//
-// {/*rightComponent={ (*/}
-//
-// {/*<ArticleCard image={testimage}*/}
-// {/*title={this.props.articles[1].title}*/}
-// {/*text_content={this.props.articles[1].body}>*/}
-//
-// {/*</ArticleCard>*/}
-//
-// {/*) }*/}
-// {/*/>*/}
+// export default ListOfArticlesScreen;

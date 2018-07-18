@@ -56,7 +56,7 @@ class ArticleCard extends Component {
     static propTypes = {
         classes: PropTypes.object.isRequired,
         title: PropTypes.string,
-        image: PropTypes.object,
+        image: PropTypes.string,
         text_content: PropTypes.string,
         article_node_id: PropTypes.number
     };

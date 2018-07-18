@@ -8,8 +8,9 @@
 // import ProfileManagementService from './profilemanagement/services/ProfileManagementService';
 
 import ArticleService from './services/article/ArticleService';
+import TopicService from './services/topic/TopicService';
 
-export default [ ArticleService ];
+export default [ ArticleService, TopicService ];
 
 // Always export an array, even if you have only one service
 // export default [ UserAuthService, MailListService, ExceptionTrackingService, ProfileManagementService ];

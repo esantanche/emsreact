@@ -5,17 +5,9 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
-import testimage from '../images/6747806-xsmall.jpg';
-import testimage2 from '../images/6484991-xsmall.jpg';
 import Button from '@material-ui/core/Button';
 
 import CardActions from '@material-ui/core/CardActions';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
-// import ShareIcon from '@material-ui/icons/Share';
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-// import MoreHoriz from '@material-ui/icons/MoreHoriz';
-// import Dotdotdot from 'react-dotdotdot';
-import withWidth from '@material-ui/core/withWidth';
 import FrontGridPane from '../components_library/panes/FrontGridPane';
 import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 
@@ -26,12 +18,6 @@ import { injector } from 'react-services-injector'; // To use service, see servi
 import theme from '../MuiTheme';
 import ArticleService from "../services/article/ArticleService";
 
-// import BottomNavigation from '@material-ui/core/BottomNavigation';
-// import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-// import RestoreIcon from '@material-ui/icons/Restore';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
-// import LocationOnIcon from '@material-ui/icons/LocationOn';
-
 // FIXME TODO  https://react-styleguidist.js.org/docs/documenting.html
 class HomeScreen extends Component {
 
@@ -41,13 +27,10 @@ class HomeScreen extends Component {
     // { title: "initial", body: "initial" }, {}, {}
 
     constructor(props) {
+
         super(props);
 
-        this.state = { articles: [ ] };
-
-        console.log('constructor state');
-        console.log(this.state);
-        // console.log(this.state.articles[0]);
+        this.state = { articles: [ ], topics: [ ] };
 
     }
 
@@ -57,24 +40,20 @@ class HomeScreen extends Component {
 
         this.ArticleService = ArticleService;
 
-        // const articles = this.ArticleService.fetch_articles_for_test();
+        const { TopicService } = this.services;
+
+        this.TopicService = TopicService;
 
         var self = this;
 
-        // The tools I use
-        // How I work
+        this.TopicService.get_topics(function(topics) {
 
-        this.ArticleService.fetch_articles({ topic: "The tools I use", sticky: 1 },
-            function (articles) {
+            // self.topics = topics;
+            self.setState({ topics: topics });
+            // console.log('HomeScreen - componentDidMount');
+            // console.log(self.state.topics);
 
-                console.log('componentDidMount articles');
-                console.log(articles);
-
-                self.setState({ articles: articles });
-
-            }
-
-        )
+        });
 
     }
 
@@ -118,65 +97,82 @@ class HomeScreen extends Component {
 
                 </FrontGridPane>
 
-                <FrontGridPane>
+                { this.state.topics.length > 0 ?
 
-                    <Card>
-                        <CardHeader
-                            avatar={
-                                <Avatar aria-label="How I work" style={{ backgroundColor: "#880000" }}>
-                                    W
-                                </Avatar>
-                            }
-                            // action={
-                            //     <IconButton>
-                            //         <MoreVertIcon />
-                            //     </IconButton>
-                            // }
-                            title="How I work"
-                            subheader="There is value in doing things properly first time"
-                        />
+                    this.state.topics.map(topic => {
 
-                        { this.state.articles.length > 0 ? (
+                        return (
 
-                            <ListOfArticlesScreen articles={this.state.articles}/>
+                            <React.Fragment>
 
-                            // <InnerGridPane
-                            //
-                            //     leftComponent={ (
-                            //
-                            //         <ArticleCard image={testimage}
-                            //                      title={this.state.articles[0].title}
-                            //                      text_content={this.state.articles[0].body}>
-                            //
-                            //         </ArticleCard>
-                            //
-                            //     ) }
-                            //
-                            //     rightComponent={ (
-                            //
-                            //         <ArticleCard image={testimage2}
-                            //                      title={this.state.articles[1].title}
-                            //                      text_content={this.state.articles[1].body}>
-                            //
-                            //         </ArticleCard>
-                            //
-                            //     ) }
-                            // />
+                                <FrontGridPane>
 
-                            )
-                            :
-                            ( <React.Fragment/> )
-                        }
+                                    <Card>
+                                        <CardHeader
+                                            avatar={
+                                                <Avatar aria-label={topic.name} style={{ backgroundColor: topic.color_for_avatar }}>
+                                                    {topic.letter_for_avatar}
+                                                </Avatar>
+                                            }
+                                            // action={
+                                            //     <IconButton>
+                                            //         <MoreVertIcon />
+                                            //     </IconButton>
+                                            // }
+                                            title={topic.name}
+                                            subheader={topic.subheader}
+                                        />
 
-                        <CardActions>
-                            <Button size="small">More articles</Button>
-                        </CardActions>
+                                        <ListOfArticlesScreen topic={topic.name} sticky={true}/>
 
-                    </Card>
+                                        <CardActions>
+                                            <Button size="small"
+                                                    href={"/articles/" + topic.name_for_url}>{topic.more_articles_button_label}</Button>
+                                        </CardActions>
 
-                </FrontGridPane>
+                                    </Card>
 
+                                </FrontGridPane>
 
+                            </React.Fragment>
+
+                        );
+
+                    })
+
+                    :
+
+                    ( <React.Fragment></React.Fragment> )
+
+                }
+
+                {/*<FrontGridPane>*/}
+
+                    {/*<Card>*/}
+                        {/*<CardHeader*/}
+                            {/*avatar={*/}
+                                {/*<Avatar aria-label="How I work" style={{ backgroundColor: "#880000" }}>*/}
+                                    {/*W*/}
+                                {/*</Avatar>*/}
+                            {/*}*/}
+                            {/*// action={*/}
+                            {/*//     <IconButton>*/}
+                            {/*//         <MoreVertIcon />*/}
+                            {/*//     </IconButton>*/}
+                            {/*// }*/}
+                            {/*title="How I work"*/}
+                            {/*subheader="There is value in doing things properly first time"*/}
+                        {/*/>*/}
+
+                        {/*<ListOfArticlesScreen topic="How I work" sticky={true}/>*/}
+
+                        {/*<CardActions>*/}
+                            {/*<Button size="small">More articles</Button>*/}
+                        {/*</CardActions>*/}
+
+                    {/*</Card>*/}
+
+                {/*</FrontGridPane>*/}
 
                 {/*this.state.articles[0].title*/}
                 {/*this.state.articles[0].body*/}

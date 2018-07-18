@@ -1,0 +1,23 @@
+[
+  {
+    "tid": "4",
+    "name": "Comment je travaille",
+    "langcode": "French",
+    "view_taxonomy_term": "\/how-i-work",
+    "contextual_links": ""
+  },
+  {
+    "tid": "4",
+    "name": "How I work",
+    "langcode": "English",
+    "view_taxonomy_term": "\/how-i-work",
+    "contextual_links": ""
+  },
+  {
+    "tid": "5",
+    "name": "The tools I use",
+    "langcode": "English",
+    "view_taxonomy_term": "\/taxonomy\/term\/5",
+    "contextual_links": ""
+  }
+]

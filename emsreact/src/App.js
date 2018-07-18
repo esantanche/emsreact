@@ -12,7 +12,9 @@ import HeaderScreen from './header/HeaderScreen';
 
 
 import {injector} from 'react-services-injector'; // To use service, see services.js
-import services from './services';                // To use service, see services.js
+import services from './services';
+// import ListOfArticlesScreen from "./list_of_articles/ListOfArticlesScreen";                // To use service, see services.js
+import TopicScreen from './list_of_articles/TopicScreen';
 
 injector.register(services);
 
@@ -54,6 +56,7 @@ class App extends Component {
                         <HeaderScreen />
                         <Route exact path="/" component={HomeScreen} />
                         <Route path="/article/:articlenid" component={ArticleScreen} />
+                        <Route path="/articles/:topic" component={TopicScreen} />
 
                         {/*<Button variant="contained" color="primary">*/}
                             {/*Hello World*/}
