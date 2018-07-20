@@ -9,7 +9,7 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 // import PropTypes from 'prop-types';
 import BodyPane from './components_library/panes/BodyPane';
 import HeaderScreen from './header/HeaderScreen';
-
+import FooterScreen from './footer/FooterScreen';
 
 import {injector} from 'react-services-injector'; // To use service, see services.js
 import services from './services';
@@ -54,10 +54,12 @@ class App extends Component {
                     <CssBaseline />
                     <BodyPane>
                         <HeaderScreen />
+
                         <Route exact path="/" component={HomeScreen} />
                         <Route path="/article/:articlenid" component={ArticleScreen} />
                         <Route path="/articles/:topic" component={TopicScreen} />
 
+                        <FooterScreen />
                         {/*<Button variant="contained" color="primary">*/}
                             {/*Hello World*/}
                         {/*</Button>*/}

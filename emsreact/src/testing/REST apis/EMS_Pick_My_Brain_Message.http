@@ -1,0 +1,31 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+# Create a new EMS Pick My Brain Message node
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+   "title": [ {
+      "value": "New message 2018-07-20 19:26"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Filipponi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele Filipponi"
+  } ]
+}
+
+###

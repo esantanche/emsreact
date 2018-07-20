@@ -1,0 +1,36 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+// FIXME throw this away?
+
+// https://www.drupal.org/docs/8/core/modules/rest/3-post-for-creating-content-entities
+
+#PUT http://api.theprospectexchange.com/level
+#Accepts: application/json
+#Authorization: Bearer {{idtoken}}
+#Content-Type: application/json
+#
+#{ "name": "JustALevel" }
+
+# This works!
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "article"
+   } ],
+  "title": [ {
+      "value": "New article with notification try 2"
+   } ],
+  "body": [ {
+      "value": "Body of new article. You should get an email try2"
+   } ]
+}
+
+###

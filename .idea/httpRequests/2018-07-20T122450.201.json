@@ -1,0 +1,129 @@
+{
+  "nid": [
+    {
+      "value": 15
+    }
+  ],
+  "uuid": [
+    {
+      "value": "b521e13a-278e-427b-a83d-4f0916993135"
+    }
+  ],
+  "vid": [
+    {
+      "value": 60
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "article",
+      "target_type": "node_type",
+      "target_uuid": "eeb87d4e-a15f-40c7-8923-0044935002af"
+    }
+  ],
+  "revision_timestamp": [
+    {
+      "value": "2018-07-20T10:24:48+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "revision_uid": [
+    {
+      "target_id": 0,
+      "target_type": "user",
+      "target_uuid": "712e6a0d-2e6b-4b8a-8208-c4ed749fe96d",
+      "url": "\/user\/0"
+    }
+  ],
+  "revision_log": [],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "title": [
+    {
+      "value": "My Article"
+    }
+  ],
+  "uid": [
+    {
+      "target_id": 0,
+      "target_type": "user",
+      "target_uuid": "712e6a0d-2e6b-4b8a-8208-c4ed749fe96d",
+      "url": "\/user\/0"
+    }
+  ],
+  "created": [
+    {
+      "value": "2018-07-20T10:24:48+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "changed": [
+    {
+      "value": "2018-07-20T10:24:48+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "promote": [
+    {
+      "value": true
+    }
+  ],
+  "sticky": [
+    {
+      "value": false
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": true
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": true
+    }
+  ],
+  "menu_link": [
+    {
+      "target_id": null
+    }
+  ],
+  "content_translation_source": [
+    {
+      "value": "und"
+    }
+  ],
+  "content_translation_outdated": [
+    {
+      "value": false
+    }
+  ],
+  "body": [
+    {
+      "value": "some body content aaa bbb ccc",
+      "format": null,
+      "processed": "\u003Cp\u003Esome body content aaa bbb ccc\u003C\/p\u003E\n",
+      "summary": null
+    }
+  ],
+  "comment": [
+    {
+      "status": 2,
+      "cid": 0,
+      "last_comment_timestamp": 0,
+      "last_comment_name": null,
+      "last_comment_uid": 0,
+      "comment_count": 0
+    }
+  ],
+  "field_image": [],
+  "field_tags": []
+}

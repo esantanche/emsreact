@@ -1,0 +1,129 @@
+{
+  "nid": [
+    {
+      "value": 19
+    }
+  ],
+  "uuid": [
+    {
+      "value": "cb142558-1ada-412c-9e82-314d5d0c937b"
+    }
+  ],
+  "vid": [
+    {
+      "value": 64
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "article",
+      "target_type": "node_type",
+      "target_uuid": "eeb87d4e-a15f-40c7-8923-0044935002af"
+    }
+  ],
+  "revision_timestamp": [
+    {
+      "value": "2018-07-20T11:56:44+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "revision_uid": [
+    {
+      "target_id": 0,
+      "target_type": "user",
+      "target_uuid": "712e6a0d-2e6b-4b8a-8208-c4ed749fe96d",
+      "url": "\/user\/0"
+    }
+  ],
+  "revision_log": [],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "title": [
+    {
+      "value": "New article with notification try 2"
+    }
+  ],
+  "uid": [
+    {
+      "target_id": 0,
+      "target_type": "user",
+      "target_uuid": "712e6a0d-2e6b-4b8a-8208-c4ed749fe96d",
+      "url": "\/user\/0"
+    }
+  ],
+  "created": [
+    {
+      "value": "2018-07-20T11:56:44+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "changed": [
+    {
+      "value": "2018-07-20T11:56:44+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "promote": [
+    {
+      "value": true
+    }
+  ],
+  "sticky": [
+    {
+      "value": false
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": true
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": true
+    }
+  ],
+  "menu_link": [
+    {
+      "target_id": null
+    }
+  ],
+  "content_translation_source": [
+    {
+      "value": "und"
+    }
+  ],
+  "content_translation_outdated": [
+    {
+      "value": false
+    }
+  ],
+  "body": [
+    {
+      "value": "Body of new article. You should get an email try2",
+      "format": null,
+      "processed": "\u003Cp\u003EBody of new article. You should get an email try2\u003C\/p\u003E\n",
+      "summary": null
+    }
+  ],
+  "comment": [
+    {
+      "status": 2,
+      "cid": 0,
+      "last_comment_timestamp": 0,
+      "last_comment_name": null,
+      "last_comment_uid": 0,
+      "comment_count": 0
+    }
+  ],
+  "field_image": [],
+  "field_tags": []
+}

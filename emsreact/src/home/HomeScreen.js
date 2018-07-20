@@ -10,13 +10,14 @@ import Button from '@material-ui/core/Button';
 import CardActions from '@material-ui/core/CardActions';
 import FrontGridPane from '../components_library/panes/FrontGridPane';
 import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
+import ColouredCard from '../components_library/cards/ColouredCard';
 
 import { injector } from 'react-services-injector'; // To use service, see services.js
 
-// import teal from "@material-ui/core/colors/teal";
-
 import theme from '../MuiTheme';
 import ArticleService from "../services/article/ArticleService";
+
+import EmailValidator from 'email-validator';
 
 // FIXME TODO  https://react-styleguidist.js.org/docs/documenting.html
 class HomeScreen extends Component {
@@ -55,6 +56,12 @@ class HomeScreen extends Component {
 
         });
 
+
+        // FIXME test to remove
+        const email_is_valid = EmailValidator.validate("esantanche@gmail.com");
+
+        console.log("email_is_valid: " + email_is_valid);
+
     }
 
     // There are some FontIcon elements that have style={{ width: "20px" }} added. It's because the icon
@@ -81,9 +88,10 @@ class HomeScreen extends Component {
 
                     {/*FIXME this card should become a component in component library*/}
 
-                    <Card style={{ backgroundColor: color_who_am_i_message_card }}>
+                    <ColouredCard>
 
                         <CardContent>
+
                             <Typography variant="title" >
 
                                 Hello, my name is Emanuele Santanché. I am a Web Developer and build websites and web applications
@@ -93,7 +101,7 @@ class HomeScreen extends Component {
 
                         </CardContent>
 
-                    </Card>
+                    </ColouredCard>
 
                 </FrontGridPane>
 

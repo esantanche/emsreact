@@ -27,7 +27,6 @@ class ListOfArticlesScreen extends Component {
 
     }
 
-
     // FIXME need these?
     static propTypes = {
         // classes: PropTypes.object.isRequired,
@@ -133,9 +132,6 @@ class ListOfArticlesScreen extends Component {
 
 }
 
-
 export default injector.connect(ListOfArticlesScreen, {
     toRender: ['ArticleService']
 });
-
-// export default ListOfArticlesScreen;

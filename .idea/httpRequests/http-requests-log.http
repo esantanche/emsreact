@@ -1,3 +1,270 @@
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+   "title": [ {
+      "value": "New message 2018-07-20 19:26"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Filipponi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche+001@@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele Filipponi"
+  } ]
+}
+
+<> 2018-07-20T072658.422.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+   "title": [ {
+      "value": "New message 2018-07-20 19:26"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Filipponi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche+001@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele Filipponi"
+  } ]
+}
+
+<> 2018-07-20T072629.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+   "title": [ {
+      "value": "New message 2018-07-20 18:36"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Garibaldi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele"
+  } ]
+}
+
+<> 2018-07-20T063648.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+   "title": [ {
+      "value": "New message 2018-07-20 18:35"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Garibaldi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele"
+  } ]
+}
+
+<> 2018-07-20T063549.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Garibaldi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele"
+  } ]
+}
+
+<> 2018-07-20T063420.422.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "article"
+   } ],
+  "title": [ {
+      "value": "New article with notification try 2"
+   } ],
+  "body": [ {
+      "value": "Body of new article. You should get an email try2"
+   } ]
+}
+
+<> 2018-07-20T015645.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "article"
+   } ],
+  "title": [ {
+      "value": "New article with notification try 2"
+   } ],
+  "body": [ {
+      "value": "Body of new article. You should get an email try2"
+   } ]
+}
+
+<> 2018-07-20T015429.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "article"
+   } ],
+  "title": [ {
+      "value": "New article with notification"
+   } ],
+  "body": [ {
+      "value": "Body of new article. You should get an email"
+   } ]
+}
+
+<> 2018-07-20T015035.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "article"
+   } ],
+  "title": [ {
+      "value": "My Article 7tsttsygsygs"
+   } ],
+  "body": [ {
+      "value": "some body content aaa bbb ccc k9764sf3vvxgxgffss"
+   } ]
+}
+
+<> 2018-07-20T122532.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "article"
+   } ],
+  "title": [ {
+      "value": "My Article"
+   } ],
+  "body": [ {
+      "value": "some body content aaa bbb ccc"
+   } ]
+}
+
+<> 2018-07-20T122450.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": {
+      "target_id": "article"
+    },
+  "title": {
+      "value": "My Article"
+    },
+  "body": {
+      "value": "some body content aaa bbb ccc"
+  }
+}
+
+<> 2018-07-20T121442.422.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": {
+      "target_id": "article"
+    },
+  "title": {
+      "value": "My Article"
+    },
+  "body": {
+      "value": "some body content aaa bbb ccc"
+  }
+}
+
+<> 2018-07-20T121351.200.html
+
+###
+
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 
 <> 2018-07-18T042440.200.json
@@ -223,78 +490,6 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&fie
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"&sticky=0
 
 <> 2018-07-12T061451.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"&sticky=1
-
-<> 2018-07-12T061312.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"&sticky="on"
-
-<> 2018-07-12T061303.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
-
-<> 2018-07-12T061243.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T061227.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T061140.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T060842.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T060742.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T060651.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T060522.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-12T060506.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
-
-<> 2018-07-12T045948.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-12T045934.200.json
 
 ###
 
