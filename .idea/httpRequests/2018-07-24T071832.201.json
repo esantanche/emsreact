@@ -1,0 +1,119 @@
+{
+  "nid": [
+    {
+      "value": 28
+    }
+  ],
+  "uuid": [
+    {
+      "value": "bb0258cc-2095-4ed6-841b-4eb764c9ff66"
+    }
+  ],
+  "vid": [
+    {
+      "value": 88
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "ems_pick_my_brain_message",
+      "target_type": "node_type",
+      "target_uuid": "5978e614-f462-4a08-9b7f-26a62d894df9"
+    }
+  ],
+  "revision_timestamp": [
+    {
+      "value": "2018-07-24T17:18:32+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "revision_uid": [
+    {
+      "target_id": 0,
+      "target_type": "user",
+      "target_uuid": "712e6a0d-2e6b-4b8a-8208-c4ed749fe96d",
+      "url": "\/user\/0"
+    }
+  ],
+  "revision_log": [],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "title": [
+    {
+      "value": "New message 2018-07-20 19:26"
+    }
+  ],
+  "uid": [
+    {
+      "target_id": 0,
+      "target_type": "user",
+      "target_uuid": "712e6a0d-2e6b-4b8a-8208-c4ed749fe96d",
+      "url": "\/user\/0"
+    }
+  ],
+  "created": [
+    {
+      "value": "2018-07-24T17:18:32+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "changed": [
+    {
+      "value": "2018-07-24T17:18:32+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "promote": [
+    {
+      "value": false
+    }
+  ],
+  "sticky": [
+    {
+      "value": false
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": true
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": true
+    }
+  ],
+  "content_translation_source": [
+    {
+      "value": "und"
+    }
+  ],
+  "content_translation_outdated": [
+    {
+      "value": false
+    }
+  ],
+  "field_email": [
+    {
+      "value": "esantanche@gmail.com"
+    }
+  ],
+  "field_message": [
+    {
+      "value": "Messaggio per Emanuele Filipponi"
+    }
+  ],
+  "field_name": [
+    {
+      "value": "Emanuele Filipponi"
+    }
+  ]
+}

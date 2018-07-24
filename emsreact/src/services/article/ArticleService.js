@@ -1,35 +1,6 @@
 import { Service } from 'react-services-injector';
-// import { convert_date_from_US_to_ISO } from '../../helpers/date_conversion';
-// import { APP_CONFIGURATION } from '../../app-configuration';
-// import { create_standard_error_object_from_rest_api_response } from "../../helpers/error_processor";
 
 class ArticleService extends Service {
-
-    // constructor() {
-    //     super();
-    //
-    //     // this.user_profile = {};
-    //     // this.id_token = "";
-    //
-    //     // this.sign_up_via_social_or_emailpwd = "";
-    //     // this.user_details = {};
-    //     // this.social_network_used_for_sign_up = "";
-    //
-    // }
-
-    // componentDidMount() {
-    //
-    //     console.log('ProfileManagementService componentDidMount');
-    //
-    // }
-
-    // must_fetch_profile_from_backend(id_token) {
-    //
-    //     // Must fetch the profile from the backend if the id_token I stored
-    //     // is not the same as the one passed or if the profile is empty
-    //
-    //     return (id_token !== this.id_token || this.user_profile.keys().length === 0)
-    // }
 
     // FIXME wiil need a parameter to fetch sticky articles only
 
@@ -49,9 +20,6 @@ class ArticleService extends Service {
                 filter_query_string += "&sticky=1";
 
         }
-
-        // console.log()
-        // field_ems_topic_target_id="How I work"
 
         fetch("http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en" + filter_query_string, {
                 method: 'GET',
@@ -111,9 +79,6 @@ class ArticleService extends Service {
             });
 
     }
-
-
-
 
 }
 

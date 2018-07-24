@@ -13,6 +13,7 @@ import Email from '@material-ui/icons/Email';
 import Person from "@material-ui/icons/es/Person";
 import Message from "@material-ui/icons/es/Message";
 import Grid from "@material-ui/core/es/Grid/Grid";
+import PickMyBrainMessageService from "../services/pick_my_brain_message/PickMyBrainMessageService";
 
 
 // FIXME why screen? it's inside a card!!
@@ -30,6 +31,14 @@ class PickMyBrainScreen extends Component {
                        name: "",
                        message: "",
                        submit_button_enabled: false };
+
+    }
+
+    componentDidMount() {
+
+        const { PickMyBrainMessageService } = this.services;
+
+        this.PickMyBrainMessageService = PickMyBrainMessageService;
 
     }
 
@@ -124,7 +133,25 @@ class PickMyBrainScreen extends Component {
 
     submit_message() {
 
-        alert("submit!");
+        // alert("submit!");
+
+        const message_details = {
+           email: this.state.email,
+           name: this.state.name,
+           message: this.state.message
+        };
+
+        this.PickMyBrainMessageService.create_pick_my_brain_message(message_details, function(error) {
+
+            if (error) {
+
+                console.error("PickMyBrainScreen::submit_message");
+                console.error(error);
+
+            }
+
+        });
+
 
     }
 
