@@ -13,9 +13,9 @@ const theme = createMuiTheme({
             dark: teal[700],  // Use white text
         },
         secondary: {
-            light: teal[400],
-            main: teal[500],
-            dark: teal[600], // use white text
+            light: teal[200],
+            main: teal[300],
+            dark: teal[400], // use white text
         }
         // text: {
         //     secondary: "white"

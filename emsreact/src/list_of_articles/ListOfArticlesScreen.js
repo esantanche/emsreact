@@ -61,18 +61,6 @@ class ListOfArticlesScreen extends Component {
 
     render() {
 
-        // const title_variant_according_to_width = {
-        //     xs: "title",
-        //     sm: "title",
-        //     md: "subheading",
-        //     lg: "title",
-        //     xl: "title"
-        // };
-
-        // let articles_pairs = [];
-        // let article = {};
-        // let index = 0;
-
         const articles_pairs = this.state.articles.reduce((articles_pairs, article, index, articles) => {
 
             if (index % 2 === 0)
@@ -81,14 +69,6 @@ class ListOfArticlesScreen extends Component {
             return articles_pairs;
 
         }, []);
-
-        // console.log("ListOfArticlesScreen");
-        // console.log(articles_pairs);
-
-        // const { classes, title, width, image, text_content } = this.props;
-        //
-        // const jsx_fragment_for_image_and_text_according_to_width =
-        //     this.produce_jsx_fragment_for_image_and_text_according_to_width(width, classes, image, text_content);
 
         return articles_pairs.map(pair_of_articles => {
 

@@ -1,3 +1,38 @@
+GET http://backend.emanuelesantanche.com/fr/node/26?_format=json
+Accepts: application/json
+
+<> 2018-07-24T044439.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/node/26?_format=json&langcode=fr
+Accepts: application/json
+
+<> 2018-07-24T044359.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/node/26?_format=json&_langcode=fr
+Accepts: application/json
+
+<> 2018-07-24T044330.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/node/26?_format=json&langcode=fr
+Accepts: application/json
+
+<> 2018-07-24T044252.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/node/26?_format=json
+Accepts: application/json
+
+<> 2018-07-24T044209.200.json
+
+###
+
 POST http://backend.emanuelesantanche.com/node?_format=json
 Content-Type: application/json
 Accepts: application/json
@@ -460,36 +495,6 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 
 <> 2018-07-13T043847.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-13T043831.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-13T025856.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-13T123055.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
-
-<> 2018-07-12T061504.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"&sticky=0
-
-<> 2018-07-12T061451.200.json
 
 ###
 

@@ -9,12 +9,14 @@ import {withStyles} from "@material-ui/core/styles/index";
 import FrontGridPane from '../components_library/panes/FrontGridPane';
 import ColouredCard from '../components_library/cards/ColouredCard';
 import SeparatorPane from '../components_library/panes/SeparatorPane';
+import PickMyBrainScreen from "../pick_my_brain/PickMyBrainScreen";
+import CardHeader from "@material-ui/core/es/CardHeader/CardHeader";
+
+// FIXME this is how you get node in different language, it works! GET http://backend.emanuelesantanche.com/fr/node/26?_format=json
 
 class FooterScreen extends Component {
 
     render() {
-
-        // const { classes } = this.props;
 
         const { width } = this.props;
 
@@ -26,15 +28,14 @@ class FooterScreen extends Component {
 
                     {/*FIXME it may be better to make a separate component for the contact me form*/}
 
-                    <ColouredCard>
+                    <ColouredCard light={true}>
+
+                        <CardHeader title="Pick My Brain!"
+                                    subheader="Or just ask me a question" />
 
                         <CardContent>
 
-                            <Typography variant="title" >
-
-                                contact me form
-
-                            </Typography>
+                            <PickMyBrainScreen />
 
                         </CardContent>
 
