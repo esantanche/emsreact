@@ -14,6 +14,7 @@ import Person from "@material-ui/icons/es/Person";
 import Message from "@material-ui/icons/es/Message";
 import Grid from "@material-ui/core/es/Grid/Grid";
 import PickMyBrainMessageService from "../services/pick_my_brain_message/PickMyBrainMessageService";
+import MessageDialog from "../components_library/dialogs/MessageDialog";
 
 
 // FIXME why screen? it's inside a card!!
@@ -30,7 +31,8 @@ class PickMyBrainScreen extends Component {
                        email_is_valid: true,
                        name: "",
                        message: "",
-                       submit_button_enabled: false };
+                       submit_button_enabled: false,
+                       message_dialog_is_open: true};
 
     }
 
@@ -141,6 +143,8 @@ class PickMyBrainScreen extends Component {
            message: this.state.message
         };
 
+        var self = this;
+
         this.PickMyBrainMessageService.create_pick_my_brain_message(message_details, function(error) {
 
             if (error) {
@@ -148,12 +152,30 @@ class PickMyBrainScreen extends Component {
                 console.error("PickMyBrainScreen::submit_message");
                 console.error(error);
 
+
+                self.setState({ message_dialog_is_open: true })
+
+            } else {
+
+
+                self.setState({ message_dialog_is_open: true })
+
             }
+
 
         });
 
 
     }
+
+    handleOnClickDialog() {
+
+
+
+        this.setState({ message_dialog_is_open: false });
+    };
+
+
 
     render() {
 
@@ -251,6 +273,8 @@ class PickMyBrainScreen extends Component {
                     </Grid>
 
                 </Grid>
+
+                <MessageDialog open={this.state.message_dialog_is_open} onclick={this.handleOnClickDialog.bind(this)}/>
 
             </React.Fragment>
 
