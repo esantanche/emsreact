@@ -13,7 +13,6 @@ import Email from '@material-ui/icons/Email';
 import Person from "@material-ui/icons/es/Person";
 import Message from "@material-ui/icons/es/Message";
 import Grid from "@material-ui/core/es/Grid/Grid";
-import PickMyBrainMessageService from "../services/pick_my_brain_message/PickMyBrainMessageService";
 import MessageDialog from "../components_library/dialogs/MessageDialog";
 
 
@@ -32,7 +31,8 @@ class PickMyBrainScreen extends Component {
                        name: "",
                        message: "",
                        submit_button_enabled: false,
-                       message_dialog_is_open: true};
+                       message_dialog_is_open: false,
+                       error_dialog_is_open: false };
 
     }
 
@@ -74,12 +74,7 @@ class PickMyBrainScreen extends Component {
                 email_error_text: email_error_text,
                 email_is_valid: email_is_valid },
                 function() {
-                    //console.log('password: ' + password + ' password_is_valid: ' + this.state.password_is_valid);
 
-                    // FIXME as soon as state actually changes, we can enable the submit button if the
-                    // form is valid
-
-                    // self.enable_create_an_account_button_if_form_is_valid();
                     self.enable_submit_button_if_form_is_valid();
 
                 });
@@ -110,10 +105,6 @@ class PickMyBrainScreen extends Component {
 
         this.setState({ message: message }, function() {
 
-            // FIXME as soon as state actually changes, we can enable the submit button if the
-            // form is valid
-
-            // self.enable_create_an_account_button_if_form_is_valid();
             self.enable_submit_button_if_form_is_valid();
 
         });
@@ -135,8 +126,6 @@ class PickMyBrainScreen extends Component {
 
     submit_message() {
 
-        // alert("submit!");
-
         const message_details = {
            email: this.state.email,
            name: this.state.name,
@@ -152,30 +141,29 @@ class PickMyBrainScreen extends Component {
                 console.error("PickMyBrainScreen::submit_message");
                 console.error(error);
 
-
-                self.setState({ message_dialog_is_open: true })
+                self.setState({ error_dialog_is_open: true });
 
             } else {
 
+                self.setState({ message_dialog_is_open: true });
 
-                self.setState({ message_dialog_is_open: true })
+                self.setState({ email: "",
+                    email_is_valid: true,
+                    name: "",
+                    message: "",
+                    submit_button_enabled: false,
+                    error_dialog_is_open: false })
 
             }
 
-
         });
-
 
     }
 
     handleOnClickDialog() {
 
-
-
-        this.setState({ message_dialog_is_open: false });
+        this.setState({ message_dialog_is_open: false, error_dialog_is_open: false });
     };
-
-
 
     render() {
 
@@ -274,7 +262,17 @@ class PickMyBrainScreen extends Component {
 
                 </Grid>
 
-                <MessageDialog open={this.state.message_dialog_is_open} onclick={this.handleOnClickDialog.bind(this)}/>
+                <MessageDialog open={this.state.error_dialog_is_open}
+                               it_is_an_error_message={true}
+                               title="Something went wrong"
+                               message="Please, save your message, reload the page and try again."
+                               onclick={this.handleOnClickDialog.bind(this)}/>
+
+                <MessageDialog open={this.state.message_dialog_is_open}
+                               it_is_an_error_message={false}
+                               title="Message sent"
+                               message="Thank you for your message!"
+                               onclick={this.handleOnClickDialog.bind(this)}/>
 
             </React.Fragment>
 

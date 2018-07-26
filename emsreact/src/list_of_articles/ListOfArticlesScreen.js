@@ -54,8 +54,31 @@ class ListOfArticlesScreen extends Component {
                 self.setState({ articles: articles });
 
             }
-
         )
+    }
+
+    componentDidUpdate(prevProps) {
+
+        var self = this;
+
+        // When the topic changes, the props to this component change as well
+        // We need to transform again the topic as provided by the url into
+        // the topic as needed to fetch articles
+
+        if (prevProps.topic !== this.props.topic) {
+
+            this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
+                function (articles) {
+
+                    // console.log('componentDidMount articles');
+                    // console.log(articles);
+
+                    self.setState({ articles: articles });
+
+                }
+            )
+
+        }
 
     }
 

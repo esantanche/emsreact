@@ -47,6 +47,9 @@ class App extends Component {
                         <Route path="/article/:articlenid" component={ArticleScreen} />
                         <Route path="/articles/:topic" component={TopicScreen} />
 
+                        footer_anchor
+                        <a name="footer_anchor"></a>
+
                         <FooterScreen />
 
                     </BodyPane>

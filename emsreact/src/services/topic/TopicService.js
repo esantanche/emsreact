@@ -1,6 +1,9 @@
 import { Service } from 'react-services-injector';
 import red from "@material-ui/core/colors/red";
 import lightBlue from "@material-ui/core/colors/lightBlue";
+import orange from '@material-ui/core/colors/orange';
+import lightGreen from '@material-ui/core/colors/lightGreen';
+import yellow from '@material-ui/core/colors/yellow';
 
 class TopicService extends Service {
 
@@ -26,10 +29,32 @@ class TopicService extends Service {
                 letter_for_avatar: "T",
                 color_for_avatar: lightBlue[400],
                 more_articles_button_label: "More about the tools I use"
+            },
+            {
+                name: "Success stories",
+                name_for_url: "success-stories",
+                subheader: "From Intel Corporation to video streaming of classical music",
+                letter_for_avatar: "S",
+                color_for_avatar: orange[400],
+                more_articles_button_label: "More success stories"
+            },
+            {
+                name: "Testimonials",
+                name_for_url: "testimonials",
+                subheader: "Happy clients and happy managers",
+                letter_for_avatar: "T",
+                color_for_avatar: lightGreen[500],
+                more_articles_button_label: "More testimonials"
+            },
+            {
+                name: "Talking about my experiences",
+                name_for_url: "talking-about-my-experiences",
+                subheader: "Sharing my knowledge with the world",
+                letter_for_avatar: "E",
+                color_for_avatar: yellow[600],
+                more_articles_button_label: "More knowledge"
             }
-
         ];
-
     }
 
     get_topics(callback_to_return_topics) {

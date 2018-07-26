@@ -7,3 +7,7 @@ Screen - component assembling many components to make part of the interface. A p
 
 Any component whose name starts with "Playground" is used for testing and prototyping and it's not
 supposed to reach production.
+
+# Master components
+
+FIXME
