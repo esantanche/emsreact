@@ -16,6 +16,9 @@ import CardActions from '@material-ui/core/CardActions';
 import IconButton from '@material-ui/core/IconButton';
 import MoreHoriz from '@material-ui/icons/MoreHoriz';
 
+import { APP_CONFIGURATION } from '../../appConfiguration';
+
+
 import Dotdotdot from 'react-dotdotdot';
 
 import SeparatorPane from '../panes/SeparatorPane';
@@ -84,7 +87,7 @@ class ArticleCard extends Component {
 
                         <CardMedia
                             className={classes.image_responsive_size}
-                            image={"http://backend.emanuelesantanche.com/" + image}
+                            image={APP_CONFIGURATION.backendUrl + image}
                             title=""
                         />
 

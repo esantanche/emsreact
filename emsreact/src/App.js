@@ -20,6 +20,10 @@ import FooterScreen from './footer/FooterScreen';
 // From components library
 import BodyPane from './components_library/panes/BodyPane';
 
+//
+// import ScrollableAnchor from 'react-scrollable-anchor';
+
+
 // We need to register services here for the entire application to use them
 // Services are declared in services.js
 import {injector} from 'react-services-injector';
@@ -46,9 +50,6 @@ class App extends Component {
                         <Route exact path="/" component={HomeScreen} />
                         <Route path="/article/:articlenid" component={ArticleScreen} />
                         <Route path="/articles/:topic" component={TopicScreen} />
-
-                        footer_anchor
-                        <a name="footer_anchor"></a>
 
                         <FooterScreen />
 

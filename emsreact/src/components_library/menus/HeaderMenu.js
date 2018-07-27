@@ -43,6 +43,11 @@ class HeaderMenu extends Component {
 
         const { anchorElement, handleMenuClose } = this.props;
 
+        // Pick My Brain menu item
+        // It calls handleMenuClose with no url and true as second parameter
+        // It means that the parent component will open the Pick My Brain Dialog
+        // See HeaderScreen.js and PickMyBrainDialog.js
+
         return (
 
             <Menu
@@ -51,12 +56,16 @@ class HeaderMenu extends Component {
                 open={Boolean(anchorElement)}
                 onClose={handleMenuClose}>
 
+                <MenuItem onClick={() => handleMenuClose("/")}>Home</MenuItem>
                 <MenuItem onClick={() => handleMenuClose("/articles/how-i-work")}>How I work</MenuItem>
                 <MenuItem onClick={() => handleMenuClose("/articles/the-tools-i-use")}>The tools I use</MenuItem>
                 <MenuItem onClick={() => handleMenuClose("/articles/success-stories")}>Success stories</MenuItem>
                 <MenuItem onClick={() => handleMenuClose("/articles/testimonials")}>Testimonials</MenuItem>
                 <MenuItem onClick={() => handleMenuClose("/articles/talking-about-my-experiences")}>Articles</MenuItem>
-                <MenuItem onClick={() => handleMenuClose("/#footer_anchor")}>Pick My Brain!</MenuItem>
+                <MenuItem onClick={() => handleMenuClose("/articles/where-how")}>Where? How?</MenuItem>
+                <MenuItem onClick={() => handleMenuClose("", true)}>
+                    Pick My Brain!
+                </MenuItem>
 
             </Menu>
 

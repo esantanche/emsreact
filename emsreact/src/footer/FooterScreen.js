@@ -4,29 +4,25 @@ import React, { Component } from 'react';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-import withWidth from "@material-ui/core/withWidth/index";
-import {withStyles} from "@material-ui/core/styles/index";
 import FrontGridPane from '../components_library/panes/FrontGridPane';
 import ColouredCard from '../components_library/cards/ColouredCard';
 import SeparatorPane from '../components_library/panes/SeparatorPane';
 import PickMyBrainScreen from "../pick_my_brain/PickMyBrainScreen";
 import CardHeader from "@material-ui/core/es/CardHeader/CardHeader";
-
-// FIXME this is how you get node in different language, it works! GET http://backend.emanuelesantanche.com/fr/node/26?_format=json
+import SocialScreen from "../social/SocialScreen";
+import Grid from "@material-ui/core/Grid/Grid";
+import CardMedia from "@material-ui/core/CardMedia";
+import ButtonBase from "@material-ui/core/ButtonBase/ButtonBase";
 
 class FooterScreen extends Component {
 
     render() {
-
-        const { width } = this.props;
 
         return (
 
             <React.Fragment>
 
                 <FrontGridPane>
-
-                    {/*FIXME it may be better to make a separate component for the contact me form*/}
 
                     <ColouredCard light={true}>
 
@@ -43,15 +39,45 @@ class FooterScreen extends Component {
 
                     <SeparatorPane />
 
+                    <SocialScreen/>
+
+                    <SeparatorPane />
+
                     <ColouredCard>
 
                         <CardContent>
 
-                            <Typography variant="title" >
+                            <Grid container spacing={8} style={{ display: "flex", alignItems: "flex-start" }}>
 
-                                small print
+                                <Grid item xs={9}>
 
-                            </Typography>
+                                    <Typography variant="title" >
+
+                                        Emanuele Santanché
+
+                                    </Typography>
+
+                                    <Typography variant="subheader" >
+
+                                        Paris, France and, remotely, worldwide
+
+                                    </Typography>
+
+                                </Grid>
+
+                                <Grid item xs={3} style={{ alignSelf: "flex-end" }}>
+
+                                    <ButtonBase href="/article/58/privacy-policy">
+                                        <Typography variant="title" >
+
+                                            Privacy policy
+
+                                        </Typography>
+                                    </ButtonBase>
+
+                                </Grid>
+
+                            </Grid>
 
                         </CardContent>
 
@@ -66,9 +92,6 @@ class FooterScreen extends Component {
 
 }
 
-// FIXME no styles here, move them to component library
-// withWidth shouldn't be used as well
-
-export default withWidth()(FooterScreen);
+export default FooterScreen;
 
 

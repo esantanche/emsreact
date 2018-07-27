@@ -1,16 +1,13 @@
-// Just a test to refactor
 import React, { Component } from 'react';
 import { withStyles } from "@material-ui/core/styles/index";
 import PropTypes from 'prop-types';
 
-
-// FIXME I want to know why it's called root
-
-const styles = theme => ({
+const styles = {
     bodyPane: {
-        backgroundColor: "#FFFFFF"
+        backgroundColor: "#FFFFFF",
+        overflowY: "hidden"
     },
-});
+};
 
 class BodyPane extends Component {
 

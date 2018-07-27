@@ -1,3 +1,10 @@
+GET http://backend.emanuelesantanche.com/node/26?_format=json
+Accepts: application/json
+
+<> 2018-07-27T063057.200.json
+
+###
+
 POST http://backend.emanuelesantanche.com/node?_format=json
 Content-Type: application/json
 Accepts: application/json
@@ -510,12 +517,6 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 
 <> 2018-07-13T050034.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-13T045910.200.json
 
 ###
 

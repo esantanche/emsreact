@@ -15,6 +15,8 @@ import Message from "@material-ui/icons/es/Message";
 import Grid from "@material-ui/core/es/Grid/Grid";
 import MessageDialog from "../components_library/dialogs/MessageDialog";
 
+import PropTypes from 'prop-types'
+
 
 // FIXME why screen? it's inside a card!!
 
@@ -35,6 +37,10 @@ class PickMyBrainScreen extends Component {
                        error_dialog_is_open: false };
 
     }
+
+    static propTypes = {
+        onclick: PropTypes.func
+    };
 
     componentDidMount() {
 
@@ -145,14 +151,16 @@ class PickMyBrainScreen extends Component {
 
             } else {
 
-                self.setState({ message_dialog_is_open: true });
-
                 self.setState({ email: "",
                     email_is_valid: true,
                     name: "",
                     message: "",
                     submit_button_enabled: false,
-                    error_dialog_is_open: false })
+                    error_dialog_is_open: false,
+                    message_dialog_is_open: true
+                });
+
+
 
             }
 
@@ -163,6 +171,13 @@ class PickMyBrainScreen extends Component {
     handleOnClickDialog() {
 
         this.setState({ message_dialog_is_open: false, error_dialog_is_open: false });
+
+        // Telling the parent component that we are done here
+        // This only if the onclick function is defined, because
+        // there may be no parent component
+        // We do this here because the user has to see the message before exiting
+        if (this.props.onclick)
+            this.props.onclick();
     };
 
     render() {
@@ -282,9 +297,9 @@ class PickMyBrainScreen extends Component {
 
 }
 
-// FIXME no use for TopicService here
+// export default PickMyBrainScreen;
 
 export default injector.connect(PickMyBrainScreen, {
-    toRender: ['TopicService']
+    toRender: ['PickMyBrainMessageService']
 });
 

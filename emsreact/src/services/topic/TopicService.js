@@ -4,6 +4,7 @@ import lightBlue from "@material-ui/core/colors/lightBlue";
 import orange from '@material-ui/core/colors/orange';
 import lightGreen from '@material-ui/core/colors/lightGreen';
 import yellow from '@material-ui/core/colors/yellow';
+import indigo from "@material-ui/core/es/colors/indigo";
 
 class TopicService extends Service {
 
@@ -53,6 +54,14 @@ class TopicService extends Service {
                 letter_for_avatar: "E",
                 color_for_avatar: yellow[600],
                 more_articles_button_label: "More knowledge"
+            },
+            {
+                name: "Where? How?",
+                name_for_url: "where-how",
+                subheader: "Where do I work? How do I work with you?",
+                letter_for_avatar: "W",
+                color_for_avatar: indigo[300],
+                more_articles_button_label: "More about where and how I work with you"
             }
         ];
     }

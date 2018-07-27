@@ -11,6 +11,8 @@ import HomeButtonText from "../components_library/texts/HomeButtonText";
 import HeaderMenu from "../components_library/menus/HeaderMenu";
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {withRouter} from "react-router-dom";
+import MessageDialog from "../components_library/dialogs/MessageDialog";
+import PickMyBrainDialog from "../components_library/dialogs/PickMyBrainDialog";
 
 
 class HeaderScreen extends Component {
@@ -22,7 +24,8 @@ class HeaderScreen extends Component {
             // The element the menu is anchored to, typically a button that opens the menu
             // When anchorElement is null, the menu is invisible
             // FIXME ? ok?
-            anchorElement: null
+            anchorElement: null,
+            pick_my_brain_dialog_is_open: false
         };
 
     }
@@ -32,16 +35,31 @@ class HeaderScreen extends Component {
         this.setState({ anchorElement: event.currentTarget });
     };
 
-    handleMenuClose = (url_to_go_to) => {
+    handleMenuClose = (url_to_go_to, open_pick_my_brain_dialog) => {
 
         this.setState({ anchorElement: null });
 
-        this.props.history.push(url_to_go_to);
+        if (url_to_go_to) {
+
+            this.props.history.push(url_to_go_to);
+
+        } else if (open_pick_my_brain_dialog) {
+
+            this.setState({ pick_my_brain_dialog_is_open: true });
+
+        }
     };
 
     handleClickAwayFromMenu = () => {
 
         this.setState({ anchorElement: null });
+    };
+
+    handleOnClickPickMyBrainDialog() {
+
+        // FIXME
+
+        this.setState({ pick_my_brain_dialog_is_open: false });
     };
 
     render() {
@@ -95,6 +113,9 @@ class HeaderScreen extends Component {
                     </Hidden>
 
                 </Grid>
+
+                <PickMyBrainDialog open={this.state.pick_my_brain_dialog_is_open}
+                                   onclick={this.handleOnClickPickMyBrainDialog.bind(this)}/>
 
             </React.Fragment>
 
