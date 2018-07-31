@@ -16,8 +16,6 @@ import PickMyBrainDialog from "../components_library/dialogs/PickMyBrainDialog";
 import withWidth from "@material-ui/core/es/withWidth/withWidth";
 
 
-//             this.props.history.push(url_to_go_to);
-
 class HeaderScreen extends Component {
 
     constructor(props) {

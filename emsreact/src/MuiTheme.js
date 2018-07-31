@@ -8,9 +8,9 @@ import cyan from "@material-ui/core/colors/cyan";
 const theme = createMuiTheme({
     palette: {
         primary: {
-            light: teal[500],
-            main: teal[600],
-            dark: teal[700],  // Use white text
+            light: teal[400],
+            main: teal[500],
+            dark: teal[600],  // Use white text
         },
         secondary: {
             light: teal[200],

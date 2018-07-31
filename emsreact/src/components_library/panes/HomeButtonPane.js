@@ -26,6 +26,8 @@ class HomeButtonPane extends Component {
 
         let classes_to_use = { main: classes.HomeButtonPane };
 
+        // For width other than 'xs', let's add top and bottom margins.
+        // For 'xs' width there will be no margins
         if (width !== "xs")
             classes_to_use.margins = classes.TopAndBottomMargins;
 

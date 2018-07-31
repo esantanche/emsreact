@@ -10,7 +10,7 @@ import Link from "react-router-dom/es/Link";
 
 const styles = {
     HomeButtonPane: {
-        marginLeft: "1em"
+        marginLeft: "1.5em"
     },
 };
 
