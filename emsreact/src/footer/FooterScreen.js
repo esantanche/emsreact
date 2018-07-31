@@ -57,7 +57,7 @@ class FooterScreen extends Component {
 
                                     </Typography>
 
-                                    <Typography variant="subheader" >
+                                    <Typography variant="subheading" >
 
                                         Paris, France and, remotely, worldwide
 

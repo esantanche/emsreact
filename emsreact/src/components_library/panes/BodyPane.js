@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { withStyles } from "@material-ui/core/styles/index";
 import PropTypes from 'prop-types';
 
-const styles = {
+const styles = theme => ({
     bodyPane: {
-        backgroundColor: "#FFFFFF",
+        backgroundColor: theme.palette.grey[500],
         overflowY: "hidden"
     },
-};
+});
 
 class BodyPane extends Component {
 

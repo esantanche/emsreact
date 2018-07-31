@@ -6,9 +6,9 @@ import withWidth from "@material-ui/core/withWidth";
 
 const styles = {
     HomeButtonText: {
-        lineHeight: "3em",
+        lineHeight: "1.5em",
         color: "white"
-    },
+    }
 };
 
 class HomeButtonText extends Component {

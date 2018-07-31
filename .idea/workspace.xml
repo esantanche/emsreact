@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e276e9-a457-4c03-8331-cc12411e868c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-13T045910.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/components_library/menus/HeaderMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/components_library/menus/HeaderMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/src/components_library/panes/HomeButtonPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/components_library/panes/HomeButtonPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/images/6484991-xsmall.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/images/6747806-xsmall.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/pick_my_brain/PickMyBrainScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/pick_my_brain/PickMyBrainScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/services/topic/TopicService.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/services/topic/TopicService.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,20 +25,21 @@
         <counts>
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="5732" />
+          <entry key="js" value="6229" />
           <entry key="md" value="231" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="5732" />
+          <entry key="JavaScript" value="6229" />
           <entry key="Markdown" value="231" />
         </counts>
       </usages-collector>
@@ -53,7 +47,7 @@
         <counts>
           <entry key="http" value="1" />
           <entry key="jpg" value="2" />
-          <entry key="js" value="46" />
+          <entry key="js" value="52" />
           <entry key="md" value="4" />
           <entry key="png" value="3" />
           <entry key="svg" value="2" />
@@ -63,7 +57,7 @@
         <counts>
           <entry key="HTTP Request" value="1" />
           <entry key="Image" value="5" />
-          <entry key="JavaScript" value="46" />
+          <entry key="JavaScript" value="52" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SVG" value="2" />
@@ -77,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+            <state relative-caret-position="1144">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#69#125#0" expanded="true" />
               </folding>
@@ -89,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+            <state relative-caret-position="365">
+              <caret line="94" column="50" lean-forward="true" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -99,18 +93,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/HomeButtonPane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+            <state relative-caret-position="646">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
+              <folding>
+                <element signature="e#27#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/menus/HeaderMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
+            <state relative-caret-position="1387">
               <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="e#2#43#0" expanded="true" />
@@ -120,9 +141,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+              <folding>
+                <element signature="e#212#243#0" expanded="true" />
+                <element signature="e#327#370#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/MuiTheme.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/services/topic/TopicService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="988">
               <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
@@ -148,6 +203,7 @@
       <find>map</find>
       <find>SeparatorPane</find>
       <find>TopicService</find>
+      <find>withwidth</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/emsreact/src</dir>
@@ -193,22 +249,22 @@
         <option value="$PROJECT_DIR$/emsreact/src/components_library/panes/AlignedGridPane.js" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/texts/README.md" />
         <option value="$PROJECT_DIR$/emsreact/src/NAME_CONVENTIONS.md" />
-        <option value="$PROJECT_DIR$/emsreact/src/components_library/panes/HomeButtonPane.js" />
-        <option value="$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js" />
         <option value="$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/list_of_articles/TopicScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/App.js" />
-        <option value="$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/dialogs/PickMyBrainDialog.js" />
-        <option value="$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js" />
         <option value="$PROJECT_DIR$/emsreact/src/pick_my_brain/PickMyBrainScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/cards/SocialCard.js" />
         <option value="$PROJECT_DIR$/emsreact/src/social/SocialScreen.js" />
-        <option value="$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js" />
         <option value="$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js" />
-        <option value="$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/services/topic/TopicService.js" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/menus/HeaderMenu.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/components_library/panes/HomeButtonPane.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js" />
       </list>
     </option>
   </component>
@@ -240,7 +296,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,7 +327,22 @@
               <item name="emsreact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components_library" type="462c0819:PsiDirectoryNode" />
+              <item name="cards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emsreact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components_library" type="462c0819:PsiDirectoryNode" />
               <item name="panes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emsreact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="emsreact" type="b2602c69:ProjectViewProjectNode" />
@@ -335,6 +405,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -989,14 +1060,16 @@
       <workItem from="1532594029526" duration="8208000" />
       <workItem from="1532606214832" duration="16718000" />
       <workItem from="1532683379212" duration="22985000" />
+      <workItem from="1533040078185" duration="5949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217137000" />
+    <option name="totallyTimeSpent" value="223086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="27" width="1928" height="1032" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17721519" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1023,6 +1096,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/emsreact/src/MuiTheme.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1064,13 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/MuiTheme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1173,20 +1250,6 @@
       </provider>
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/HomeButtonPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/bars/MasterAppBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1249,41 +1312,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/images/6484991-xsmall.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/images/Logo-2C-128px-TM.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/images/so-logo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/images/Wordmark_Black.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/images/6484991-xsmall.jpg" />
+    <entry file="file://$PROJECT_DIR$/emsreact/src/images/Logo-2C-128px-TM.png" />
+    <entry file="file://$PROJECT_DIR$/emsreact/src/images/so-logo.svg" />
+    <entry file="file://$PROJECT_DIR$/emsreact/src/images/Wordmark_Black.svg" />
     <entry file="file://$PROJECT_DIR$/emsreact/src/images/GitHub_Logo.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#27#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="49" column="71" lean-forward="true" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
-          <folding>
-            <element signature="e#212#243#0" expanded="true" />
-            <element signature="e#327#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/FrontGridPane.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1303,9 +1337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-          <folding>
-            <element signature="e#27#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,9 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="e#27#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1344,42 +1372,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding>
-            <element signature="e#69#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2261">
-          <caret line="43" column="6" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="43" selection-end-column="6" />
-          <folding>
-            <element signature="e#27#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
-          <folding>
-            <element signature="e#69#125#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="608">
           <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/services/topic/TopicService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="988">
           <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -1387,10 +1392,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js">
+    <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+        <state relative-caret-position="411">
+          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding>
+            <element signature="e#212#243#0" expanded="true" />
+            <element signature="e#327#370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/MuiTheme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1399,10 +1422,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/menus/HeaderMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
+        <state relative-caret-position="1387">
           <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="e#2#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#69#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="94" column="50" lean-forward="true" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
+          <folding>
+            <element signature="e#27#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/HomeButtonPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

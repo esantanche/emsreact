@@ -25,6 +25,7 @@ import SeparatorPane from '../panes/SeparatorPane';
 
 import { title_to_slug } from '../../helpers/title_to_slug';
 
+// FIXME get rid of theme
 const styles = theme => ({
     card_header: {
         height: "6em",

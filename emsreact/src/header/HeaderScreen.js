@@ -13,7 +13,10 @@ import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {withRouter} from "react-router-dom";
 import MessageDialog from "../components_library/dialogs/MessageDialog";
 import PickMyBrainDialog from "../components_library/dialogs/PickMyBrainDialog";
+import withWidth from "@material-ui/core/es/withWidth/withWidth";
 
+
+//             this.props.history.push(url_to_go_to);
 
 class HeaderScreen extends Component {
 
@@ -64,6 +67,8 @@ class HeaderScreen extends Component {
 
     render() {
 
+        const { width } = this.props;
+
         return (
 
             <React.Fragment>
@@ -84,16 +89,27 @@ class HeaderScreen extends Component {
                                 <Grid item xs={11}>
                                     <HomeButtonPane>
                                         <Button href="/">
-                                            <HomeButtonText>
-                                                Emanuele Santanché, Web Developer
-                                            </HomeButtonText>
+
+                                            {
+
+                                                width === 'xs' ?
+                                                    <HomeButtonText>
+                                                        Emanuele Santanché,<br /> Web Developer
+                                                    </HomeButtonText>
+                                                    :
+                                                    <HomeButtonText>
+                                                        Emanuele Santanché, Web Developer
+                                                    </HomeButtonText>
+                                            }
+
                                         </Button>
                                     </HomeButtonPane>
                                 </Grid>
 
                                 <Grid item xs={1}>
-                                    <Button onClick={this.handleMenuButtonClick.bind(this)}>
-                                        <MenuIcon style={{ marginRight: "2em", float: "right" }}/>
+                                    <Button onClick={this.handleMenuButtonClick.bind(this)}
+                                            style={{ marginRight: "2em", float: "right" }}>
+                                        <MenuIcon />
                                     </Button>
                                     <ClickAwayListener onClickAway={this.handleClickAwayFromMenu.bind(this)}>
                                         <HeaderMenu anchorElement={this.state.anchorElement}
@@ -129,8 +145,13 @@ class HeaderScreen extends Component {
 
 // export default HeaderScreen;
 
-export default withRouter(HeaderScreen);
+// withRouter is needed to be able to use the history
+// like in:
+//    this.props.history.push(url_to_go_to);
+export default withRouter(withWidth()(HeaderScreen));
 
+
+// export default withWidth()(withStyles(styles)(ArticleCard));
 // export default HeaderScreen;
 
 
