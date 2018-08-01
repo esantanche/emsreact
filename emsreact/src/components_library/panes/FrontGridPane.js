@@ -8,11 +8,11 @@ import Hidden from '@material-ui/core/Hidden';
 
 // FIXME I want to know why it's called root
 
-const styles = theme => ({
+const styles = {
     bodyPane: {
         backgroundColor: "#FFFFFF"
     },
-});
+};
 
 // FIXME this is the grid that is used to set margins on front pages.
 

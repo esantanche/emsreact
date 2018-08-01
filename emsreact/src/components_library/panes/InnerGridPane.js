@@ -7,11 +7,11 @@ import Grid from '@material-ui/core/Grid';
 
 // FIXME I want to know why it's called root
 
-const styles = theme => ({
+const styles = {
     bodyPane: {
         backgroundColor: "#FFFFFF"
     },
-});
+};
 
 // FIXME this is the grid that is used to encapsulate two cards (or one on xsmall devices)
 

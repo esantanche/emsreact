@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 // Material UI components
 import TextField from "@material-ui/core/es/TextField/TextField";
+import Button from "@material-ui/core/es/Button/Button";
+import InputAdornment from "@material-ui/core/es/InputAdornment/InputAdornment";
+import Grid from "@material-ui/core/es/Grid/Grid";
+
+// Material UI icons
+import Email from '@material-ui/icons/Email';
+import Person from "@material-ui/icons/es/Person";
+import Message from "@material-ui/icons/es/Message";
 
 import * as EmailValidator from 'email-validator';
 
 import { injector } from 'react-services-injector';
-import Button from "@material-ui/core/es/Button/Button";
-import InputAdornment from "@material-ui/core/es/InputAdornment/InputAdornment";
 
-import Email from '@material-ui/icons/Email';
-import Person from "@material-ui/icons/es/Person";
-import Message from "@material-ui/icons/es/Message";
-import Grid from "@material-ui/core/es/Grid/Grid";
 import MessageDialog from "../components_library/dialogs/MessageDialog";
-
-import PropTypes from 'prop-types'
 
 
 // FIXME why screen? it's inside a card!!
@@ -160,8 +161,6 @@ class PickMyBrainScreen extends Component {
                     message_dialog_is_open: true
                 });
 
-
-
             }
 
         });
@@ -178,6 +177,16 @@ class PickMyBrainScreen extends Component {
         // We do this here because the user has to see the message before exiting
         if (this.props.onclick)
             this.props.onclick();
+    };
+
+    handleOnClickErrorDialog() {
+
+        this.setState({ message_dialog_is_open: false, error_dialog_is_open: false });
+
+       // No telling the parent component that it has to close
+       // The user may want to copy the message they wrote and use it later
+       // The user will close the dialog themselves when they finish copying the message
+
     };
 
     render() {
@@ -281,7 +290,7 @@ class PickMyBrainScreen extends Component {
                                it_is_an_error_message={true}
                                title="Something went wrong"
                                message="Please, save your message, reload the page and try again."
-                               onclick={this.handleOnClickDialog.bind(this)}/>
+                               onclick={this.handleOnClickErrorDialog.bind(this)}/>
 
                 <MessageDialog open={this.state.message_dialog_is_open}
                                it_is_an_error_message={false}

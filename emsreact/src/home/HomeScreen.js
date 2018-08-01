@@ -14,18 +14,8 @@ import ColouredCard from '../components_library/cards/ColouredCard';
 
 import { injector } from 'react-services-injector'; // To use service, see services.js
 
-import theme from '../MuiTheme';
-import ArticleService from "../services/article/ArticleService";
-
-import EmailValidator from 'email-validator';
-
 // FIXME TODO  https://react-styleguidist.js.org/docs/documenting.html
 class HomeScreen extends Component {
-
-    // FIXME text is supposed to always have a (...) at the end possibly being cut out by the dotdotdot
-    // library
-
-    // { title: "initial", body: "initial" }, {}, {}
 
     constructor(props) {
 
@@ -37,10 +27,6 @@ class HomeScreen extends Component {
 
     componentDidMount() {
 
-        const { ArticleService } = this.services;
-
-        this.ArticleService = ArticleService;
-
         const { TopicService } = this.services;
 
         this.TopicService = TopicService;
@@ -49,36 +35,13 @@ class HomeScreen extends Component {
 
         this.TopicService.get_topics(function(topics) {
 
-            // self.topics = topics;
             self.setState({ topics: topics });
-            // console.log('HomeScreen - componentDidMount');
-            // console.log(self.state.topics);
 
         });
 
-
-        // FIXME test to remove
-        const email_is_valid = EmailValidator.validate("esantanche@gmail.com");
-
-        console.log("email_is_valid: " + email_is_valid);
-
     }
 
-    // There are some FontIcon elements that have style={{ width: "20px" }} added. It's because the icon
-    // is defective and doesn't have proper width.
     render() {
-
-        // const { width } = this.props;
-
-        //const { theme } = this.props;
-
-        // FIXME should use withTheme, but not here, this stuff should go to the component library
-
-        //const color_who_am_i_message_card = theme.palette.primary.light;
-        const color_who_am_i_message_card = theme.palette.secondary.light;
-
-        // console.log(theme);
-        // console.log(theme.palette.primary.light);
 
         return (
 
@@ -154,56 +117,11 @@ class HomeScreen extends Component {
 
                 }
 
-                {/*<FrontGridPane>*/}
-
-                    {/*<Card>*/}
-                        {/*<CardHeader*/}
-                            {/*avatar={*/}
-                                {/*<Avatar aria-label="How I work" style={{ backgroundColor: "#880000" }}>*/}
-                                    {/*W*/}
-                                {/*</Avatar>*/}
-                            {/*}*/}
-                            {/*// action={*/}
-                            {/*//     <IconButton>*/}
-                            {/*//         <MoreVertIcon />*/}
-                            {/*//     </IconButton>*/}
-                            {/*// }*/}
-                            {/*title="How I work"*/}
-                            {/*subheader="There is value in doing things properly first time"*/}
-                        {/*/>*/}
-
-                        {/*<ListOfArticlesScreen topic="How I work" sticky={true}/>*/}
-
-                        {/*<CardActions>*/}
-                            {/*<Button size="small">More articles</Button>*/}
-                        {/*</CardActions>*/}
-
-                    {/*</Card>*/}
-
-                {/*</FrontGridPane>*/}
-
-                {/*this.state.articles[0].title*/}
-                {/*this.state.articles[0].body*/}
-
-                {/*<div dangerouslySetInnerHTML={{ __html: this.state.articles[0].body }} />*/}
-
-                {/*<ArticleCard image={testimage}*/}
-                             {/*title={this.state.articles[0].title}*/}
-                             {/*text_content={this.state.articles[0].body}>*/}
-
-                {/*</ArticleCard>*/}
-
-
             </React.Fragment>
 
         );
     }
 }
-
-//export default HomeScreen;
-
-// export default withWidth()(HomeScreen);
-
 
 export default injector.connect(HomeScreen, {
     toRender: ['ArticleService']

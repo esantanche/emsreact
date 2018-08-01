@@ -1,6 +1,5 @@
 import {createMuiTheme} from "@material-ui/core/styles/index";
 import teal from "@material-ui/core/colors/teal";
-import cyan from "@material-ui/core/colors/cyan";
 
 /**
  *
@@ -17,9 +16,6 @@ const theme = createMuiTheme({
             main: teal[300],
             dark: teal[400], // use white text
         }
-        // text: {
-        //     secondary: "white"
-        // }
     },
     typography: {
         fontFamily: "\"Montserrat\", \"Helvetica\", \"Arial\", sans-serif"

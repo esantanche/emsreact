@@ -89,7 +89,6 @@ class HeaderScreen extends Component {
                                         <Button href="/">
 
                                             {
-
                                                 width === 'xs' ?
                                                     <HomeButtonText>
                                                         Emanuele Santanché,<br /> Web Developer
@@ -106,7 +105,7 @@ class HeaderScreen extends Component {
 
                                 <Grid item xs={1}>
                                     <Button onClick={this.handleMenuButtonClick.bind(this)}
-                                            style={{ marginRight: "2em", float: "right" }}>
+                                            style={{ float: "right" }}>
                                         <MenuIcon />
                                     </Button>
                                     <ClickAwayListener onClickAway={this.handleClickAwayFromMenu.bind(this)}>
@@ -138,32 +137,8 @@ class HeaderScreen extends Component {
 
 }
 
-// FIXME no styles here, move them to component library
-// withWidth shouldn't be used as well
-
-// export default HeaderScreen;
-
 // withRouter is needed to be able to use the history
 // like in:
 //    this.props.history.push(url_to_go_to);
 export default withRouter(withWidth()(HeaderScreen));
 
-
-// export default withWidth()(withStyles(styles)(ArticleCard));
-// export default HeaderScreen;
-
-
-{/*<ClickAwayListener onClickAway={this.handleClickAway}>*/}
-    {/*<div>*/}
-        {/*<Button onClick={this.handleClick}>Open menu</Button>*/}
-        {/*{open ? (*/}
-            {/*<Paper className={classes.paper}>*/}
-                {/*{fake}*/}
-                {/*{fake}*/}
-                {/*{fake}*/}
-                {/*{fake}*/}
-                {/*{fake}*/}
-            {/*</Paper>*/}
-        {/*) : null}*/}
-    {/*</div>*/}
-{/*</ClickAwayListener>*/}

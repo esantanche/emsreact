@@ -1,12 +1,12 @@
 // Just a test to refactor
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import striptags from 'striptags';
 
+// Material UI functions that make classes and width available
 import { withStyles } from "@material-ui/core/styles/index";
 import withWidth from '@material-ui/core/withWidth';
 
-import CardHeader from '@material-ui/core/CardHeader';
+// Material UI components
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -14,19 +14,27 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import CardActions from '@material-ui/core/CardActions';
 import IconButton from '@material-ui/core/IconButton';
+
+// Material UI icons
 import MoreHoriz from '@material-ui/icons/MoreHoriz';
 
+// App configuration
 import { APP_CONFIGURATION } from '../../appConfiguration';
 
+// Library used to strip html tags from text
+import striptags from 'striptags';
 
+// Used to cut text and add '...'
 import Dotdotdot from 'react-dotdotdot';
 
+// From component library
 import SeparatorPane from '../panes/SeparatorPane';
 
+// Helper function that takes a title and produces a slug
+// which is how we put the title in the url
 import { title_to_slug } from '../../helpers/title_to_slug';
 
-// FIXME get rid of theme
-const styles = theme => ({
+const styles = {
     card_header: {
         height: "6em",
         display: "flex",
@@ -42,18 +50,8 @@ const styles = theme => ({
     image_responsive_size: {
         height: "0",
         paddingTop: '100%'
-    },
-    // image_large_fixed_size: {
-    //     height: "200px",
-    //     width: "200px"
-    // },
-    typography_when_below_image: {
-        marginTop: "10px"
-    },
-    title: {
-        fontSize: "1px"
     }
-});
+};
 
 class ArticleCard extends Component {
 
@@ -74,10 +72,14 @@ class ArticleCard extends Component {
             xl: "200px"
         };
 
+        // We are going to remove any html tag from the text of the article
+        // because we want no html tags when showing the text in the article
+        // card
         const stripped_text_content = striptags(text_content);
 
-        // FIXME the url of the backend goes to parameters
-        // FIXME do I need a title for CardMedia?
+        // When fetching images' url from the Drupal backend, we get relative paths
+        // and we have to prepend the backend root url to access the images
+        // The module Pathologic in Drupal makes urls absolutes, but not in this case
 
         if (width === 'xs') {
 
@@ -100,7 +102,11 @@ class ArticleCard extends Component {
 
                         <Typography variant="body2" component="div">
 
-                            {stripped_text_content}
+                            <Dotdotdot clamp={5}>
+
+                                {stripped_text_content}
+
+                            </Dotdotdot>
 
                         </Typography>
 
@@ -111,6 +117,10 @@ class ArticleCard extends Component {
 
         } else {
 
+            // In this case we want the text to be as high as the image.
+            // The dotdotdot component will cut the text and add '...'
+            // at the end when the text is as high as the image
+
             return (
                 <React.Fragment>
 
@@ -118,7 +128,7 @@ class ArticleCard extends Component {
                         style={{ height: image_fixed_size_according_to_width[width],
                                  width: image_fixed_size_according_to_width[width] }}
                         // className={classes.image_fixed_size}
-                        image={"http://backend.emanuelesantanche.com/" + image}
+                        image={APP_CONFIGURATION.backendUrl + image}
                         title=""
                     />
 
