@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Global</title>
+    <title>JSDoc: Class: ArticleScreen</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Global</h1>
+    <h1 class="page-title">Class: ArticleScreen</h1>
 
     
 
@@ -28,7 +28,9 @@
 
 <header>
     
-        <h2></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>ArticleScreen<span class="signature">()</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">Screen showing a single article. The text can contain html tags. In this case we render them.</div>
         
     
 </header>
@@ -38,74 +40,23 @@
     
         
 
-        
+    
+    <h2>Constructor</h2>
+    
 
-
-<dl class="details">
-
+    
+    <h4 class="name" id="ArticleScreen"><span class="type-signature"></span>new ArticleScreen<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="theme"><span class="type-signature">(constant) </span>theme<span class="type-signature"></span></h4>
 
 
 
 
-<div class="description">
-    This is the theme with custom colour and font choices the application uses
-</div>
+
+
+
 
 
 
@@ -142,7 +93,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="MuiTheme.js.html">MuiTheme.js</a>, <a href="MuiTheme.js.html#line7">line 7</a>
+        <a href="article_ArticleScreen.js.html">article/ArticleScreen.js</a>, <a href="article_ArticleScreen.js.html#line22">line 22</a>
     </li></ul></dd>
     
 
@@ -158,9 +109,135 @@
 
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="componentDidMount"><span class="type-signature"></span>componentDidMount<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    When the component mounts, we fetch the article we have to display.
+
+The url that triggers displaying this Screen is like this:
+/article/:articlenid
+
+For example it can be: /article/27
+
+The number is the node id of the article in the Drupal backend.
+
+This component uses the service ArticleService for it to fetch
+that specific article.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="article_ArticleScreen.js.html">article/ArticleScreen.js</a>, <a href="article_ArticleScreen.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     
 
     

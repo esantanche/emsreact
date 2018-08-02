@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: MuiTheme.js</title>
+    <title>JSDoc: Source: components_library/cards/ColouredCard.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: MuiTheme.js</h1>
+    <h1 class="page-title">Source: components_library/cards/ColouredCard.js</h1>
 
     
 
@@ -26,31 +26,55 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import {createMuiTheme} from "@material-ui/core/styles/index";
-import teal from "@material-ui/core/colors/teal";
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-/**
- * This is the theme with custom colour and font choices the application uses
- */
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            light: teal[400],
-            main: teal[500],
-            dark: teal[600],  // Use white text
-        },
-        secondary: {
-            light: teal[200],
-            main: teal[300],
-            dark: teal[400], // use white text
-        }
+// Material UI components
+import Card from '@material-ui/core/Card';
+
+// Theme, style, width and other Material UI related things
+import { withStyles } from "@material-ui/core/styles/index";
+
+// See MuiTheme.js for theme properties
+const styles = theme => ({
+    coloured_card: {
+        backgroundColor: theme.palette.secondary.main
     },
-    typography: {
-        fontFamily: "\"Montserrat\", \"Helvetica\", \"Arial\", sans-serif"
+    light_coloured_card: {
+        backgroundColor: theme.palette.secondary.light
     }
 });
 
-export default theme;</code></pre>
+/**
+ * A card with coloured background.
+ *
+ * Props
+ * @param {boolean} light True is a lighter colour is to be used
+ */
+class ColouredCard extends Component {
+
+    static propTypes = {
+
+        light: PropTypes.boolean
+    };
+
+    render() {
+
+        const { classes } = this.props;
+
+        return (
+
+            &lt;Card className={this.props.light ? classes.light_coloured_card : classes.coloured_card}>
+
+                {this.props.children}
+
+            &lt;/Card>
+
+        );
+    }
+}
+
+export default withStyles(styles)(ColouredCard);</code></pre>
         </article>
     </section>
 

@@ -1,34 +1,22 @@
-// Just a test to refactor
 import React, { Component } from 'react';
-import { withStyles } from "@material-ui/core/styles/index";
-import PropTypes from 'prop-types';
+
+// Material UI components
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 
-
-// FIXME I want to know why it's called root
-
-const styles = {
-    bodyPane: {
-        backgroundColor: "#FFFFFF"
-    },
-};
-
-// FIXME this is the grid that is used to set margins on front pages.
-
+/**
+ * This is the grid that sets two columns on the left and two on the right
+ * as empty so that to make some margin on the sides of the main content.
+ *
+ * These two columns become one on medium devices and are removed on small
+ * devices. The latter will see just the main content with no empty columns
+ * on the sides.
+ */
 class FrontGridPane extends Component {
-
-    static propTypes = {
-        classes: PropTypes.object.isRequired,
-
-    };
 
     render() {
 
-        const { classes } = this.props;
-
         return (
-
 
             <Grid container spacing={16}>
 
@@ -52,15 +40,10 @@ class FrontGridPane extends Component {
 
             </Grid>
 
-
-
-
-
-
         )
 
     }
 
 }
 
-export default withStyles(styles)(FrontGridPane);
+export default FrontGridPane;

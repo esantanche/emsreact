@@ -2,7 +2,7 @@ import {createMuiTheme} from "@material-ui/core/styles/index";
 import teal from "@material-ui/core/colors/teal";
 
 /**
- *
+ * This is the theme with custom colour and font choices the application uses
  */
 const theme = createMuiTheme({
     palette: {

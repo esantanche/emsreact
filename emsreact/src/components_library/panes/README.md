@@ -1,4 +1,4 @@
-# Panes are react components that are defined as follows:
+# Panes are React components that are defined as follows:
 
 Panes define the positioning of elements.
 
@@ -9,3 +9,4 @@ if any, that contains them.
 
 They may define display, border, height, padding, margin and vertical-align
 
+They shouldn't define other attributes.

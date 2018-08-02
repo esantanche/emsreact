@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { withStyles } from "@material-ui/core/styles/index";
 import PropTypes from 'prop-types';
-import Typography from "@material-ui/core/Typography";
+
+// Material UI functions that make classes and width available
+import { withStyles } from "@material-ui/core/styles/index";
 import withWidth from "@material-ui/core/es/withWidth/withWidth";
 
 const styles = {
@@ -14,26 +15,33 @@ const styles = {
     }
 };
 
+/**
+ * This pane defines margins for the home button, the one in the header that links
+ * to the home page and has "Emanuele Santanché, Web Developer" written on it.
+ *
+ * Props
+ * @param {object} classes Classes injected by withStyles function
+ * @param {string} width Material UI device width (xs, sm, md, lg, xl). The function withWidth
+ * provides it.
+ */
 class HomeButtonPane extends Component {
 
     static propTypes = {
         classes: PropTypes.object.isRequired,
+        width: PropTypes.string
     };
 
     render() {
 
         const { classes, width } = this.props;
 
-        let classes_to_use = { main: classes.HomeButtonPane };
-
         // For width other than 'xs', let's add top and bottom margins.
         // For 'xs' width there will be no margins
-        if (width !== "xs")
-            classes_to_use.margins = classes.TopAndBottomMargins;
 
         return (
 
-            <div className={classes_to_use.main + " " + classes_to_use.margins}>
+            <div className={classes.HomeButtonPane +
+                            (width !== "xs" ? " " + classes.TopAndBottomMargins : "")}>
 
                 {this.props.children}
 
@@ -46,5 +54,3 @@ class HomeButtonPane extends Component {
 }
 
 export default withWidth()(withStyles(styles)(HomeButtonPane));
-
-{/*<div className={classes_to_use.join(" ")}>*/}

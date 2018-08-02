@@ -1,9 +1,8 @@
-// Just a test to refactor
 import React, { Component } from 'react';
-import { withStyles } from "@material-ui/core/styles/index";
 import PropTypes from 'prop-types';
 
-
+// Material UI uses withStyles to inject an array of styles into the DOM as CSS, using JSS
+import { withStyles } from "@material-ui/core/styles/index";
 
 const styles = {
     separatorPane: {
@@ -11,6 +10,12 @@ const styles = {
     },
 };
 
+/**
+ * Just a separator.
+ *
+ * Props
+ * @param {object} classes Classes injected by withStyles function
+ */
 class SeparatorPane extends Component {
 
     static propTypes = {

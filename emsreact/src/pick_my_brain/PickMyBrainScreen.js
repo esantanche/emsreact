@@ -12,15 +12,21 @@ import Email from '@material-ui/icons/Email';
 import Person from "@material-ui/icons/es/Person";
 import Message from "@material-ui/icons/es/Message";
 
+// To validate email addresses
 import * as EmailValidator from 'email-validator';
 
+// The injector allows this component to use services, see README.md in folder 'services'
 import { injector } from 'react-services-injector';
 
+// From components library
 import MessageDialog from "../components_library/dialogs/MessageDialog";
 
-
-// FIXME why screen? it's inside a card!!
-
+/**
+ * This is the Pick My Brain form used to send messages. Messages will be sent to the backend
+ * to be stored. Their creation will be notified.
+ *
+ * @param {function} onclick There may be a function to call when the user clicks on "Submit"
+ */
 class PickMyBrainScreen extends Component {
 
     constructor(props) {
@@ -51,12 +57,16 @@ class PickMyBrainScreen extends Component {
 
     }
 
+    /**
+     * Called when the user enter text in the email field.
+     *
+     * @param {object} event Changing event for email field
+     */
     handleEmailChange(event) {
 
         let email = event.target.value;
 
         let email_is_valid = false;
-        let email_error_text = "";
 
         // Let's get rid of extra spaces
         const trimmed_email = email.trim();
@@ -70,16 +80,12 @@ class PickMyBrainScreen extends Component {
             // For example, we consider as invalid the email address esantanche+001@gmail.com
             if (/\+/.test(trimmed_email))
                 email_is_valid = false;
-
-            if (!email_is_valid) email_error_text = "Please enter a valid email address";
-
         }
 
         var self = this;
 
         this.setState({ email: trimmed_email,
-                email_error_text: email_error_text,
-                email_is_valid: email_is_valid },
+                        email_is_valid: email_is_valid },
                 function() {
 
                     self.enable_submit_button_if_form_is_valid();
@@ -88,6 +94,11 @@ class PickMyBrainScreen extends Component {
 
     };
 
+    /**
+     * Called when the user enter text in the name field.
+     *
+     * @param {object} event Changing event for name field
+     */
     handleNameChange(event) {
 
         let name = event.target.value;
@@ -102,11 +113,14 @@ class PickMyBrainScreen extends Component {
 
     };
 
+    /**
+     * Called when the user enter text in the message field.
+     *
+     * @param {object} event Changing event for message field
+     */
     handleMessageChange(event) {
 
         let message = event.target.value;
-
-        // FIXME do I need any sensitization?
 
         var self = this;
 
@@ -305,8 +319,6 @@ class PickMyBrainScreen extends Component {
     }
 
 }
-
-// export default PickMyBrainScreen;
 
 export default injector.connect(PickMyBrainScreen, {
     toRender: ['PickMyBrainMessageService']

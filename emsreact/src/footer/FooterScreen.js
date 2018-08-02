@@ -3,17 +3,29 @@ import React, { Component } from 'react';
 // Material UI components
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import CardHeader from "@material-ui/core/es/CardHeader/CardHeader";
+import ButtonBase from "@material-ui/core/ButtonBase/ButtonBase";
 
+// From components library
 import FrontGridPane from '../components_library/panes/FrontGridPane';
 import ColouredCard from '../components_library/cards/ColouredCard';
 import SeparatorPane from '../components_library/panes/SeparatorPane';
-import PickMyBrainScreen from "../pick_my_brain/PickMyBrainScreen";
-import CardHeader from "@material-ui/core/es/CardHeader/CardHeader";
-import SocialScreen from "../social/SocialScreen";
-import Grid from "@material-ui/core/Grid/Grid";
-import CardMedia from "@material-ui/core/CardMedia";
-import ButtonBase from "@material-ui/core/ButtonBase/ButtonBase";
+import BottomGridPane from "../components_library/panes/BottomGridPane";
 
+// Screen implementing the form used to send messages
+import PickMyBrainScreen from "../pick_my_brain/PickMyBrainScreen";
+
+// Social networks links
+import SocialScreen from "../social/SocialScreen";
+
+/**
+ * This is the footer screen.
+ *
+ * It includes:
+ * * The Pick My Brain form to send messages
+ * * The social network links
+ * * Bottom name and link to privacy policy
+ */
 class FooterScreen extends Component {
 
     render() {
@@ -47,25 +59,27 @@ class FooterScreen extends Component {
 
                         <CardContent>
 
-                            <Grid container spacing={8} style={{ display: "flex", alignItems: "flex-start" }}>
+                            <BottomGridPane
+                                leftComponent={ (
 
-                                <Grid item xs={9}>
+                                        <React.Fragment>
 
-                                    <Typography variant="title" >
+                                            <Typography variant="title" >
 
-                                        Emanuele Santanché
+                                                Emanuele Santanché
 
-                                    </Typography>
+                                            </Typography>
 
-                                    <Typography variant="subheading" >
+                                            <Typography variant="subheading" >
 
-                                        Paris, France and, remotely, worldwide
+                                                Paris, France and, remotely, worldwide
 
-                                    </Typography>
+                                            </Typography>
 
-                                </Grid>
+                                        </React.Fragment>
 
-                                <Grid item xs={3} style={{ alignSelf: "flex-end" }}>
+                                    ) }
+                                rightComponent={ (
 
                                     <ButtonBase href="/article/58/privacy-policy">
                                         <Typography variant="title" >
@@ -75,9 +89,8 @@ class FooterScreen extends Component {
                                         </Typography>
                                     </ButtonBase>
 
-                                </Grid>
-
-                            </Grid>
+                                ) }
+                            />
 
                         </CardContent>
 

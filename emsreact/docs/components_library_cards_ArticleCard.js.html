@@ -1,4 +1,32 @@
-// Just a test to refactor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components_library/cards/ArticleCard.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components_library/cards/ArticleCard.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// Just a test to refactor
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -126,35 +154,35 @@ class ArticleCard extends Component {
             // at the truncation point
 
             return (
-                <React.Fragment>
+                &lt;React.Fragment>
 
-                    <Grid item xs={12}>
+                    &lt;Grid item xs={12}>
 
-                        <CardMedia
+                        &lt;CardMedia
                             className={classes.image_responsive_size}
                             image={APP_CONFIGURATION.backendUrl + image}
                             title=""
                         />
 
-                    </Grid>
+                    &lt;/Grid>
 
-                    <SeparatorPane/>
+                    &lt;SeparatorPane/>
 
-                    <Grid item xs={12}>
+                    &lt;Grid item xs={12}>
 
-                        <Typography variant="body2" component="div">
+                        &lt;Typography variant="body2" component="div">
 
-                            <Dotdotdot clamp={5}>
+                            &lt;Dotdotdot clamp={5}>
 
                                 {stripped_text_content}
 
-                            </Dotdotdot>
+                            &lt;/Dotdotdot>
 
-                        </Typography>
+                        &lt;/Typography>
 
-                    </Grid>
+                    &lt;/Grid>
 
-                </React.Fragment>
+                &lt;/React.Fragment>
             );
 
         } else {
@@ -164,28 +192,28 @@ class ArticleCard extends Component {
             // at the end when the text is as high as the image
 
             return (
-                <React.Fragment>
+                &lt;React.Fragment>
 
-                    <CardMedia
+                    &lt;CardMedia
                         style={{ height: image_fixed_size_according_to_width[width],
                                  width: image_fixed_size_according_to_width[width] }}
                         image={APP_CONFIGURATION.backendUrl + image}
                         title=""
                     />
 
-                    <Typography variant="body2" component="div"
+                    &lt;Typography variant="body2" component="div"
                                 style={{ flex: "1", height: image_fixed_size_according_to_width[width], marginLeft: "10px" }}>
 
-                        <Dotdotdot clamp={image_fixed_size_according_to_width[width]}
+                        &lt;Dotdotdot clamp={image_fixed_size_according_to_width[width]}
                                    style={{ height: image_fixed_size_according_to_width[width] }}>
 
                             {stripped_text_content}
 
-                        </Dotdotdot>
+                        &lt;/Dotdotdot>
 
-                    </Typography>
+                    &lt;/Typography>
 
-                </React.Fragment>
+                &lt;/React.Fragment>
             );
 
         }
@@ -218,34 +246,34 @@ class ArticleCard extends Component {
 
         return (
 
-            <Card>
+            &lt;Card>
 
-                <div className={classes.card_header}>
+                &lt;div className={classes.card_header}>
 
-                    <Typography variant={title_variant_according_to_width[width]}>
+                    &lt;Typography variant={title_variant_according_to_width[width]}>
                         {title}
-                    </Typography>
+                    &lt;/Typography>
 
-                </div>
+                &lt;/div>
 
-                <CardContent>
+                &lt;CardContent>
 
-                    <Grid container spacing={0} className={classes.container}>
+                    &lt;Grid container spacing={0} className={classes.container}>
 
                         {jsx_fragment_for_image_and_text_according_to_width}
 
-                    </Grid>
+                    &lt;/Grid>
 
-                </CardContent>
+                &lt;/CardContent>
 
-                <CardActions>
-                    <IconButton className={classes.margin_for_more_button}
+                &lt;CardActions>
+                    &lt;IconButton className={classes.margin_for_more_button}
                                 href={"/article/" + article_node_id + "/" + slug_for_link_to_article}>
-                        <MoreHoriz/>
-                    </IconButton>
-                </CardActions>
+                        &lt;MoreHoriz/>
+                    &lt;/IconButton>
+                &lt;/CardActions>
 
-            </Card>
+            &lt;/Card>
 
         )
 
@@ -254,3 +282,26 @@ class ArticleCard extends Component {
 }
 
 export default withWidth()(withStyles(styles)(ArticleCard));
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="SocialCard.html">SocialCard</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Aug 02 2018 12:45:20 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

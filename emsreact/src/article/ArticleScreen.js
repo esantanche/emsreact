@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 
+// Material UI components
 import Card from '@material-ui/core/Card';
-import FrontGridPane from '../components_library/panes/FrontGridPane';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+
+// Material UI icons
 import Clear from '@material-ui/icons/Clear';
 import IconButton from '@material-ui/core/IconButton';
 
-import { injector } from 'react-services-injector'; // To use service, see services.js
+// From components library
+import FrontGridPane from '../components_library/panes/FrontGridPane';
 
+// The injector allows this component to use services, see README.md in folder 'services'
+import { injector } from 'react-services-injector';
+
+/**
+ * Screen showing a single article. The text can contain html tags. In this case we render them.
+ */
 class ArticleScreen extends Component {
 
     constructor(props) {
@@ -19,6 +28,19 @@ class ArticleScreen extends Component {
 
     }
 
+    /**
+     * When the component mounts, we fetch the article we have to display.
+     *
+     * The url that triggers displaying this Screen is like this:
+     * /article/:articlenid
+     *
+     * For example it can be: /article/27
+     *
+     * The number is the node id of the article in the Drupal backend.
+     *
+     * This component uses the service ArticleService for it to fetch
+     * that specific article.
+     */
     componentDidMount() {
 
         const { ArticleService } = this.services;
@@ -27,16 +49,10 @@ class ArticleScreen extends Component {
 
         var self = this;
 
-        // The tools I use
-        // How I work
-
-        // FIXME excpt what if articlenid is not defined?
+        // TODO add exception handling in case articlenid is not defined
 
         this.ArticleService.fetch_articles({ nid: this.props.match.params.articlenid },
             function (article) {
-
-                console.log('componentDidMount article');
-                console.log(article);
 
                 self.setState({ article: article });
 
@@ -53,8 +69,6 @@ class ArticleScreen extends Component {
             <React.Fragment>
 
                 <FrontGridPane>
-
-                    {/*FIXME this card should become a component in component library*/}
 
                     <Card>
 

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { withStyles } from "@material-ui/core/styles/index";
 import PropTypes from 'prop-types';
+
+// Material UI function that make classes available
+import { withStyles } from "@material-ui/core/styles/index";
 
 const styles = theme => ({
     bodyPane: {
@@ -9,6 +11,14 @@ const styles = theme => ({
     },
 });
 
+
+/**
+ * Defines the background for the entire body.
+ * Also gets rid of horizontal scrollbar by setting overflowY to hidden.
+ *
+ * Props
+ * @param {object} classes Classes injected by withStyles function
+ */
 class BodyPane extends Component {
 
     static propTypes = {

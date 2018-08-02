@@ -1,51 +1,35 @@
-
-
 import React, { Component } from 'react';
-import { withStyles } from "@material-ui/core/styles/index";
 import PropTypes from 'prop-types';
-import Typography from "@material-ui/core/Typography";
+
+// Material UI components
 import Menu from "@material-ui/core/Menu/Menu";
 import MenuItem from "@material-ui/core/MenuItem/MenuItem";
-import Link from "react-router-dom/es/Link";
 
-const styles = {
-    HomeButtonPane: {
-        marginLeft: "1.5em"
-    },
-};
-
+/**
+ * Header menu.
+ *
+ * Props
+ * @param {object} anchorElement The element this menu should anchor to.
+ * It gives this menu a position.
+ * @param {function} handleMenuClose Function to call when the user clicks
+ * on a menu item
+ */
 class HeaderMenu extends Component {
 
-    // constructor(props) {
-    //     super(props);
-    //
-    //     // this.state = {
-    //     //     // The element the menu is anchored to, typically a button that opens the menu
-    //     //     // When anchorElement is null, the menu is invisible
-    //     //     // FIXME ? ok?
-    //     //     anchorElement: null,
-    //     //     handleClose:
-    //     // };
-    //
-    // }
-
     static propTypes = {
-        classes: PropTypes.object.isRequired,
         anchorElement: PropTypes.object,
         handleMenuClose: PropTypes.func
     };
-
-    // handleClose = () => {
-    //     this.setState({ anchorElement: null });
-    // };
 
     render() {
 
         const { anchorElement, handleMenuClose } = this.props;
 
+        // To close this menu, just make anchorElement null
+
         // Pick My Brain menu item
         // It calls handleMenuClose with no url and true as second parameter
-        // It means that the parent component will open the Pick My Brain Dialog
+        // This means that the parent component will open the Pick My Brain Dialog
         // See HeaderScreen.js and PickMyBrainDialog.js
 
         return (
@@ -75,6 +59,6 @@ class HeaderMenu extends Component {
 
 }
 
-export default withStyles(styles)(HeaderMenu);
+export default HeaderMenu;
 
 

@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
+// Material UI components
+import Card from '@material-ui/core/Card';
+
+// From components library
 import InnerGridPane from '../components_library/panes/InnerGridPane';
 import ArticleCard from '../components_library/cards/ArticleCard';
-import Card from '@material-ui/core/Card';
-import red from "@material-ui/core/colors/red";
-import lightBlue from "@material-ui/core/colors/lightBlue";
 
+// The injector allows this component to use services, see README.md in folder 'services'
 import { injector } from 'react-services-injector'; // To use service, see services.js
 
-// import striptags from 'striptags';
-
-// import { withStyles } from "@material-ui/core/styles/index";
-// import withWidth from '@material-ui/core/withWidth';
-
-
-
-// import SeparatorPane from '../panes/SeparatorPane';
-
-
+/**
+ * This Screen shows a list of articles. It's supposed to use the service ArticleService
+ * to retrieve them from the backend.
+ *
+ * If the prop sticky is true, only the articles that are flagged as sticky on the backend
+ * will be retrieved.
+ *
+ * @param {string} topic The topic of articles to show. Like "How I work", "The tools I use",
+ * "Success stories", etc.
+ * @param {boolean} sticky True if only sticky articles should be displayed
+ */
 class ListOfArticlesScreen extends Component {
 
     constructor() {
@@ -27,17 +31,14 @@ class ListOfArticlesScreen extends Component {
 
     }
 
-    // FIXME need these?
     static propTypes = {
-        // classes: PropTypes.object.isRequired,
-        // articles: PropTypes.array
-        // image: PropTypes.object,
-        // text_content: PropTypes.string
         topic: PropTypes.string,
         sticky: PropTypes.boolean
     };
 
     componentDidMount() {
+
+        // Fetching articles when the component mounts
 
         const { ArticleService } = this.services;
 
@@ -47,9 +48,6 @@ class ListOfArticlesScreen extends Component {
 
         this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
             function (articles) {
-
-                // console.log('componentDidMount articles');
-                // console.log(articles);
 
                 self.setState({ articles: articles });
 
@@ -62,16 +60,15 @@ class ListOfArticlesScreen extends Component {
         var self = this;
 
         // When the topic changes, the props to this component change as well
-        // We need to transform again the topic as provided by the url into
-        // the topic as needed to fetch articles
+        // We need to fetch the articles related to the new topic
 
-        if (prevProps.topic !== this.props.topic) {
+        // Same thing if the prop 'sticky' changes. Again we have to fetch articles again
+
+        if (prevProps.topic !== this.props.topic ||
+            prevProps.sticky !== this.props.sticky) {
 
             this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
                 function (articles) {
-
-                    // console.log('componentDidMount articles');
-                    // console.log(articles);
 
                     self.setState({ articles: articles });
 
@@ -83,6 +80,12 @@ class ListOfArticlesScreen extends Component {
     }
 
     render() {
+
+        // We get articles in an array where each item contains one article
+        // We produce another array where each item contains two articles
+        // This makes it easier to use the component InnerGridPane to build the list.
+        // That component shows two articles at a time (a leftComponent and a
+        // rightComponent)
 
         const articles_pairs = this.state.articles.reduce((articles_pairs, article, index, articles) => {
 

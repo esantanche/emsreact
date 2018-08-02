@@ -1,4 +1,4 @@
-# Texts are react components that are defined as follows:
+# Texts are React components that are defined as follows:
 
 Texts define text style.
 
@@ -8,7 +8,7 @@ text-decoration, line-height
 
 No positioning allowed here.
 
-No margins, no padding, no display attribute. These attributes are in panes.
+No margins, no padding, no display attribute. These attributes go to panes.
 
 See panes/README.md
 

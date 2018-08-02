@@ -1,27 +1,38 @@
-// Just a test to refactor
 import React, { Component } from 'react';
-import { withStyles } from "@material-ui/core/styles/index";
 import PropTypes from 'prop-types';
+
+// Material UI components
 import Grid from '@material-ui/core/Grid';
 
-
-// FIXME I want to know why it's called root
+// Material UI uses withStyles to inject an array of styles into the DOM as CSS, using JSS
+import { withStyles } from "@material-ui/core/styles/index";
 
 const styles = {
-    bodyPane: {
-        backgroundColor: "#FFFFFF"
+    InnerGridPane: {
+        marginLeft: "10px",
+        marginRight: "10px"
     },
 };
 
-// FIXME this is the grid that is used to encapsulate two cards (or one on xsmall devices)
-
+/**
+ * This is the grid used for the main content. it shows two components side by side or
+ * one only on small devices. You can see it at work on the home page.
+ *
+ * It shows two article cards or one on small devices.
+ *
+ * leftComponent and rightComponent actually go one above the other on small devices.
+ *
+ * Props
+ * @param {object} classes Classes injected by withStyles function
+ * @param {object} leftComponent Component to show on the left side
+ * @param {object} rightComponent Component to show on the right side
+ */
 class InnerGridPane extends Component {
 
     static propTypes = {
         classes: PropTypes.object.isRequired,
         leftComponent: PropTypes.element,
         rightComponent: PropTypes.element
-
     };
 
     render() {
@@ -30,7 +41,7 @@ class InnerGridPane extends Component {
 
         return (
 
-            <div style={{ marginLeft: "10px", marginRight: "10px" }}>
+            <div className={classes.InnerGridPane}>
 
                 <Grid container spacing={16}>
 
@@ -45,28 +56,6 @@ class InnerGridPane extends Component {
                 </Grid>
 
             </div>
-
-            // <Grid container spacing={16}>
-            //
-            //     <Hidden smDown>
-            //         <Grid item md={1} lg={2} >
-            //
-            //         </Grid>
-            //     </Hidden>
-            //
-            //     <Grid item xs={12} md={10} lg={8}>
-            //
-            //         {this.props.children}
-            //
-            //     </Grid>
-            //
-            //     <Hidden smDown>
-            //         <Grid item md={1} lg={2} >
-            //
-            //         </Grid>
-            //     </Hidden>
-            //
-            // </Grid>
 
         )
 

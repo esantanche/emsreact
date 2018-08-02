@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// Material UI functions that make classes and width available
 import { withStyles } from "@material-ui/core/styles/index";
 
+// Material UI components
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-
 import ButtonBase from "@material-ui/core/ButtonBase/ButtonBase";
 
 const styles = {
@@ -19,6 +20,16 @@ const styles = {
     }
 };
 
+/**
+ * Card with logo of social network and link to corresponding social account.
+ *
+ * They are used in the footer.
+ *
+ * Props
+ * @param {object} classes Classes for button and social logo image
+ * @param {object} logo Social logo image as binary. The parent component provides it
+ * @param {string} url_to_go Url of social network account to link to
+ */
 class SocialCard extends Component {
 
     static propTypes = {
@@ -32,6 +43,7 @@ class SocialCard extends Component {
         const { classes, logo, url_to_go } = this.props;
 
         // ButtonBase makes its children clickable without adding too much style
+        // Instead the component Button would add style you don't want in this case
 
         return (
 
