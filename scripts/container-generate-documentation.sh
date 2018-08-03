@@ -15,7 +15,7 @@ echo "Script $0 starting"
 
 cd /srv/app/emsreact
 
-jsdoc src -r -d docs
+jsdoc -c ./jsdoc_conf.json src -r -d docs
 
 EOF
 

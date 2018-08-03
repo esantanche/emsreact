@@ -27,14 +27,15 @@ const styles = {
  *
  * Props
  * @param {object} classes Classes for button and social logo image
- * @param {object} logo Social logo image as binary. The parent component provides it
+ * @param {string} logo Social logo image as binary, but encoded in a string.
+ * The parent component provides it
  * @param {string} url_to_go Url of social network account to link to
  */
 class SocialCard extends Component {
 
     static propTypes = {
         classes: PropTypes.object.isRequired,
-        logo: PropTypes.object,
+        logo: PropTypes.string,
         url_to_go: PropTypes.string
     };
 

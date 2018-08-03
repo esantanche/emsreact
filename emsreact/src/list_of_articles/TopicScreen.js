@@ -41,14 +41,20 @@ class TopicScreen extends Component {
 
     componentDidMount() {
 
+        if (!this.props.match.params.topic) {
+
+            console.error("TopicScreen::componentDidMount");
+            console.error("this.props.match.params.topic is not defined");
+            console.error("This is a bug");
+
+            return;
+        }
+
         const { TopicService } = this.services;
 
         this.TopicService = TopicService;
 
         var self = this;
-
-        // TODO exception handling. What if the parameter this.props.match.params.topic
-        // is undefined?
 
         // First time the component is mounted we find the topic we have to pass to
         // the component ListOfArticlesScreen for it to call the service that will
@@ -147,7 +153,5 @@ class TopicScreen extends Component {
 
 }
 
-export default injector.connect(TopicScreen, {
-    toRender: ['TopicService']
-});
+export default injector.connect(TopicScreen);
 

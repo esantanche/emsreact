@@ -132,6 +132,12 @@ class PickMyBrainScreen extends Component {
 
     };
 
+    /**
+     * If the form is valid, this function enables the submit button.
+     *
+     * The form is valid if the email is valid and name and message fields
+     * are not empty.
+     */
     enable_submit_button_if_form_is_valid() {
 
         let form_is_valid = false;
@@ -145,6 +151,15 @@ class PickMyBrainScreen extends Component {
 
     }
 
+    /**
+     * This function send the message to the backend.
+     *
+     * It packages the fields, email, name and message, into an object and passes it
+     * to the PickMyBrainMessageService service for it to send the message to the backend.
+     *
+     * This function will be called only if the form is valid because if it is not, the submit
+     * button will be disabled.
+     */
     submit_message() {
 
         const message_details = {
@@ -159,12 +174,21 @@ class PickMyBrainScreen extends Component {
 
             if (error) {
 
+                // For now exception handling is just writing the error to the console
+
                 console.error("PickMyBrainScreen::submit_message");
                 console.error(error);
+
+                // In case of error, we open the error message dialog
+                // We don't clear the form because the user may want to copy the
+                // message and try again later
 
                 self.setState({ error_dialog_is_open: true });
 
             } else {
+
+                // If everything is fine, we clear the form and open the
+                // message dialog to tell the user that we sent the message
 
                 self.setState({ email: "",
                     email_is_valid: true,
@@ -181,6 +205,11 @@ class PickMyBrainScreen extends Component {
 
     }
 
+    /**
+     * Closing the dialog when the user clicks on "OK".
+     *
+     * Closing the parent dialog as well, if there actually is a parent dialog.
+     */
     handleOnClickDialog() {
 
         this.setState({ message_dialog_is_open: false, error_dialog_is_open: false });
@@ -188,11 +217,18 @@ class PickMyBrainScreen extends Component {
         // Telling the parent component that we are done here
         // This only if the onclick function is defined, because
         // there may be no parent component
-        // We do this here because the user has to see the message before exiting
+
         if (this.props.onclick)
             this.props.onclick();
     };
 
+    /**
+     * Closing the error dialog.
+     *
+     * In this case we don't close the parent dialog, if any.
+     *
+     * This because the user may want to copy the message.
+     */
     handleOnClickErrorDialog() {
 
         this.setState({ message_dialog_is_open: false, error_dialog_is_open: false });
@@ -219,7 +255,6 @@ class PickMyBrainScreen extends Component {
                             id="email"
                             label="Email"
                             fullWidth
-                            // className={classes.textField}
                             value={this.state.email}
                             onChange={this.handleEmailChange.bind(this)}
                             margin="dense"
@@ -242,7 +277,6 @@ class PickMyBrainScreen extends Component {
                             id="name"
                             label="Name"
                             fullWidth
-                            // className={classes.textField}
                             value={this.state.name}
                             onChange={this.handleNameChange.bind(this)}
                             margin="dense"
@@ -268,7 +302,6 @@ class PickMyBrainScreen extends Component {
                             error={false}
                             id="message"
                             label="Message"
-                            // className={classes.textField}
                             value={this.state.message}
                             onChange={this.handleMessageChange.bind(this)}
                             margin="dense"
@@ -320,7 +353,4 @@ class PickMyBrainScreen extends Component {
 
 }
 
-export default injector.connect(PickMyBrainScreen, {
-    toRender: ['PickMyBrainMessageService']
-});
-
+export default injector.connect(PickMyBrainScreen);

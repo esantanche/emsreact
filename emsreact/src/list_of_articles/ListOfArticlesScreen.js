@@ -33,7 +33,7 @@ class ListOfArticlesScreen extends Component {
 
     static propTypes = {
         topic: PropTypes.string,
-        sticky: PropTypes.boolean
+        sticky: PropTypes.bool
     };
 
     componentDidMount() {
@@ -96,11 +96,11 @@ class ListOfArticlesScreen extends Component {
 
         }, []);
 
-        return articles_pairs.map(pair_of_articles => {
+        return articles_pairs.map((pair_of_articles, index) => {
 
             return (
 
-                <InnerGridPane
+                <InnerGridPane key={index}
 
                     leftComponent={ (
 
@@ -138,6 +138,4 @@ class ListOfArticlesScreen extends Component {
 
 }
 
-export default injector.connect(ListOfArticlesScreen, {
-    toRender: ['ArticleService']
-});
+export default injector.connect(ListOfArticlesScreen);

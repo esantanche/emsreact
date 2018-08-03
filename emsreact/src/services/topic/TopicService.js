@@ -1,4 +1,6 @@
 import { Service } from 'react-services-injector';
+
+// Material UI colors
 import red from "@material-ui/core/colors/red";
 import lightBlue from "@material-ui/core/colors/lightBlue";
 import orange from '@material-ui/core/colors/orange';
@@ -6,6 +8,19 @@ import lightGreen from '@material-ui/core/colors/lightGreen';
 import yellow from '@material-ui/core/colors/yellow';
 import indigo from "@material-ui/core/es/colors/indigo";
 
+/**
+ * When showing lists of articles about topics, many details are needed.
+ *
+ * This service provides these details.
+ *
+ * Each topic has the following details:
+ * * topic name
+ * * topic name as it has to be shown in urls
+ * * subheader
+ * * letter to be used in the avatar
+ * * color of avatar
+ * * text to be used on the button that links to more articles for the same topic
+ */
 class TopicService extends Service {
 
     constructor() {
@@ -13,6 +28,7 @@ class TopicService extends Service {
 
         this.topics = {};
 
+        // For now supporting English only
         this.topics['en'] = [
 
             {
@@ -66,27 +82,34 @@ class TopicService extends Service {
         ];
     }
 
+    /**
+     * Returning all details for all topics.
+     *
+     * @param {function} callback_to_return_topics Function to call to return all details for all topics
+     */
     get_topics(callback_to_return_topics) {
 
         callback_to_return_topics(this.topics['en']);
 
-        // TODO there will be the possibiility to use another language
-        // return ;
     }
 
+    /**
+     * Returning all details for a specific topic. The topic name as it appears in urls is given.
+     *
+     * @param {string} topic_from_url The topic's name as it appears in urls
+     * @param {function} callback_to_return_topic Function to call to return the topic's details
+     */
     get_topic_from_url(topic_from_url, callback_to_return_topic) {
 
-        const found_topic = this.topics['en'].find(topic => topic.name_for_url === topic_from_url);
+        const found_topic_details = this.topics['en'].find(topic => topic.name_for_url === topic_from_url);
 
-        callback_to_return_topic(found_topic);
+        callback_to_return_topic(found_topic_details);
 
-        // TODO there will be the possibiility to use another language
-        // return ;
     }
 
 }
 
-//"publicName" property is important if you use any kind of minimization on your JS
+// "publicName" property is important if you use any kind of minimization on your JS
 TopicService.publicName = 'TopicService';
 
 export default TopicService;

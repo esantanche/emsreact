@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 // Material UI components
-import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
@@ -13,24 +12,19 @@ import HomeButtonPane from "../components_library/panes/HomeButtonPane";
 import HomeButtonText from "../components_library/texts/HomeButtonText";
 import HeaderMenu from "../components_library/menus/HeaderMenu";
 import PickMyBrainDialog from "../components_library/dialogs/PickMyBrainDialog";
-
-// Material UI icons
-import MenuIcon from '@material-ui/icons/Menu';
+import MenuButton from "../components_library/buttons/MenuButton";
+import FrontGridPane from "../components_library/panes/FrontGridPane";
 
 // Needed to use history and move to other url
 import {withRouter} from "react-router-dom";
 
 // Material UI function that make width available
 import withWidth from "@material-ui/core/es/withWidth/withWidth";
-import MenuButton from "../components_library/buttons/MenuButton";
-import FrontGridPane from "../components_library/panes/FrontGridPane";
-
-// FIXME clean up
-
 
 /**
- * fixme
+ * This is the header always present at the top of the page.
  *
+ * There are the home button (the text "Emanuele Santanché, Web Developer") and the menu button.
  */
 class HeaderScreen extends Component {
 
@@ -104,16 +98,12 @@ class HeaderScreen extends Component {
      */
     handleOnClickPickMyBrainDialog() {
 
-        // FIXME
-
         this.setState({ pick_my_brain_dialog_is_open: false });
     };
 
     render() {
 
         const { width } = this.props;
-
-        // FIXME why we are not using FrontGridPane.js here?
 
         return (
 

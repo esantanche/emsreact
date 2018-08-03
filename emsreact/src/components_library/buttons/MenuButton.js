@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 // Material UI icons
 import MenuIcon from "@material-ui/icons/Menu";
 
-// Theme, style, width and other Material UI related things
+// Material UI functions that make classes available
 import { withStyles } from "@material-ui/core/styles/index";
 
 const styles = {
@@ -16,15 +16,11 @@ const styles = {
     }
 };
 
-// FIXME everything to fix here!!!
-
-// FIXME clean up to do!!!
-
 /**
- * fixme
+ * This is the menu button, the one made of three horizontal lines
  *
  * Props
- * @param {function} onclick fixme
+ * @param {function} onclick Function to call when the user clicks on the menu button
  */
 class MenuButton extends Component {
 

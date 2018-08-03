@@ -5,15 +5,16 @@
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
-
 # Getting single node, default language
-GET http://backend.emanuelesantanche.com/node/26?_format=json
+# Not using this api to fetch a single article.
+# We are using the articles view even for single articles
+GET http://backend.emanuelesantanche.com/node/58?_format=json
 Accepts: application/json
 
 ###
 
 # Getting single node, French translation
-GET http://backend.emanuelesantanche.com/fr/node/26?_format=json
+GET http://backend.emanuelesantanche.com/fr/node/58?_format=json
 Accepts: application/json
 
 ###

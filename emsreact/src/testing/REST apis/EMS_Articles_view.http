@@ -15,7 +15,7 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&lan
 
 ###
 
-# &field_ems_topic_target_id="How I work"&sticky=1 (with sticky=1 I get only the sticky ones
+# &field_ems_topic_target_id="How I work"&sticky=1 (with sticky=1 I get only the sticky ones)
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&field_ems_topic_target_id="How I work"
 
 ###

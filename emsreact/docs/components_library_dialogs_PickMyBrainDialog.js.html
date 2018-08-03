@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components_library/dialogs/PickMyBrainDialog.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components_library/dialogs/PickMyBrainDialog.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+import PropTypes from 'prop-types'
+
+// Material UI components
+import AppBar from "@material-ui/core/AppBar/AppBar";
+import Toolbar from "@material-ui/core/Toolbar/Toolbar";
+import IconButton from "@material-ui/core/IconButton/IconButton";
+import Dialog from '@material-ui/core/Dialog';
+import CardContent from "@material-ui/core/CardContent";
+import CardHeader from "@material-ui/core/es/CardHeader/CardHeader";
+
+// Material UI icons
+import CloseIcon from '@material-ui/icons/Close';
+
+// On small devices, we want the dialog to go full screen
+// This function does the trick
+import withMobileDialog from '@material-ui/core/withMobileDialog';
+
+// From component library
+import PickMyBrainScreen from "../../pick_my_brain/PickMyBrainScreen";
+import ColouredCard from "../cards/ColouredCard";
+
+// Material UI function that make classes available
+import {withStyles} from "@material-ui/core/styles";
+
+const styles = {
+    appBar: {
+        position: 'relative',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
+    }
+};
+
+/**
+ * When clicking on "Pick My Brain!" in the menu, we use the same form you find in the footer
+ * to allow the user to write a message.
+ *
+ * Props
+ * @param {boolean} open True is the dialog should be visible
+ * @param {function} onclick Function to call when the user click on OK
+ * @param {boolean} fullScreen True if the dialog has to go full screen. This prop
+ * is provided by the function withMobileDialog. It will make the dialog full screen
+ * on small devices.
+ * @param {object} classes Classes injected by withStyles function
+ */
+class PickMyBrainDialog extends Component {
+
+    static propTypes = {
+        open: PropTypes.bool.isRequired,
+        onclick: PropTypes.func,
+        fullScreen: PropTypes.bool.isRequired,
+        classes: PropTypes.object.isRequired
+    };
+
+    render() {
+
+        const { open, onclick, fullScreen, classes } = this.props;
+
+        return (
+
+            &lt;Dialog
+                open={open}
+                onClose={this.handleClose}
+                fullScreen={fullScreen}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+                >
+                &lt;AppBar className={classes.appBar}>
+                    &lt;Toolbar>
+                        &lt;IconButton color="inherit" onClick={onclick} aria-label="Close">
+                            &lt;CloseIcon />
+                        &lt;/IconButton>
+                    &lt;/Toolbar>
+                &lt;/AppBar>
+
+                &lt;ColouredCard light={true}>
+
+                    &lt;CardHeader title="Pick My Brain!"
+                                subheader="Or just ask me a question" />
+
+                    &lt;CardContent>
+
+                        &lt;PickMyBrainScreen onclick={onclick} />
+
+                    &lt;/CardContent>
+
+                &lt;/ColouredCard>
+
+            &lt;/Dialog>
+
+        )
+
+    }
+
+}
+
+export default withMobileDialog()(withStyles(styles)(PickMyBrainDialog));
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AlignedGridPane.html">AlignedGridPane</a></li><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ArticleService.html">ArticleService</a></li><li><a href="BodyPane.html">BodyPane</a></li><li><a href="BottomGridPane.html">BottomGridPane</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="FooterScreen.html">FooterScreen</a></li><li><a href="FrontGridPane.html">FrontGridPane</a></li><li><a href="HeaderMenu.html">HeaderMenu</a></li><li><a href="HeaderScreen.html">HeaderScreen</a></li><li><a href="HomeButtonPane.html">HomeButtonPane</a></li><li><a href="HomeButtonText.html">HomeButtonText</a></li><li><a href="HomeScreen.html">HomeScreen</a></li><li><a href="InnerGridPane.html">InnerGridPane</a></li><li><a href="ListOfArticlesScreen.html">ListOfArticlesScreen</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="MasterAvatar.html">MasterAvatar</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MessageDialog.html">MessageDialog</a></li><li><a href="PickMyBrainDialog.html">PickMyBrainDialog</a></li><li><a href="PickMyBrainMessageService.html">PickMyBrainMessageService</a></li><li><a href="PickMyBrainScreen.html">PickMyBrainScreen</a></li><li><a href="SeparatorPane.html">SeparatorPane</a></li><li><a href="SocialCard.html">SocialCard</a></li><li><a href="SocialScreen.html">SocialScreen</a></li><li><a href="TopicScreen.html">TopicScreen</a></li><li><a href="TopicService.html">TopicService</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#title_to_slug">title_to_slug</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Aug 03 2018 15:00:41 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

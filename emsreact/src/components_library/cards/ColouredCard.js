@@ -27,7 +27,7 @@ class ColouredCard extends Component {
 
     static propTypes = {
 
-        light: PropTypes.boolean
+        light: PropTypes.bool
     };
 
     render() {

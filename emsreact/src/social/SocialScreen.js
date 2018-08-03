@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 
+// Material UI components
 import Grid from "@material-ui/core/es/Grid/Grid";
 
+// Social networks logos
 import GitHub_logo from '../images/GitHub_Logo.png';
 import LinkedIn_logo from '../images/LinkedIn_logo.png';
 import Medium_logo from '../images/Medium_logo.png';
 import StackOverflow_logo from '../images/StackOverflow_logo.png';
 
+// From components library
 import SocialCard from "../components_library/cards/SocialCard";
 
-
+/**
+ * Showing four social network logos and linking them to the respective accounts.
+ *
+ * On small devices there will be two row with two logos each.
+ *
+ * On bigger devices there will be one row with four logos.
+ */
 class SocialScreen extends Component {
 
     render() {

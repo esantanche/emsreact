@@ -1,16 +1,31 @@
 import { Service } from 'react-services-injector';
-// import { convert_date_from_US_to_ISO } from '../../helpers/date_conversion';
+
 import { APP_CONFIGURATION } from '../../appConfiguration';
 
-// FIXME do i need this?
-// import { create_standard_error_object_from_rest_api_response } from "../../helpers/error_processor";
-
+/**
+ * This service gets the message the user entered in the Pick My Brain form
+ * and sends it to the backend.
+ *
+ * Drupal will send an email to notify that there is a new message.
+ */
 class PickMyBrainMessageService extends Service {
 
+    /**
+     * Sending the message.
+     *
+     * @param {object} message_details Contains name, email and message
+     * @param {function} callback_to_return_error Function to call to return the
+     * error or null is everything went fine
+     */
     create_pick_my_brain_message(message_details, callback_to_return_error) {
 
-
         const now = new Date();
+
+        // The Drupal backend needs the content type of the node to create
+        // It's ems_pick_my_brain_message.
+        // This Drupal content type has three fields: name, email and message.
+        // We have to provide a title that will show up only in Drupal
+        // admin interface
 
         const message_node_details = {
             type: [{"target_id": "ems_pick_my_brain_message"}],
@@ -19,8 +34,6 @@ class PickMyBrainMessageService extends Service {
             field_email: [{"value": message_details.email}],
             field_message: [{"value": message_details.message}]
         };
-
-        // alert("insiede create_pick_my_brain_message");
 
         fetch(APP_CONFIGURATION.backendUrl + '/node?_format=json', {
                 method: 'POST',
@@ -38,13 +51,15 @@ class PickMyBrainMessageService extends Service {
             })
             .then(function (response_json) {
 
-                // no error here
+                // No error here
+
                 callback_to_return_error(null);
             })
             .catch(function (error) {
-                // FIXME here we need exception handling
 
-                // FIXME do I need the heloer function that formats the error object?
+                console.error("PickMyBrainMessageService::create_pick_my_brain_message");
+                console.error(error);
+
                 callback_to_return_error(error);
 
             });
@@ -53,7 +68,7 @@ class PickMyBrainMessageService extends Service {
 
 }
 
-//"publicName" property is important if you use any kind of minimization on your JS
+// "publicName" property is important if you use any kind of minimization on your JS
 PickMyBrainMessageService.publicName = 'PickMyBrainMessageService';
 
 export default PickMyBrainMessageService;

@@ -43,13 +43,20 @@ class ArticleScreen extends Component {
      */
     componentDidMount() {
 
+        if (!this.props.match.params.articlenid) {
+
+            console.error("ArticleScreen::componentDidMount");
+            console.error("this.props.match.params.articlenid is not defined");
+            console.error("This is a bug");
+
+            return;
+        }
+
         const { ArticleService } = this.services;
 
         this.ArticleService = ArticleService;
 
         var self = this;
-
-        // TODO add exception handling in case articlenid is not defined
 
         this.ArticleService.fetch_articles({ nid: this.props.match.params.articlenid },
             function (article) {
@@ -101,7 +108,4 @@ class ArticleScreen extends Component {
 
 }
 
-export default injector.connect(ArticleScreen, {
-    toRender: ['ArticleService']
-});
-
+export default injector.connect(ArticleScreen);

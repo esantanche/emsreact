@@ -16,6 +16,8 @@ const styles = {
 
 /**
  * The AppBar in the header. Its children are the home button and the menu button.
+ *
+ * @param {object} classes Classes injected by withStyles function
  */
 class MasterAppBar extends Component {
 

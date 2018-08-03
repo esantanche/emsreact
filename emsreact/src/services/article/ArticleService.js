@@ -1,9 +1,29 @@
 import { Service } from 'react-services-injector';
 
+// App configuration
+import { APP_CONFIGURATION } from '../../appConfiguration';
+
+/**
+ * This service fetches articles from the backend.
+ */
 class ArticleService extends Service {
 
-    // FIXME wiil need a parameter to fetch sticky articles only
-
+    /**
+     * Function fetching articles.
+     *
+     * There are three implemented filters.
+     *
+     * The first one fetches a single article. It needs the node id the backend assigned to the article.
+     *
+     * The second fetches all articles for a given topic. Topics can be "How I work", "The tools I use", etc.
+     *
+     * The third fetches sticky articles only or all af them.
+     *
+     * It's possible to combine the topic and sticky filters. Of course the nid filter (single article) has to be used alone.
+     *
+     * @param {object} filters Filters to use when fetching articles
+     * @param {function} callback_to_return_articles Function to call to return the fetched articles
+     */
     fetch_articles(filters, callback_to_return_articles) {
 
         let filter_query_string = "";
@@ -21,7 +41,7 @@ class ArticleService extends Service {
 
         }
 
-        fetch("http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en" + filter_query_string, {
+        fetch(APP_CONFIGURATION.backendUrl + "/rest/EMS/view/articles?_format=json&langcode=en" + filter_query_string, {
                 method: 'GET',
 
             })
@@ -29,60 +49,21 @@ class ArticleService extends Service {
                 if (!response.ok) { throw response }
                 return response.json()
             })
-            .then(function(fixme_list_of_articles) {
-                //console.log('UserAuthService.js fetch_user_profile');
-                // console.log("fetch_articles_for_test, fixme_list_of_articles");
-                // console.log(fixme_list_of_articles);
-                // if (user_profile.code) callback_to_return_user_profile(user_profile);
-                //
-                callback_to_return_articles(fixme_list_of_articles);
+            .then(function(list_of_articles) {
+
+                callback_to_return_articles(list_of_articles);
             })
             .catch(function(error) {
-                // FIXME here we need exception handling
-                console.error("Error fetching articles");
+
+                console.error("ArticleService::fetch_articles");
                 console.error(error);
-                // console.error("UserAuthService fetch_user_profile catch error");
-                // console.error(error.status + error.statusText); callback_to_return_user_profile(null, error);
-                // console.error('MailListService subscribe_to_mail_list error: ', error);
-                // FIXME should call the callback with some return value like null
-                return null;
+
+                callback_to_return_articles(null);
             });
     };
-
-
-    fetch_article(article_node_id, callback_to_return_article) {
-
-        fetch("http://backend.emanuelesantanche.com/node/" + article_node_id + "/?_format=json", {
-            method: 'GET',
-        })
-            .then((response) => {
-                if (!response.ok) { throw response }
-                return response.json()
-            })
-            .then(function(fixme_list_of_articles_maybe_or_only_one) {
-                //console.log('UserAuthService.js fetch_user_profile');
-                // console.log("fetch_articles_for_test, fixme_list_of_articles");
-                // console.log(fixme_list_of_articles);
-                // if (user_profile.code) callback_to_return_user_profile(user_profile);
-                //
-                callback_to_return_article(fixme_list_of_articles_maybe_or_only_one);
-            })
-            .catch(function(error) {
-                // FIXME here we need exception handling
-                console.error("Error fetching article (one)");
-                console.error(error);
-                // console.error("UserAuthService fetch_user_profile catch error");
-                // console.error(error.status + error.statusText); callback_to_return_user_profile(null, error);
-                // console.error('MailListService subscribe_to_mail_list error: ', error);
-                // FIXME should call the callback with some return value like null
-                return null;
-            });
-
-    }
-
 }
 
-//"publicName" property is important if you use any kind of minimization on your JS
+// "publicName" property is important if you use any kind of minimization on your JS
 ArticleService.publicName = 'ArticleService';
 
 export default ArticleService;
