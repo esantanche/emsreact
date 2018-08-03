@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // Material UI components
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import CardHeader from "@material-ui/core/es/CardHeader/CardHeader";
+import CardHeader from "@material-ui/core/CardHeader/CardHeader";
 import ButtonBase from "@material-ui/core/ButtonBase/ButtonBase";
 
 // From components library

@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 // Material UI components
-import TextField from "@material-ui/core/es/TextField/TextField";
-import Button from "@material-ui/core/es/Button/Button";
-import InputAdornment from "@material-ui/core/es/InputAdornment/InputAdornment";
-import Grid from "@material-ui/core/es/Grid/Grid";
+import TextField from "@material-ui/core/TextField/TextField";
+import Button from "@material-ui/core/Button/Button";
+import InputAdornment from "@material-ui/core/InputAdornment/InputAdornment";
+import Grid from "@material-ui/core/Grid/Grid";
 
 // Material UI icons
 import Email from '@material-ui/icons/Email';
-import Person from "@material-ui/icons/es/Person";
-import Message from "@material-ui/icons/es/Message";
+import Person from "@material-ui/icons/Person";
+import Message from "@material-ui/icons/Message";
 
 // To validate email addresses
 import * as EmailValidator from 'email-validator';

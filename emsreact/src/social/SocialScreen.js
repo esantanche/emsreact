@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Material UI components
-import Grid from "@material-ui/core/es/Grid/Grid";
+import Grid from "@material-ui/core/Grid/Grid";
 
 // Social networks logos
 import GitHub_logo from '../images/GitHub_Logo.png';

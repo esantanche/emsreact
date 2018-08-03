@@ -19,7 +19,7 @@ import FrontGridPane from "../components_library/panes/FrontGridPane";
 import {withRouter} from "react-router-dom";
 
 // Material UI function that make width available
-import withWidth from "@material-ui/core/es/withWidth/withWidth";
+import withWidth from "@material-ui/core/withWidth/withWidth";
 
 /**
  * This is the header always present at the top of the page.

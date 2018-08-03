@@ -7,7 +7,7 @@ import Toolbar from "@material-ui/core/Toolbar/Toolbar";
 import IconButton from "@material-ui/core/IconButton/IconButton";
 import Dialog from '@material-ui/core/Dialog';
 import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/es/CardHeader/CardHeader";
+import CardHeader from "@material-ui/core/CardHeader/CardHeader";
 
 // Material UI icons
 import CloseIcon from '@material-ui/icons/Close';

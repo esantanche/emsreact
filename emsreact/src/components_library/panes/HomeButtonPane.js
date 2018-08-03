@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 // Material UI functions that make classes and width available
 import { withStyles } from "@material-ui/core/styles/index";
-import withWidth from "@material-ui/core/es/withWidth/withWidth";
+import withWidth from "@material-ui/core/withWidth/withWidth";
 
 const styles = {
     HomeButtonPane: {

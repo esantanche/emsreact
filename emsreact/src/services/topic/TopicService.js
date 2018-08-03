@@ -6,7 +6,7 @@ import lightBlue from "@material-ui/core/colors/lightBlue";
 import orange from '@material-ui/core/colors/orange';
 import lightGreen from '@material-ui/core/colors/lightGreen';
 import yellow from '@material-ui/core/colors/yellow';
-import indigo from "@material-ui/core/es/colors/indigo";
+import indigo from "@material-ui/core/colors/indigo";
 
 /**
  * When showing lists of articles about topics, many details are needed.
