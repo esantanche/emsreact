@@ -19,6 +19,8 @@ import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 // The injector allows this component to use services, see README.md in folder 'services'
 import { injector } from 'react-services-injector';
 
+// import TopicService from '../services/topic/TopicService';
+
 /**
  * Home Screen. Header and Footer are not here.
  *
@@ -143,3 +145,7 @@ class HomeScreen extends Component {
 }
 
 export default injector.connect(HomeScreen);
+
+// export default injector.connect(HomeScreen, {
+//     toRender: ['TopicService']
+// });

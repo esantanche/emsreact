@@ -5899,9 +5899,9 @@ react-scripts@1.1.4:
   optionalDependencies:
     fsevents "^1.1.3"
 
-react-services-injector@^1.0.0-rc.4:
-  version "1.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/react-services-injector/-/react-services-injector-1.0.0-rc.4.tgz#362986150235a9f761f722bba27640a44da2e111"
+react-services-injector@1.0.0-rc.5:
+  version "1.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/react-services-injector/-/react-services-injector-1.0.0-rc.5.tgz#5521e92129af852cf9e32cd8f596ab6fab236914"
   dependencies:
     es6-promise "^4.1.1"
 
