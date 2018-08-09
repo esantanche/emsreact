@@ -8,8 +8,7 @@ import Card from '@material-ui/core/Card';
 import InnerGridPane from '../components_library/panes/InnerGridPane';
 import ArticleCard from '../components_library/cards/ArticleCard';
 
-// The injector allows this component to use services, see README.md in folder 'services'
-import { injector } from 'react-services-injector'; // To use service, see services.js
+import AppContext from "../AppContext";
 
 /**
  * This Screen shows a list of articles. It's supposed to use the service ArticleService
@@ -40,7 +39,7 @@ class ListOfArticlesScreen extends Component {
 
         // Fetching articles when the component mounts
 
-        const { ArticleService } = this.services;
+        const { ArticleService } = this.props.services;
 
         this.ArticleService = ArticleService;
 
@@ -138,4 +137,11 @@ class ListOfArticlesScreen extends Component {
 
 }
 
-export default injector.connect(ListOfArticlesScreen);
+
+export default props => (
+    <AppContext.Consumer>
+        {services => <ListOfArticlesScreen {...props} services={services} />}
+    </AppContext.Consumer>
+);
+
+// export default injector.connect(ListOfArticlesScreen);

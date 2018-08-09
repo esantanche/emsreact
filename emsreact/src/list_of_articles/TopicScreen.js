@@ -17,7 +17,10 @@ import SeparatorPane from "../components_library/panes/SeparatorPane";
 import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 
 // The injector allows this component to use services, see README.md in folder 'services'
-import { injector } from 'react-services-injector';
+//import { injector } from 'react-services-injector';
+
+import AppContext from '../AppContext';
+
 
 /**
  * This screen shows a list of articles for a given topic.
@@ -50,7 +53,7 @@ class TopicScreen extends Component {
             return;
         }
 
-        const { TopicService } = this.services;
+        const { TopicService } = this.props.services;
 
         this.TopicService = TopicService;
 
@@ -153,5 +156,12 @@ class TopicScreen extends Component {
 
 }
 
-export default injector.connect(TopicScreen);
+
+export default props => (
+    <AppContext.Consumer>
+        {services => <TopicScreen {...props} services={services} />}
+    </AppContext.Consumer>
+);
+
+// export default injector.connect(TopicScreen);
 

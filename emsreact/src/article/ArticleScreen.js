@@ -14,7 +14,8 @@ import IconButton from '@material-ui/core/IconButton';
 import FrontGridPane from '../components_library/panes/FrontGridPane';
 
 // The injector allows this component to use services, see README.md in folder 'services'
-import { injector } from 'react-services-injector';
+//import { injector } from 'react-services-injector';
+import AppContext from "../AppContext";
 
 /**
  * Screen showing a single article. The text can contain html tags. In this case we render them.
@@ -52,7 +53,7 @@ class ArticleScreen extends Component {
             return;
         }
 
-        const { ArticleService } = this.services;
+        const { ArticleService } = this.props.services;
 
         this.ArticleService = ArticleService;
 
@@ -108,4 +109,12 @@ class ArticleScreen extends Component {
 
 }
 
-export default injector.connect(ArticleScreen);
+
+
+export default props => (
+    <AppContext.Consumer>
+        {services => <ArticleScreen {...props} services={services} />}
+    </AppContext.Consumer>
+);
+
+// export default injector.connect(ArticleScreen);

@@ -1,5 +1,7 @@
 # Services framework
 
+FIXME to be updated
+
 Here we use React Service Injector.
 
 More about it here:
@@ -11,8 +13,7 @@ services defined in this folder.
 Services may be used as well to provide functions and information
 to components that are not retrieved from the backend.
 
-All services have to be declared in the file services.js for them
-to be available to the entire application.
+FIXME
 
 In App.js services are registered.
 

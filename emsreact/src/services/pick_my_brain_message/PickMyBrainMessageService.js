@@ -1,4 +1,5 @@
-import { Service } from 'react-services-injector';
+// FIXME
+//import { Service } from 'react-services-injector';
 
 import { APP_CONFIGURATION } from '../../appConfiguration';
 
@@ -8,7 +9,7 @@ import { APP_CONFIGURATION } from '../../appConfiguration';
  *
  * Drupal will send an email to notify that there is a new message.
  */
-class PickMyBrainMessageService extends Service {
+class PickMyBrainMessageService {
 
     /**
      * Sending the message.
@@ -68,7 +69,8 @@ class PickMyBrainMessageService extends Service {
 
 }
 
+// FIXME!!!
 // "publicName" property is important if you use any kind of minimization on your JS
-PickMyBrainMessageService.publicName = 'PickMyBrainMessageService';
+// PickMyBrainMessageService.publicName = 'PickMyBrainMessageService';
 
 export default PickMyBrainMessageService;

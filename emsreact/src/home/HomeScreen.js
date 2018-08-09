@@ -17,7 +17,9 @@ import MasterAvatar from "../components_library/avatars/MasterAvatar";
 import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 
 // The injector allows this component to use services, see README.md in folder 'services'
-import { injector } from 'react-services-injector';
+//import { injector } from 'react-services-injector';
+
+import AppContext from '../AppContext';
 
 // import TopicService from '../services/topic/TopicService';
 
@@ -51,7 +53,10 @@ class HomeScreen extends Component {
      */
     componentDidMount() {
 
-        const { TopicService } = this.services;
+        // console.log('HomeScreen::componentDidMount');
+        // console.log(this.props.services);
+
+        const { TopicService } = this.props.services;
 
         this.TopicService = TopicService;
 
@@ -144,7 +149,13 @@ class HomeScreen extends Component {
     }
 }
 
-export default injector.connect(HomeScreen);
+export default props => (
+    <AppContext.Consumer>
+        {services => <HomeScreen {...props} services={services} />}
+    </AppContext.Consumer>
+);
+
+//export default injector.connect(HomeScreen);
 
 // export default injector.connect(HomeScreen, {
 //     toRender: ['TopicService']

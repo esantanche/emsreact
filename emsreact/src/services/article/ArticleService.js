@@ -1,4 +1,5 @@
-import { Service } from 'react-services-injector';
+// FIXME
+// import { Service } from 'react-services-injector';
 
 // App configuration
 import { APP_CONFIGURATION } from '../../appConfiguration';
@@ -6,7 +7,7 @@ import { APP_CONFIGURATION } from '../../appConfiguration';
 /**
  * This service fetches articles from the backend.
  */
-class ArticleService extends Service {
+class ArticleService {
 
     /**
      * Function fetching articles.
@@ -63,7 +64,8 @@ class ArticleService extends Service {
     };
 }
 
+// FIXME!!!
 // "publicName" property is important if you use any kind of minimization on your JS
-ArticleService.publicName = 'ArticleService';
+// ArticleService.publicName = 'ArticleService';
 
 export default ArticleService;

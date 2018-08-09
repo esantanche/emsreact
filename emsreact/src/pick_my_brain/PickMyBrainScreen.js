@@ -15,11 +15,11 @@ import Message from "@material-ui/icons/Message";
 // To validate email addresses
 import * as EmailValidator from 'email-validator';
 
-// The injector allows this component to use services, see README.md in folder 'services'
-import { injector } from 'react-services-injector';
-
 // From components library
 import MessageDialog from "../components_library/dialogs/MessageDialog";
+
+// FIXME document this
+import AppContext from "../AppContext";
 
 /**
  * This is the Pick My Brain form used to send messages. Messages will be sent to the backend
@@ -51,7 +51,7 @@ class PickMyBrainScreen extends Component {
 
     componentDidMount() {
 
-        const { PickMyBrainMessageService } = this.services;
+        const { PickMyBrainMessageService } = this.props.services;
 
         this.PickMyBrainMessageService = PickMyBrainMessageService;
 
@@ -353,4 +353,8 @@ class PickMyBrainScreen extends Component {
 
 }
 
-export default injector.connect(PickMyBrainScreen);
+export default props => (
+    <AppContext.Consumer>
+        {services => <PickMyBrainScreen {...props} services={services} />}
+    </AppContext.Consumer>
+);

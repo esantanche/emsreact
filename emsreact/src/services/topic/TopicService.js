@@ -1,4 +1,5 @@
-import { Service } from 'react-services-injector';
+// FIXME
+//import { Service } from 'react-services-injector';
 
 // Material UI colors
 import red from "@material-ui/core/colors/red";
@@ -21,10 +22,9 @@ import indigo from "@material-ui/core/colors/indigo";
  * * color of avatar
  * * text to be used on the button that links to more articles for the same topic
  */
-class TopicService extends Service {
+class TopicService {
 
     constructor() {
-        super();
 
         this.topics = {};
 
@@ -109,7 +109,8 @@ class TopicService extends Service {
 
 }
 
+// FIXME
 // "publicName" property is important if you use any kind of minimization on your JS
-TopicService.publicName = 'TopicService';
+//TopicService.publicName = 'TopicService';
 
 export default TopicService;

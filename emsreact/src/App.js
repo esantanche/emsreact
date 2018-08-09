@@ -20,11 +20,25 @@ import FooterScreen from './footer/FooterScreen';
 // From components library
 import BodyPane from './components_library/panes/BodyPane';
 
-// We need to register services here for the entire application to use them
-// Services are declared in services.js
-import {injector} from 'react-services-injector';
-import services from './services';
-injector.register(services);
+// FIXME!
+import AppContext from './AppContext';
+
+// FIXME clean again!!
+
+import TopicService from "./services/topic/TopicService";
+import ArticleService from "./services/article/ArticleService";
+import PickMyBrainMessageService from "./services/pick_my_brain_message/PickMyBrainMessageService";
+
+const AppTopicService = new TopicService();
+const AppArticleService = new ArticleService();
+const AppPickMyBrainMessageService = new PickMyBrainMessageService();
+
+// FIXME!
+const Services = { TopicService: AppTopicService,
+                   ArticleService: AppArticleService,
+                   PickMyBrainMessageService: AppPickMyBrainMessageService};
+
+// FIXME uninstall react service injector
 
 /**
  * This is the starting point for the application.
@@ -54,22 +68,24 @@ class App extends Component {
         // CssBaseline is like normalize.css. It normalizes differences between browsers
 
         return (
-            <BrowserRouter>
-                <MuiThemeProvider theme={theme}>
-                    <CssBaseline />
-                    <BodyPane>
+            <AppContext.Provider value={Services}>
+                <BrowserRouter>
+                    <MuiThemeProvider theme={theme}>
+                        <CssBaseline />
+                        <BodyPane>
 
-                        <HeaderScreen />
+                            <HeaderScreen />
 
-                        <Route exact path="/" component={HomeScreen} />
-                        <Route path="/article/:articlenid" component={ArticleScreen} />
-                        <Route path="/articles/:topic" component={TopicScreen} />
+                            <Route exact path="/" component={HomeScreen} />
+                            <Route path="/article/:articlenid" component={ArticleScreen} />
+                            <Route path="/articles/:topic" component={TopicScreen} />
 
-                        <FooterScreen />
+                            <FooterScreen />
 
-                    </BodyPane>
-                </MuiThemeProvider>
-            </BrowserRouter>
+                        </BodyPane>
+                    </MuiThemeProvider>
+                </BrowserRouter>
+            </AppContext.Provider>
         );
     }
 }
