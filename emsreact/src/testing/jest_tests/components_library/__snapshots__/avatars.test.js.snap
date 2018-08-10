@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MasterAvatar renders correctly 1`] = `
+<div
+  aria-label="How I work"
+  className="MuiAvatar-root-1 MuiAvatar-colorDefault-2"
+  style={
+    Object {
+      "backgroundColor": "#f44336",
+    }
+  }
+>
+  W
+</div>
+`;

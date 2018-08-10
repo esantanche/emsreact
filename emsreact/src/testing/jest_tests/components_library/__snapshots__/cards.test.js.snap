@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleCard renders correctly 1`] = `
+<div
+  className="MuiPaper-root-186 MuiPaper-elevation1-189 MuiPaper-rounded-187 MuiCard-root-185"
+>
+  <div
+    className="ArticleCard-card_header-181"
+  >
+    <h3
+      className="MuiTypography-root-213 MuiTypography-subheading-220"
+    >
+      Article card title
+    </h3>
+  </div>
+  <div
+    className="MuiCardContent-root-237"
+  >
+    <div
+      className="MuiGrid-container-238 ArticleCard-container-182"
+    >
+      <div
+        className="MuiCardMedia-root-334"
+        src={undefined}
+        style={
+          Object {
+            "backgroundImage": "url(\\"http://backend.emanuelesantanche.comhttp://backend.emanuelesantanche.com/sites/default/files/2018-07/css-in-js_0.png\\")",
+            "height": "150px",
+            "width": "150px",
+          }
+        }
+        title=""
+      />
+      <div
+        className="MuiTypography-root-213 MuiTypography-body2-221"
+        style={
+          Object {
+            "flex": "1",
+            "height": "150px",
+            "marginLeft": "10px",
+          }
+        }
+      >
+        <div
+          clamp="150px"
+          style={
+            Object {
+              "height": "150px",
+            }
+          }
+        >
+          Article card text content
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiCardActions-root-336"
+  >
+    <a
+      className="MuiButtonBase-root-344 MuiIconButton-root-338 ArticleCard-margin_for_more_button-184 MuiCardActions-action-337"
+      href="/article/22/article-card-title"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiIconButton-label-343"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root-347"
+          color={undefined}
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <g>
+            <path
+              d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </g>
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root-354"
+      />
+    </a>
+  </div>
+</div>
+`;

@@ -137,7 +137,6 @@ class ListOfArticlesScreen extends Component {
 
 }
 
-
 export default props => (
     <AppContext.Consumer>
         {services => <ListOfArticlesScreen {...props} services={services} />}
