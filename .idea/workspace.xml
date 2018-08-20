@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e276e9-a457-4c03-8331-cc12411e868c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-17T114457.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-17T115736.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-17T115842.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/src/appConfiguration.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/appConfiguration.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,16 +75,16 @@
     <session id="-1361174222">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="http" value="1" />
-          <entry key="js" value="29" />
+          <entry key="js" value="30" />
           <entry key="md" value="1" />
           <entry key="snap" value="22" />
         </counts>
@@ -99,20 +92,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTTP Request" value="1" />
-          <entry key="JavaScript" value="29" />
+          <entry key="JavaScript" value="30" />
           <entry key="Jest Snapshot" value="22" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2259" />
+          <entry key="js" value="2260" />
           <entry key="md" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2259" />
+          <entry key="JavaScript" value="2260" />
           <entry key="Markdown" value="28" />
         </counts>
       </usages-collector>
@@ -121,10 +114,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/TopicScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
+            <state relative-caret-position="794">
               <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
               <folding>
                 <element signature="e#69#111#0" expanded="true" />
@@ -134,11 +127,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/appConfiguration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="113" column="83" lean-forward="true" selection-start-line="111" selection-start-column="48" selection-end-line="113" selection-end-column="83" />
+            <state relative-caret-position="1590">
+              <caret line="113" column="83" selection-start-line="111" selection-start-column="48" selection-end-line="113" selection-end-column="83" />
               <folding>
                 <element signature="e#69#123#0" expanded="true" />
                 <element signature="e#411#481#0" expanded="true" />
@@ -150,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
+            <state relative-caret-position="210">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#69#111#0" expanded="true" />
@@ -213,7 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/emsreact/src/components_library/bars/README.md" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/cards/README.md" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/cards/ArticleCard.js" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/dialogs/README.md" />
@@ -264,6 +265,7 @@
         <option value="$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library/avatars.test.js" />
         <option value="$PROJECT_DIR$/emsreact/src/testing/jest_tests/list_of_articles.test.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/appConfiguration.js" />
       </list>
     </option>
   </component>
@@ -1189,11 +1191,12 @@
       <workItem from="1533822901958" duration="7526000" />
       <workItem from="1533848271438" duration="68000" />
       <workItem from="1533890462528" duration="21036000" />
+      <workItem from="1534766259581" duration="394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317697000" />
+    <option name="totallyTimeSpent" value="318091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1357,13 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/appConfiguration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/texts/HomeButtonText.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1462,11 +1458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
           <caret line="360" selection-start-line="360" selection-end-line="360" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#105#167#0" expanded="true" />
-            <element signature="e#370#415#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1474,10 +1465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#69#111#0" expanded="true" />
-            <element signature="e#256#323#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1499,9 +1486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1509,9 +1493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1533,9 +1514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1550,32 +1528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#69#111#0" expanded="true" />
-            <element signature="e#301#346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/testing/jest_tests/__snapshots__/list_of_articles.test.js.snap">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="113" column="83" lean-forward="true" selection-start-line="111" selection-start-column="48" selection-end-line="113" selection-end-column="83" />
-          <folding>
-            <element signature="e#69#123#0" expanded="true" />
-            <element signature="e#411#481#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1597,9 +1553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#15#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1614,9 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="34" column="33" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="33" />
-          <folding>
-            <element signature="e#85#132#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1624,10 +1574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#176#246#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1635,9 +1581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3060">
           <caret line="204" selection-start-line="204" selection-end-line="204" />
-          <folding>
-            <element signature="e#32#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1645,20 +1588,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="e#52#78#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/TopicScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
+        <state relative-caret-position="794">
           <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
           <folding>
             <element signature="e#69#111#0" expanded="true" />
             <element signature="e#365#435#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="113" column="83" selection-start-line="111" selection-start-column="48" selection-end-line="113" selection-end-column="83" />
+          <folding>
+            <element signature="e#69#123#0" expanded="true" />
+            <element signature="e#411#481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#69#111#0" expanded="true" />
+            <element signature="e#301#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/appConfiguration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
