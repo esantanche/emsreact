@@ -1,4 +1,5 @@
 // FIXME docs? anything to do?
+// Testing everything in folder list_of_articles
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -147,7 +148,7 @@ describe('Testing ListOfArticlesScreen', function() {
 const topic_screen_to_be_tested = ( <AppContext.Provider value={Services}>
                                         <TopicScreen topic="How I work"
                                                      sticky={true}
-                                                     match={{ params: { topic: "how-i-work" }, isExact: true, path: "", url: "" }}
+                                                     match={{ params: { topic: "how-i-work" }}}
                                         />
                                     </AppContext.Provider> );
 

@@ -21,6 +21,6 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&fie
 ###
 
 # &nid=4 single article and language
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=6&langcode=en
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=58&langcode=en
 
 ###

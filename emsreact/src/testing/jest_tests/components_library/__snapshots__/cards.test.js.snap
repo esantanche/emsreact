@@ -24,7 +24,7 @@ exports[`ArticleCard renders correctly 1`] = `
         src={undefined}
         style={
           Object {
-            "backgroundImage": "url(\\"http://backend.emanuelesantanche.comhttp://backend.emanuelesantanche.com/sites/default/files/2018-07/css-in-js_0.png\\")",
+            "backgroundImage": "url(\\"https://backend.emanuelesantanche.comhttps://backend.emanuelesantanche.com/sites/default/files/2018-07/css-in-js_0.png\\")",
             "height": "150px",
             "width": "150px",
           }
@@ -95,5 +95,55 @@ exports[`ArticleCard renders correctly 1`] = `
       />
     </a>
   </div>
+</div>
+`;
+
+exports[`ColouredCard renders correctly 1`] = `
+<div
+  className="MuiPaper-root-186 MuiPaper-elevation1-189 MuiPaper-rounded-187 MuiCard-root-185 ColouredCard-coloured_card-363"
+/>
+`;
+
+exports[`ColouredCard renders correctly, light version 1`] = `
+<div
+  className="MuiPaper-root-186 MuiPaper-elevation1-189 MuiPaper-rounded-187 MuiCard-root-185 ColouredCard-light_coloured_card-364"
+/>
+`;
+
+exports[`SocialCard renders correctly 1`] = `
+<div
+  className="MuiPaper-root-186 MuiPaper-elevation1-189 MuiPaper-rounded-187 MuiCard-root-185"
+>
+  <a
+    className="MuiButtonBase-root-344 SocialCard-cardButton-368"
+    href="https://github.com/esantanche"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex="0"
+    target="_blank"
+  >
+    <div
+      className="MuiCardMedia-root-334 SocialCard-image_responsive_size-367"
+      src={undefined}
+      style={
+        Object {
+          "backgroundImage": "url(\\"GitHub_Logo.png\\")",
+        }
+      }
+      title=""
+    />
+    <span
+      className="MuiTouchRipple-root-354"
+    />
+  </a>
 </div>
 `;
