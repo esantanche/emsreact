@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components_library/dialogs/MessageDialog.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components_library/dialogs/MessageDialog.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+import PropTypes from 'prop-types'
+
+// Material UI components
+import Button from "@material-ui/core/Button/Button";
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+
+// Material UI icons
+import ErrorOutline from '@material-ui/icons/ErrorOutline';
+
+// On small devices, we want the dialog to go full screen
+// This function does the trick
+import withMobileDialog from '@material-ui/core/withMobileDialog';
+
+// Material UI function that make classes available
+import {withStyles} from "@material-ui/core/styles";
+
+const styles = {
+    dialog: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
+    },
+    dialog_title: {
+        textAlign: "center"
+    },
+    error_outline: {
+        fontSize: "200%"
+    }
+};
+
+/**
+ * Message dialog to notify successful completion of operations.
+ * Used as well for errors. *
+ *
+ * Props
+ * @param {boolean} open True is the dialog should be visible
+ * @param {boolean} it_is_an_error_message True if the dialog contains an error message
+ * @param {string} title Dialog title
+ * @param {string} message Message to display
+ * @param {function} onclick Function to call when the user click on OK
+ * @param {boolean} fullScreen True if the dialog has to go full screen. This prop
+ * is provided by the function withMobileDialog. It will make the dialog full screen
+ * on small devices.
+ */
+class MessageDialog extends Component {
+
+    static propTypes = {
+        open: PropTypes.bool.isRequired,
+        it_is_an_error_message: PropTypes.bool,
+        title: PropTypes.string,
+        message: PropTypes.string,
+        onclick: PropTypes.func,
+        fullScreen: PropTypes.bool.isRequired
+    };
+
+    render() {
+
+        const { open, it_is_an_error_message, title, message, onclick, fullScreen, classes } = this.props;
+
+        // Only if it's an error message we display the ErrorOutline icon
+
+        return (
+
+            &lt;Dialog
+                open={open}
+                onClose={this.handleClose}
+                fullScreen={fullScreen}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+                className={classes.dialog}>
+                { it_is_an_error_message ?
+                    (
+                        &lt;DialogTitle className={classes.dialog_title}>
+                            &lt;ErrorOutline className={classes.error_outline} />
+                        &lt;/DialogTitle>
+                    ) : ( &lt;React.Fragment>&lt;/React.Fragment> )
+                }
+                &lt;DialogTitle id="alert-dialog-title">{title}&lt;/DialogTitle>
+                &lt;DialogContent>
+                    &lt;DialogContentText id="alert-dialog-description">
+                        {message}
+                    &lt;/DialogContentText>
+                &lt;/DialogContent>
+                &lt;DialogActions>
+                    &lt;Button onClick={onclick} color="primary" autoFocus>
+                        OK
+                    &lt;/Button>
+                &lt;/DialogActions>
+            &lt;/Dialog>
+
+        )
+
+    }
+
+}
+
+export default withMobileDialog()(withStyles(styles)(MessageDialog));
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AlignedGridPane.html">AlignedGridPane</a></li><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ArticleService.html">ArticleService</a></li><li><a href="BodyPane.html">BodyPane</a></li><li><a href="BottomGridPane.html">BottomGridPane</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="FooterScreen.html">FooterScreen</a></li><li><a href="FrontGridPane.html">FrontGridPane</a></li><li><a href="HeaderMenu.html">HeaderMenu</a></li><li><a href="HeaderScreen.html">HeaderScreen</a></li><li><a href="HomeButtonPane.html">HomeButtonPane</a></li><li><a href="HomeButtonText.html">HomeButtonText</a></li><li><a href="HomeScreen.html">HomeScreen</a></li><li><a href="InnerGridPane.html">InnerGridPane</a></li><li><a href="ListOfArticlesScreen.html">ListOfArticlesScreen</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="MasterAvatar.html">MasterAvatar</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MessageDialog.html">MessageDialog</a></li><li><a href="PickMyBrainDialog.html">PickMyBrainDialog</a></li><li><a href="PickMyBrainMessageService.html">PickMyBrainMessageService</a></li><li><a href="PickMyBrainScreen.html">PickMyBrainScreen</a></li><li><a href="SeparatorPane.html">SeparatorPane</a></li><li><a href="SocialCard.html">SocialCard</a></li><li><a href="SocialScreen.html">SocialScreen</a></li><li><a href="TopicScreen.html">TopicScreen</a></li><li><a href="TopicService.html">TopicService</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#title_to_slug">title_to_slug</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Aug 21 2018 07:30:21 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

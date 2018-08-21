@@ -6,7 +6,7 @@
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
 # Create a new EMS Pick My Brain Message node
-POST http://backend.emanuelesantanche.com/node?_format=json
+POST https://backend.emanuelesantanche.com/node?_format=json
 Content-Type: application/json
 Accepts: application/json
 

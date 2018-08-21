@@ -1,0 +1,523 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing FooterScreen FooterScreen renders correctly 1`] = `
+<div
+  className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+  <div
+    className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+  />
+  <div
+    className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+  >
+    <div
+      className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99 ColouredCard-light_coloured_card-98"
+    >
+      <div
+        className="MuiCardHeader-root-127"
+      >
+        <div
+          className="MuiCardHeader-content-130"
+        >
+          <span
+            className="MuiTypography-root-133 MuiTypography-headline-138 MuiCardHeader-title-131"
+          >
+            Pick My Brain!
+          </span>
+          <span
+            className="MuiTypography-root-133 MuiTypography-body1-142 MuiTypography-colorTextSecondary-155 MuiCardHeader-subheader-132"
+          >
+            Or just ask me a question
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root-157"
+      >
+        <div
+          className="MuiGrid-container-1 MuiGrid-spacing-xs-32-25"
+        >
+          <div
+            className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-sm-6-48"
+          >
+            <div
+              aria-describedby={undefined}
+              className="MuiFormControl-root-158 MuiFormControl-marginDense-160 MuiFormControl-fullWidth-161"
+            >
+              <label
+                className="MuiFormLabel-root-167 MuiInputLabel-root-162 MuiInputLabel-formControl-163 MuiInputLabel-animated-166 MuiInputLabel-shrink-165 MuiInputLabel-marginDense-164"
+                data-shrink={true}
+                htmlFor="email"
+              >
+                Email
+                <span
+                  className="MuiFormLabel-asterisk-171"
+                >
+                   *
+                </span>
+              </label>
+              <div
+                className="MuiInput-root-172 MuiInput-fullWidth-179 MuiInput-formControl-173 MuiInput-underline-176"
+              >
+                <div
+                  className="MuiInputAdornment-root-185 MuiInputAdornment-positionStart-186"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-188"
+                    color={undefined}
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <input
+                  aria-invalid={false}
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiInput-input-180 MuiInput-inputMarginDense-181"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id="email"
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={true}
+                  rows={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-sm-6-48"
+          >
+            <div
+              aria-describedby={undefined}
+              className="MuiFormControl-root-158 MuiFormControl-marginDense-160 MuiFormControl-fullWidth-161"
+            >
+              <label
+                className="MuiFormLabel-root-167 MuiInputLabel-root-162 MuiInputLabel-formControl-163 MuiInputLabel-animated-166 MuiInputLabel-shrink-165 MuiInputLabel-marginDense-164"
+                data-shrink={true}
+                htmlFor="name"
+              >
+                Name
+                <span
+                  className="MuiFormLabel-asterisk-171"
+                >
+                   *
+                </span>
+              </label>
+              <div
+                className="MuiInput-root-172 MuiInput-fullWidth-179 MuiInput-formControl-173 MuiInput-underline-176"
+              >
+                <div
+                  className="MuiInputAdornment-root-185 MuiInputAdornment-positionStart-186"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-188"
+                    color={undefined}
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <input
+                  aria-invalid={false}
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiInput-input-180 MuiInput-inputMarginDense-181"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id="name"
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={true}
+                  rows={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-container-1 MuiGrid-spacing-xs-32-25"
+        >
+          <div
+            className="MuiGrid-item-2 MuiGrid-grid-xs-12-40"
+          >
+            <div
+              aria-describedby={undefined}
+              className="MuiFormControl-root-158 MuiFormControl-marginDense-160 MuiFormControl-fullWidth-161"
+            >
+              <label
+                className="MuiFormLabel-root-167 MuiInputLabel-root-162 MuiInputLabel-formControl-163 MuiInputLabel-animated-166 MuiInputLabel-shrink-165 MuiInputLabel-marginDense-164"
+                data-shrink={true}
+                htmlFor="message"
+              >
+                Message
+                <span
+                  className="MuiFormLabel-asterisk-171"
+                >
+                   *
+                </span>
+              </label>
+              <div
+                className="MuiInput-root-172 MuiInput-fullWidth-179 MuiInput-formControl-173 MuiInput-multiline-178 MuiInput-underline-176"
+              >
+                <div
+                  className="MuiInputAdornment-root-185 MuiInputAdornment-positionStart-186"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-188"
+                    color={undefined}
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  className="Textarea-root-195"
+                  style={
+                    Object {
+                      "height": 19,
+                    }
+                  }
+                >
+                  <textarea
+                    aria-hidden="true"
+                    className="Textarea-shadow-197 Textarea-textarea-196"
+                    readOnly={true}
+                    rows="1"
+                    tabIndex={-1}
+                    value=""
+                  />
+                  <textarea
+                    aria-hidden="true"
+                    className="Textarea-shadow-197 Textarea-textarea-196"
+                    defaultValue={undefined}
+                    readOnly={true}
+                    rows={1}
+                    tabIndex={-1}
+                    value=""
+                  />
+                  <textarea
+                    aria-invalid={false}
+                    autoComplete={undefined}
+                    autoFocus={undefined}
+                    className="Textarea-textarea-196 MuiInput-input-180 MuiInput-inputMultiline-182 MuiInput-inputMarginDense-181"
+                    defaultValue={undefined}
+                    disabled={false}
+                    id="message"
+                    name={undefined}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={undefined}
+                    onKeyUp={undefined}
+                    placeholder={undefined}
+                    readOnly={undefined}
+                    required={true}
+                    rows={1}
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-container-1 MuiGrid-spacing-xs-32-25"
+        >
+          <div
+            className="MuiGrid-item-2 MuiGrid-grid-xs-12-40"
+          >
+            <button
+              className="MuiButtonBase-root-222 MuiButtonBase-disabled-223 MuiButton-root-198 MuiButton-text-200 MuiButton-flat-203 MuiButton-sizeSmall-219 MuiButton-disabled-216"
+              disabled={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              <span
+                className="MuiButton-label-199"
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="SeparatorPane-separatorPane-225"
+    >
+       
+    </div>
+    <div
+      className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+    >
+      <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-6-34 MuiGrid-grid-sm-3-45 MuiGrid-grid-md-3-59 MuiGrid-grid-lg-3-73"
+      >
+        <div
+          className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+          <a
+            className="MuiButtonBase-root-222 SocialCard-cardButton-227"
+            href="https://github.com/esantanche"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root-228 SocialCard-image_responsive_size-226"
+              src={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(\\"GitHub_Logo.png\\")",
+                }
+              }
+              title=""
+            />
+            <span
+              className="MuiTouchRipple-root-230"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-6-34 MuiGrid-grid-sm-3-45 MuiGrid-grid-md-3-59 MuiGrid-grid-lg-3-73"
+      >
+        <div
+          className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+          <a
+            className="MuiButtonBase-root-222 SocialCard-cardButton-227"
+            href="https://medium.com/@esantanche"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root-228 SocialCard-image_responsive_size-226"
+              src={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(\\"Medium_logo.png\\")",
+                }
+              }
+              title=""
+            />
+            <span
+              className="MuiTouchRipple-root-230"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-6-34 MuiGrid-grid-sm-3-45 MuiGrid-grid-md-3-59 MuiGrid-grid-lg-3-73"
+      >
+        <div
+          className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+          <a
+            className="MuiButtonBase-root-222 SocialCard-cardButton-227"
+            href="https://www.linkedin.com/in/emanuelesantanche/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root-228 SocialCard-image_responsive_size-226"
+              src={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(\\"LinkedIn_logo.png\\")",
+                }
+              }
+              title=""
+            />
+            <span
+              className="MuiTouchRipple-root-230"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-6-34 MuiGrid-grid-sm-3-45 MuiGrid-grid-md-3-59 MuiGrid-grid-lg-3-73"
+      >
+        <div
+          className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+          <a
+            className="MuiButtonBase-root-222 SocialCard-cardButton-227"
+            href="https://stackoverflow.com/users/6171615/emanuele-santanche"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+            target="_blank"
+          >
+            <div
+              className="MuiCardMedia-root-228 SocialCard-image_responsive_size-226"
+              src={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(\\"StackOverflow_logo.png\\")",
+                }
+              }
+              title=""
+            />
+            <span
+              className="MuiTouchRipple-root-230"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="SeparatorPane-separatorPane-225"
+    >
+       
+    </div>
+    <div
+      className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99 ColouredCard-coloured_card-97"
+    >
+      <div
+        className="MuiCardContent-root-157"
+      >
+        <div
+          className="MuiGrid-container-1 MuiGrid-spacing-xs-8-22 BottomGridPane-container-237"
+        >
+          <div
+            className="MuiGrid-item-2 MuiGrid-grid-xs-9-37"
+          >
+            <h2
+              className="MuiTypography-root-133 MuiTypography-title-139"
+            >
+              Emanuele Santanché
+            </h2>
+            <h3
+              className="MuiTypography-root-133 MuiTypography-subheading-140"
+            >
+              Paris, France and, remotely, worldwide
+            </h3>
+          </div>
+          <div
+            className="MuiGrid-item-2 MuiGrid-grid-xs-3-31 BottomGridPane-right_element-238"
+          >
+            <a
+              className="MuiButtonBase-root-222"
+              href="/article/58/privacy-policy"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <h2
+                className="MuiTypography-root-133 MuiTypography-title-139"
+              >
+                Privacy policy
+              </h2>
+              <span
+                className="MuiTouchRipple-root-230"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+  />
+</div>
+`;

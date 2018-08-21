@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: list_of_articles/ListOfArticlesScreen.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: list_of_articles/ListOfArticlesScreen.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+// Material UI components
+import Card from '@material-ui/core/Card';
+
+// From components library
+import InnerGridPane from '../components_library/panes/InnerGridPane';
+import ArticleCard from '../components_library/cards/ArticleCard';
+
+import AppContext from "../AppContext";
+
+/**
+ * This Screen shows a list of articles. It's supposed to use the service ArticleService
+ * to retrieve them from the backend.
+ *
+ * If the prop sticky is true, only the articles that are flagged as sticky on the backend
+ * will be retrieved.
+ *
+ * @param {string} topic The topic of articles to show. Like "How I work", "The tools I use",
+ * "Success stories", etc.
+ * @param {boolean} sticky True if only sticky articles should be displayed
+ */
+class ListOfArticlesScreen extends Component {
+
+    constructor() {
+        super();
+
+        this.state = { articles: [] }
+
+    }
+
+    static propTypes = {
+        topic: PropTypes.string,
+        sticky: PropTypes.bool
+    };
+
+    componentDidMount() {
+
+        // Fetching articles when the component mounts
+
+        const { ArticleService } = this.props.services;
+
+        this.ArticleService = ArticleService;
+
+        var self = this;
+
+        this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
+            function (articles) {
+
+                self.setState({ articles: articles });
+
+            }
+        )
+    }
+
+    componentDidUpdate(prevProps) {
+
+        var self = this;
+
+        // When the topic changes, the props to this component change as well
+        // We need to fetch the articles related to the new topic
+
+        // Same thing if the prop 'sticky' changes. Again we have to fetch articles again
+
+        if (prevProps.topic !== this.props.topic ||
+            prevProps.sticky !== this.props.sticky) {
+
+            this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
+                function (articles) {
+
+                    self.setState({ articles: articles });
+
+                }
+            )
+
+        }
+
+    }
+
+    render() {
+
+        // We get articles in an array where each item contains one article
+        // We produce another array where each item contains two articles
+        // This makes it easier to use the component InnerGridPane to build the list.
+        // That component shows two articles at a time (a leftComponent and a
+        // rightComponent)
+
+        const articles_pairs = this.state.articles.reduce((articles_pairs, article, index, articles) => {
+
+            if (index % 2 === 0)
+                articles_pairs.push(articles.slice(index, index + 2));
+
+            return articles_pairs;
+
+        }, []);
+
+        return articles_pairs.map((pair_of_articles, index) => {
+
+            return (
+
+                &lt;InnerGridPane key={index}
+
+                    leftComponent={ (
+
+                            &lt;ArticleCard image={pair_of_articles[0].field_image}
+                                         title={pair_of_articles[0].title}
+                                         text_content={pair_of_articles[0].body}
+                                         article_node_id={Number(pair_of_articles[0].nid)}>
+
+                            &lt;/ArticleCard>
+
+                    ) }
+
+                    rightComponent={ pair_of_articles.length === 2 ? (
+
+                            &lt;ArticleCard image={pair_of_articles[1].field_image}
+                                         title={pair_of_articles[1].title}
+                                         text_content={pair_of_articles[1].body}
+                                         article_node_id={Number(pair_of_articles[1].nid)}>
+
+                            &lt;/ArticleCard>
+
+                    ) : (
+
+                        &lt;Card>&lt;/Card>
+
+                    )}
+
+                />
+
+            )
+
+        })
+
+    }
+
+}
+
+export default props => (
+    &lt;AppContext.Consumer>
+        {services => &lt;ListOfArticlesScreen {...props} services={services} />}
+    &lt;/AppContext.Consumer>
+);
+
+// export default injector.connect(ListOfArticlesScreen);
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AlignedGridPane.html">AlignedGridPane</a></li><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ArticleService.html">ArticleService</a></li><li><a href="BodyPane.html">BodyPane</a></li><li><a href="BottomGridPane.html">BottomGridPane</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="FooterScreen.html">FooterScreen</a></li><li><a href="FrontGridPane.html">FrontGridPane</a></li><li><a href="HeaderMenu.html">HeaderMenu</a></li><li><a href="HeaderScreen.html">HeaderScreen</a></li><li><a href="HomeButtonPane.html">HomeButtonPane</a></li><li><a href="HomeButtonText.html">HomeButtonText</a></li><li><a href="HomeScreen.html">HomeScreen</a></li><li><a href="InnerGridPane.html">InnerGridPane</a></li><li><a href="ListOfArticlesScreen.html">ListOfArticlesScreen</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="MasterAvatar.html">MasterAvatar</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MessageDialog.html">MessageDialog</a></li><li><a href="PickMyBrainDialog.html">PickMyBrainDialog</a></li><li><a href="PickMyBrainMessageService.html">PickMyBrainMessageService</a></li><li><a href="PickMyBrainScreen.html">PickMyBrainScreen</a></li><li><a href="SeparatorPane.html">SeparatorPane</a></li><li><a href="SocialCard.html">SocialCard</a></li><li><a href="SocialScreen.html">SocialScreen</a></li><li><a href="TopicScreen.html">TopicScreen</a></li><li><a href="TopicService.html">TopicService</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#title_to_slug">title_to_slug</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Aug 21 2018 07:30:21 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

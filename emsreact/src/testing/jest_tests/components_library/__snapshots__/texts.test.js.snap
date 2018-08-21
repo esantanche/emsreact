@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomeButtonText HomeButtonText renders correctly 1`] = `
+<h1
+  className="MuiTypography-root-2 MuiTypography-headline-7 HomeButtonText-HomeButtonText-1"
+>
+  Emanuele Santanché,
+  <br />
+   Web Developer
+</h1>
+`;

@@ -1,0 +1,513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomeScreen HomeScreen renders correctly 1`] = `
+Array [
+  <div
+    className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+    >
+        <div
+            className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99 ColouredCard-coloured_card-97"
+        >
+            <div
+                className="MuiCardContent-root-127"
+            >
+                <h2
+                    className="MuiTypography-root-128 MuiTypography-title-134"
+                >
+                    Hello, my name is Emanuele Santanché. I am a Web Developer and build websites and web applications using JavaScript, React, Angular, WordPress, Drupal, HTML5, CSS3, CSSinJS.
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+</div>,
+  <div
+    className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+    >
+        <div
+            className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+            <div
+                className="MuiCardHeader-root-152"
+            >
+                <div
+                    className="MuiCardHeader-avatar-153"
+                >
+                    <div
+                        aria-label="How I work"
+                        className="MuiAvatar-root-158 MuiAvatar-colorDefault-159"
+                        style={
+                            Object {
+                                "backgroundColor": "#f44336",
+                              }
+                        }
+                    >
+                        W
+                    </div>
+                </div>
+                <div
+                    className="MuiCardHeader-content-155"
+                >
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiCardHeader-title-156"
+                    >
+                        How I work
+                    </span>
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiTypography-colorTextSecondary-150 MuiCardHeader-subheader-157"
+                    >
+                        There is value in doing things properly first time
+                    </span>
+                </div>
+            </div>
+            <div
+                className="MuiCardActions-root-161"
+            >
+                <a
+                    className="MuiButtonBase-root-187 MuiButton-root-163 MuiButton-text-165 MuiButton-flat-168 MuiButton-sizeSmall-184 MuiCardActions-action-162"
+                    href="/articles/how-i-work"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex="0"
+                >
+                    <span
+                        className="MuiButton-label-164"
+                    >
+                        More about how I work
+                    </span>
+                    <span
+                        className="MuiTouchRipple-root-190"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+</div>,
+  <div
+    className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+    >
+        <div
+            className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+            <div
+                className="MuiCardHeader-root-152"
+            >
+                <div
+                    className="MuiCardHeader-avatar-153"
+                >
+                    <div
+                        aria-label="The tools I use"
+                        className="MuiAvatar-root-158 MuiAvatar-colorDefault-159"
+                        style={
+                            Object {
+                                "backgroundColor": "#29b6f6",
+                              }
+                        }
+                    >
+                        T
+                    </div>
+                </div>
+                <div
+                    className="MuiCardHeader-content-155"
+                >
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiCardHeader-title-156"
+                    >
+                        The tools I use
+                    </span>
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiTypography-colorTextSecondary-150 MuiCardHeader-subheader-157"
+                    >
+                        Modern technology making writing code more productive, fun and easy
+                    </span>
+                </div>
+            </div>
+            <div
+                className="MuiCardActions-root-161"
+            >
+                <a
+                    className="MuiButtonBase-root-187 MuiButton-root-163 MuiButton-text-165 MuiButton-flat-168 MuiButton-sizeSmall-184 MuiCardActions-action-162"
+                    href="/articles/the-tools-i-use"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex="0"
+                >
+                    <span
+                        className="MuiButton-label-164"
+                    >
+                        More about the tools I use
+                    </span>
+                    <span
+                        className="MuiTouchRipple-root-190"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+</div>,
+  <div
+    className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+    >
+        <div
+            className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+            <div
+                className="MuiCardHeader-root-152"
+            >
+                <div
+                    className="MuiCardHeader-avatar-153"
+                >
+                    <div
+                        aria-label="Success stories"
+                        className="MuiAvatar-root-158 MuiAvatar-colorDefault-159"
+                        style={
+                            Object {
+                                "backgroundColor": "#ffa726",
+                              }
+                        }
+                    >
+                        S
+                    </div>
+                </div>
+                <div
+                    className="MuiCardHeader-content-155"
+                >
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiCardHeader-title-156"
+                    >
+                        Success stories
+                    </span>
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiTypography-colorTextSecondary-150 MuiCardHeader-subheader-157"
+                    >
+                        From Intel Corporation to video streaming of classical music
+                    </span>
+                </div>
+            </div>
+            <div
+                className="MuiCardActions-root-161"
+            >
+                <a
+                    className="MuiButtonBase-root-187 MuiButton-root-163 MuiButton-text-165 MuiButton-flat-168 MuiButton-sizeSmall-184 MuiCardActions-action-162"
+                    href="/articles/success-stories"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex="0"
+                >
+                    <span
+                        className="MuiButton-label-164"
+                    >
+                        More success stories
+                    </span>
+                    <span
+                        className="MuiTouchRipple-root-190"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+</div>,
+  <div
+    className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+    >
+        <div
+            className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+            <div
+                className="MuiCardHeader-root-152"
+            >
+                <div
+                    className="MuiCardHeader-avatar-153"
+                >
+                    <div
+                        aria-label="Testimonials"
+                        className="MuiAvatar-root-158 MuiAvatar-colorDefault-159"
+                        style={
+                            Object {
+                                "backgroundColor": "#8bc34a",
+                              }
+                        }
+                    >
+                        T
+                    </div>
+                </div>
+                <div
+                    className="MuiCardHeader-content-155"
+                >
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiCardHeader-title-156"
+                    >
+                        Testimonials
+                    </span>
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiTypography-colorTextSecondary-150 MuiCardHeader-subheader-157"
+                    >
+                        Happy clients and happy managers
+                    </span>
+                </div>
+            </div>
+            <div
+                className="MuiCardActions-root-161"
+            >
+                <a
+                    className="MuiButtonBase-root-187 MuiButton-root-163 MuiButton-text-165 MuiButton-flat-168 MuiButton-sizeSmall-184 MuiCardActions-action-162"
+                    href="/articles/testimonials"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex="0"
+                >
+                    <span
+                        className="MuiButton-label-164"
+                    >
+                        More testimonials
+                    </span>
+                    <span
+                        className="MuiTouchRipple-root-190"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+</div>,
+  <div
+    className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+    >
+        <div
+            className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+            <div
+                className="MuiCardHeader-root-152"
+            >
+                <div
+                    className="MuiCardHeader-avatar-153"
+                >
+                    <div
+                        aria-label="Talking about my experiences"
+                        className="MuiAvatar-root-158 MuiAvatar-colorDefault-159"
+                        style={
+                            Object {
+                                "backgroundColor": "#fdd835",
+                              }
+                        }
+                    >
+                        E
+                    </div>
+                </div>
+                <div
+                    className="MuiCardHeader-content-155"
+                >
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiCardHeader-title-156"
+                    >
+                        Talking about my experiences
+                    </span>
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiTypography-colorTextSecondary-150 MuiCardHeader-subheader-157"
+                    >
+                        Sharing my knowledge with the world
+                    </span>
+                </div>
+            </div>
+            <div
+                className="MuiCardActions-root-161"
+            >
+                <a
+                    className="MuiButtonBase-root-187 MuiButton-root-163 MuiButton-text-165 MuiButton-flat-168 MuiButton-sizeSmall-184 MuiCardActions-action-162"
+                    href="/articles/talking-about-my-experiences"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex="0"
+                >
+                    <span
+                        className="MuiButton-label-164"
+                    >
+                        More knowledge
+                    </span>
+                    <span
+                        className="MuiTouchRipple-root-190"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+</div>,
+  <div
+    className="MuiGrid-container-1 MuiGrid-spacing-xs-16-23"
+>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-xs-12-40 MuiGrid-grid-md-10-66 MuiGrid-grid-lg-8-78"
+    >
+        <div
+            className="MuiPaper-root-100 MuiPaper-elevation1-103 MuiPaper-rounded-101 MuiCard-root-99"
+        >
+            <div
+                className="MuiCardHeader-root-152"
+            >
+                <div
+                    className="MuiCardHeader-avatar-153"
+                >
+                    <div
+                        aria-label="Where? How?"
+                        className="MuiAvatar-root-158 MuiAvatar-colorDefault-159"
+                        style={
+                            Object {
+                                "backgroundColor": "#7986cb",
+                              }
+                        }
+                    >
+                        W
+                    </div>
+                </div>
+                <div
+                    className="MuiCardHeader-content-155"
+                >
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiCardHeader-title-156"
+                    >
+                        Where? How?
+                    </span>
+                    <span
+                        className="MuiTypography-root-128 MuiTypography-body2-136 MuiTypography-colorTextSecondary-150 MuiCardHeader-subheader-157"
+                    >
+                        Where do I work? How do I work with you?
+                    </span>
+                </div>
+            </div>
+            <div
+                className="MuiCardActions-root-161"
+            >
+                <a
+                    className="MuiButtonBase-root-187 MuiButton-root-163 MuiButton-text-165 MuiButton-flat-168 MuiButton-sizeSmall-184 MuiCardActions-action-162"
+                    href="/articles/where-how"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex="0"
+                >
+                    <span
+                        className="MuiButton-label-164"
+                    >
+                        More about where and how I work with you
+                    </span>
+                    <span
+                        className="MuiTouchRipple-root-190"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        className="MuiGrid-item-2 MuiGrid-grid-md-1-57 MuiGrid-grid-lg-2-72"
+    />
+</div>,
+]
+`;

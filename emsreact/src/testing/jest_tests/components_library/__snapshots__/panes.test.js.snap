@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing AlignedGridPane AlignedGridPane renders correctly 1`] = `
+<div
+  className="MuiGrid-container-2 AlignedGridPane-AlignedGridPane-1"
+/>
+`;
+
+exports[`Testing BodyPane BodyPane renders correctly 1`] = `
+<div
+  className="BodyPane-bodyPane-98"
+/>
+`;
+
+exports[`Testing BottomGridPane BottomGridPane renders correctly 1`] = `
+<div
+  className="MuiGrid-container-2 MuiGrid-spacing-xs-8-23 BottomGridPane-container-99"
+>
+  <div
+    className="MuiGrid-item-3 MuiGrid-grid-xs-9-38"
+  >
+    <h2
+      className="MuiTypography-root-101 MuiTypography-title-107"
+    >
+      Emanuele Santanché
+    </h2>
+    <h3
+      className="MuiTypography-root-101 MuiTypography-subheading-108"
+    >
+      Paris, France and, remotely, worldwide
+    </h3>
+  </div>
+  <div
+    className="MuiGrid-item-3 MuiGrid-grid-xs-3-32 BottomGridPane-right_element-100"
+  >
+    <a
+      className="MuiButtonBase-root-125"
+      href="/article/58/privacy-policy"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <h2
+        className="MuiTypography-root-101 MuiTypography-title-107"
+      >
+        Privacy policy
+      </h2>
+      <span
+        className="MuiTouchRipple-root-128"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Testing FrontGridPane FrontGridPane renders correctly 1`] = `
+<div
+  className="MuiGrid-container-2 MuiGrid-spacing-xs-16-24"
+>
+  <div
+    className="MuiGrid-item-3 MuiGrid-grid-md-1-58 MuiGrid-grid-lg-2-73"
+  />
+  <div
+    className="MuiGrid-item-3 MuiGrid-grid-xs-12-41 MuiGrid-grid-md-10-67 MuiGrid-grid-lg-8-79"
+  />
+  <div
+    className="MuiGrid-item-3 MuiGrid-grid-md-1-58 MuiGrid-grid-lg-2-73"
+  />
+</div>
+`;
+
+exports[`Testing HomeButtonPane HomeButtonPane renders correctly 1`] = `
+<div
+  className="HomeButtonPane-HomeButtonPane-135 HomeButtonPane-TopAndBottomMargins-136"
+/>
+`;
+
+exports[`Testing InnerGridPane InnerGridPane renders correctly 1`] = `
+<div
+  className="InnerGridPane-InnerGridPane-137"
+>
+  <div
+    className="MuiGrid-container-2 MuiGrid-spacing-xs-16-24"
+  >
+    <div
+      className="MuiGrid-item-3 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-6-63 MuiGrid-grid-lg-6-77"
+    >
+      <div>
+        left component
+      </div>
+    </div>
+    <div
+      className="MuiGrid-item-3 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-12-55 MuiGrid-grid-md-6-63 MuiGrid-grid-lg-6-77"
+    >
+      <div>
+        right component
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Testing SeparatorPane SeparatorPane renders correctly 1`] = `
+<div
+  className="SeparatorPane-separatorPane-138"
+>
+   
+</div>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HeaderMenu HeaderMenu renders correctly 1`] = `
+<WithStyles(Menu)
+  anchorEl={<div />}
+  id="header-menu"
+  onClose={[Function]}
+  open={true}
+>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    Home
+  </WithStyles(MenuItem)>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    How I work
+  </WithStyles(MenuItem)>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    The tools I use
+  </WithStyles(MenuItem)>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    Success stories
+  </WithStyles(MenuItem)>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    Testimonials
+  </WithStyles(MenuItem)>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    Articles
+  </WithStyles(MenuItem)>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    Where? How?
+  </WithStyles(MenuItem)>
+  <WithStyles(MenuItem)
+    onClick={[Function]}
+  >
+    Pick My Brain!
+  </WithStyles(MenuItem)>
+</WithStyles(Menu)>
+`;

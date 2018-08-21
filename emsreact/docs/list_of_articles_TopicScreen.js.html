@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: list_of_articles/TopicScreen.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: list_of_articles/TopicScreen.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+
+// Material UI components
+import Card from '@material-ui/core/Card';
+import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import CardHeader from '@material-ui/core/CardHeader';
+
+// Material UI icons
+import Clear from '@material-ui/icons/Clear';
+
+// From components library
+import FrontGridPane from '../components_library/panes/FrontGridPane';
+import SeparatorPane from "../components_library/panes/SeparatorPane";
+
+// Screen that shows a list of articles
+import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
+
+// The injector allows this component to use services, see README.md in folder 'services'
+//import { injector } from 'react-services-injector';
+
+import AppContext from '../AppContext';
+
+
+/**
+ * This screen shows a list of articles for a given topic.
+ *
+ * Both sticky and non-sticky articles are shown.
+ *
+ * For now there is no pagination. All articles are shown.
+ *
+ * When this screen is mounted, the url is like this:
+ * "/articles/:topic"
+ *
+ * Props will provide the parameter 'topic' in this variable: this.props.match.params.topic
+ */
+class TopicScreen extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = { topic_details: {} };
+    }
+
+    componentDidMount() {
+
+        if (!this.props.match.params.topic) {
+
+            console.error("TopicScreen::componentDidMount");
+            console.error("this.props.match.params.topic is not defined");
+            console.error("This is a bug");
+
+            return;
+        }
+
+        const { TopicService } = this.props.services;
+
+        this.TopicService = TopicService;
+
+        var self = this;
+
+        // First time the component is mounted we find the topic we have to pass to
+        // the component ListOfArticlesScreen for it to call the service that will
+        // return the articles
+
+        // this.props.match.params.topic is the topic in the format that goes on the url
+        // this.state.topic_details.name is the same topic in the format to be used to fetch
+        // articles
+        // For example:
+        // how-i-work is good for urls
+        // "How I work" is to be used to fetch articles
+        // The service TopicService provides topics good to fetch articles from topics
+        // good for urls
+
+        // Consider that the object topic_details returned by get_topic_from_url is an object
+        // containing many properties, not just the name of the topic as it is needed
+        // to fetch articles
+
+        this.TopicService.get_topic_from_url(this.props.match.params.topic, function(topic_details) {
+
+            self.setState({ topic_details: topic_details });
+
+        });
+
+    }
+
+    componentDidUpdate(prevProps) {
+
+        var self = this;
+
+        // When the topic changes, the props to this component change as well
+        // We need to transform again the topic as provided by the url into
+        // the topic as needed to fetch articles
+
+        if (prevProps.match.params.topic !== this.props.match.params.topic) {
+
+            if (this.TopicService) {
+                this.TopicService.get_topic_from_url(this.props.match.params.topic, function(topic_details) {
+
+                    self.setState({ topic_details: topic_details });
+
+                });
+            }
+
+        }
+
+    }
+
+    render() {
+
+        const topic_details = this.state.topic_details;
+
+        // If topic_details.name is not defined, it means that the topic_details object that the service TopicService
+        // should provide is not yet available.
+        // In this case we just render an empty element
+
+        return (
+
+            topic_details.name ?
+
+            &lt;FrontGridPane>
+
+                &lt;Card>
+                    &lt;CardHeader
+                        avatar={
+                            &lt;Avatar aria-label={topic_details.name} style={{ backgroundColor: topic_details.color_for_avatar }}>
+                                {topic_details.letter_for_avatar}
+                            &lt;/Avatar>
+                        }
+                        action={
+                            &lt;IconButton href="/">
+                                &lt;Clear />
+                            &lt;/IconButton>
+                        }
+                        title={topic_details.name}
+                        subheader={topic_details.subheader}
+                    />
+
+                    &lt;ListOfArticlesScreen topic={topic_details.name} sticky={false}/>
+
+                    &lt;SeparatorPane/>
+
+                &lt;/Card>
+
+            &lt;/FrontGridPane>
+
+                :
+
+            &lt;FrontGridPane>
+
+            &lt;/FrontGridPane>
+
+        )
+
+    }
+
+}
+
+
+export default props => (
+    &lt;AppContext.Consumer>
+        {services => &lt;TopicScreen {...props} services={services} />}
+    &lt;/AppContext.Consumer>
+);
+
+// export default injector.connect(TopicScreen);
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AlignedGridPane.html">AlignedGridPane</a></li><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ArticleService.html">ArticleService</a></li><li><a href="BodyPane.html">BodyPane</a></li><li><a href="BottomGridPane.html">BottomGridPane</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="FooterScreen.html">FooterScreen</a></li><li><a href="FrontGridPane.html">FrontGridPane</a></li><li><a href="HeaderMenu.html">HeaderMenu</a></li><li><a href="HeaderScreen.html">HeaderScreen</a></li><li><a href="HomeButtonPane.html">HomeButtonPane</a></li><li><a href="HomeButtonText.html">HomeButtonText</a></li><li><a href="HomeScreen.html">HomeScreen</a></li><li><a href="InnerGridPane.html">InnerGridPane</a></li><li><a href="ListOfArticlesScreen.html">ListOfArticlesScreen</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="MasterAvatar.html">MasterAvatar</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MessageDialog.html">MessageDialog</a></li><li><a href="PickMyBrainDialog.html">PickMyBrainDialog</a></li><li><a href="PickMyBrainMessageService.html">PickMyBrainMessageService</a></li><li><a href="PickMyBrainScreen.html">PickMyBrainScreen</a></li><li><a href="SeparatorPane.html">SeparatorPane</a></li><li><a href="SocialCard.html">SocialCard</a></li><li><a href="SocialScreen.html">SocialScreen</a></li><li><a href="TopicScreen.html">TopicScreen</a></li><li><a href="TopicService.html">TopicService</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#title_to_slug">title_to_slug</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Aug 21 2018 07:30:21 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

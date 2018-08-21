@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: pick_my_brain/PickMyBrainScreen.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: pick_my_brain/PickMyBrainScreen.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+// Material UI components
+import TextField from "@material-ui/core/TextField/TextField";
+import Button from "@material-ui/core/Button/Button";
+import InputAdornment from "@material-ui/core/InputAdornment/InputAdornment";
+import Grid from "@material-ui/core/Grid/Grid";
+
+// Material UI icons
+import Email from '@material-ui/icons/Email';
+import Person from "@material-ui/icons/Person";
+import Message from "@material-ui/icons/Message";
+
+// To validate email addresses
+import * as EmailValidator from 'email-validator';
+
+// From components library
+import MessageDialog from "../components_library/dialogs/MessageDialog";
+
+// FIXME document this
+import AppContext from "../AppContext";
+
+/**
+ * This is the Pick My Brain form used to send messages. Messages will be sent to the backend
+ * to be stored. Their creation will be notified.
+ *
+ * @param {function} onclick There may be a function to call when the user clicks on "Submit"
+ */
+class PickMyBrainScreen extends Component {
+
+    constructor(props) {
+        super(props);
+
+        // Email starts as valid because we don't want the email field to show error
+        // if it's empty
+
+        this.state = { email: "",
+                       email_is_valid: true,
+                       name: "",
+                       message: "",
+                       submit_button_enabled: false,
+                       message_dialog_is_open: false,
+                       error_dialog_is_open: false };
+
+    }
+
+    static propTypes = {
+        onclick: PropTypes.func
+    };
+
+    componentDidMount() {
+
+        const { PickMyBrainMessageService } = this.props.services;
+
+        this.PickMyBrainMessageService = PickMyBrainMessageService;
+
+    }
+
+    /**
+     * Called when the user enter text in the email field.
+     *
+     * @param {object} event Changing event for email field
+     */
+    handleEmailChange(event) {
+
+        let email = event.target.value;
+
+        let email_is_valid = false;
+
+        // Let's get rid of extra spaces
+        const trimmed_email = email.trim();
+
+        // Email addresses cannot be valid if they are shorter than 5 characters
+        if (trimmed_email.length > 5) {
+
+            email_is_valid = EmailValidator.validate(trimmed_email);
+
+            // We don't allow email addresses including the + sign.
+            // For example, we consider as invalid the email address esantanche+001@gmail.com
+            if (/\+/.test(trimmed_email))
+                email_is_valid = false;
+        }
+
+        var self = this;
+
+        this.setState({ email: trimmed_email,
+                        email_is_valid: email_is_valid },
+                function() {
+
+                    self.enable_submit_button_if_form_is_valid();
+
+                });
+
+    };
+
+    /**
+     * Called when the user enter text in the name field.
+     *
+     * @param {object} event Changing event for name field
+     */
+    handleNameChange(event) {
+
+        let name = event.target.value;
+
+        var self = this;
+
+        this.setState({ name: name }, function() {
+
+            self.enable_submit_button_if_form_is_valid();
+
+        });
+
+    };
+
+    /**
+     * Called when the user enter text in the message field.
+     *
+     * @param {object} event Changing event for message field
+     */
+    handleMessageChange(event) {
+
+        let message = event.target.value;
+
+        var self = this;
+
+        this.setState({ message: message }, function() {
+
+            self.enable_submit_button_if_form_is_valid();
+
+        });
+
+    };
+
+    /**
+     * If the form is valid, this function enables the submit button.
+     *
+     * The form is valid if the email is valid and name and message fields
+     * are not empty.
+     */
+    enable_submit_button_if_form_is_valid() {
+
+        let form_is_valid = false;
+
+        if (this.state.email_is_valid &amp;&amp;
+            this.state.name.length > 0 &amp;&amp;
+            this.state.message.length > 0)
+            form_is_valid = true;
+
+        this.setState({ submit_button_enabled: form_is_valid });
+
+    }
+
+    /**
+     * This function send the message to the backend.
+     *
+     * It packages the fields, email, name and message, into an object and passes it
+     * to the PickMyBrainMessageService service for it to send the message to the backend.
+     *
+     * This function will be called only if the form is valid because if it is not, the submit
+     * button will be disabled.
+     */
+    submit_message() {
+
+        const message_details = {
+           email: this.state.email,
+           name: this.state.name,
+           message: this.state.message
+        };
+
+        var self = this;
+
+        this.PickMyBrainMessageService.create_pick_my_brain_message(message_details, function(error) {
+
+            if (error) {
+
+                // For now exception handling is just writing the error to the console
+
+                console.error("PickMyBrainScreen::submit_message");
+                console.error(error);
+
+                // In case of error, we open the error message dialog
+                // We don't clear the form because the user may want to copy the
+                // message and try again later
+
+                self.setState({ error_dialog_is_open: true });
+
+            } else {
+
+                // If everything is fine, we clear the form and open the
+                // message dialog to tell the user that we sent the message
+
+                self.setState({ email: "",
+                    email_is_valid: true,
+                    name: "",
+                    message: "",
+                    submit_button_enabled: false,
+                    error_dialog_is_open: false,
+                    message_dialog_is_open: true
+                });
+
+            }
+
+        });
+
+    }
+
+    /**
+     * Closing the dialog when the user clicks on "OK".
+     *
+     * Closing the parent dialog as well, if there actually is a parent dialog.
+     */
+    handleOnClickDialog() {
+
+        this.setState({ message_dialog_is_open: false, error_dialog_is_open: false });
+
+        // Telling the parent component that we are done here
+        // This only if the onclick function is defined, because
+        // there may be no parent component
+
+        if (this.props.onclick)
+            this.props.onclick();
+    };
+
+    /**
+     * Closing the error dialog.
+     *
+     * In this case we don't close the parent dialog, if any.
+     *
+     * This because the user may want to copy the message.
+     */
+    handleOnClickErrorDialog() {
+
+        this.setState({ message_dialog_is_open: false, error_dialog_is_open: false });
+
+       // No telling the parent component that it has to close
+       // The user may want to copy the message they wrote and use it later
+       // The user will close the dialog themselves when they finish copying the message
+
+    };
+
+    render() {
+
+        return (
+
+            &lt;React.Fragment>
+
+                &lt;Grid container spacing={32}>
+
+                    &lt;Grid item xs={12} sm={6}>
+
+                        &lt;TextField
+                            required
+                            error={!this.state.email_is_valid}
+                            id="email"
+                            label="Email"
+                            fullWidth
+                            value={this.state.email}
+                            onChange={this.handleEmailChange.bind(this)}
+                            margin="dense"
+                            InputProps={{
+                                startAdornment: (
+                                    &lt;InputAdornment position="start">
+                                        &lt;Email />
+                                    &lt;/InputAdornment>
+                                ),
+                            }}
+                        />
+
+                    &lt;/Grid>
+
+                    &lt;Grid item xs={12} sm={6}>
+
+                        &lt;TextField
+                            required
+                            error={false}
+                            id="name"
+                            label="Name"
+                            fullWidth
+                            value={this.state.name}
+                            onChange={this.handleNameChange.bind(this)}
+                            margin="dense"
+                            InputProps={{
+                                startAdornment: (
+                                    &lt;InputAdornment position="start">
+                                        &lt;Person />
+                                    &lt;/InputAdornment>
+                                ),
+                            }}
+                        />
+
+                    &lt;/Grid>
+
+                &lt;/Grid>
+
+                &lt;Grid container spacing={32}>
+
+                    &lt;Grid item xs={12}>
+
+                        &lt;TextField
+                            required
+                            error={false}
+                            id="message"
+                            label="Message"
+                            value={this.state.message}
+                            onChange={this.handleMessageChange.bind(this)}
+                            margin="dense"
+                            multiline
+                            fullWidth
+                            rowsMax="10"
+                            InputProps={{
+                                startAdornment: (
+                                    &lt;InputAdornment position="start">
+                                        &lt;Message />
+                                    &lt;/InputAdornment>
+                                ),
+                            }}
+                        />
+
+                    &lt;/Grid>
+
+                &lt;/Grid>
+
+                &lt;Grid container spacing={32}>
+
+                    &lt;Grid item xs={12}>
+
+                        &lt;Button size="small"
+                                disabled={!this.state.submit_button_enabled}
+                                onClick={this.submit_message.bind(this)}>Submit&lt;/Button>
+
+                    &lt;/Grid>
+
+                &lt;/Grid>
+
+                &lt;MessageDialog open={this.state.error_dialog_is_open}
+                               it_is_an_error_message={true}
+                               title="Something went wrong"
+                               message="Please, save your message, reload the page and try again."
+                               onclick={this.handleOnClickErrorDialog.bind(this)}/>
+
+                &lt;MessageDialog open={this.state.message_dialog_is_open}
+                               it_is_an_error_message={false}
+                               title="Message sent"
+                               message="Thank you for your message!"
+                               onclick={this.handleOnClickDialog.bind(this)}/>
+
+            &lt;/React.Fragment>
+
+        )
+
+    }
+
+}
+
+export default props => (
+    &lt;AppContext.Consumer>
+        {services => &lt;PickMyBrainScreen {...props} services={services} />}
+    &lt;/AppContext.Consumer>
+);
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AlignedGridPane.html">AlignedGridPane</a></li><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ArticleService.html">ArticleService</a></li><li><a href="BodyPane.html">BodyPane</a></li><li><a href="BottomGridPane.html">BottomGridPane</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="FooterScreen.html">FooterScreen</a></li><li><a href="FrontGridPane.html">FrontGridPane</a></li><li><a href="HeaderMenu.html">HeaderMenu</a></li><li><a href="HeaderScreen.html">HeaderScreen</a></li><li><a href="HomeButtonPane.html">HomeButtonPane</a></li><li><a href="HomeButtonText.html">HomeButtonText</a></li><li><a href="HomeScreen.html">HomeScreen</a></li><li><a href="InnerGridPane.html">InnerGridPane</a></li><li><a href="ListOfArticlesScreen.html">ListOfArticlesScreen</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="MasterAvatar.html">MasterAvatar</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MessageDialog.html">MessageDialog</a></li><li><a href="PickMyBrainDialog.html">PickMyBrainDialog</a></li><li><a href="PickMyBrainMessageService.html">PickMyBrainMessageService</a></li><li><a href="PickMyBrainScreen.html">PickMyBrainScreen</a></li><li><a href="SeparatorPane.html">SeparatorPane</a></li><li><a href="SocialCard.html">SocialCard</a></li><li><a href="SocialScreen.html">SocialScreen</a></li><li><a href="TopicScreen.html">TopicScreen</a></li><li><a href="TopicService.html">TopicService</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#title_to_slug">title_to_slug</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Aug 21 2018 07:30:21 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

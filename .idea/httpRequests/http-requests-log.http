@@ -1,3 +1,55 @@
+POST https://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+   "title": [ {
+      "value": "New message 2018-07-20 19:26"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Filipponi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele Filipponi"
+  } ]
+}
+
+<> 2018-08-21T085445.201.json
+
+###
+
+POST http://backend.emanuelesantanche.com/node?_format=json
+Content-Type: application/json
+Accepts: application/json
+
+{
+  "type": [ {
+      "target_id": "ems_pick_my_brain_message"
+   } ],
+   "title": [ {
+      "value": "New message 2018-07-20 19:26"
+   } ],
+  "field_name": [ {
+      "value": "Emanuele Filipponi"
+   } ],
+  "field_email": [ {
+      "value": "esantanche@gmail.com"
+   } ],
+  "field_message": [ {
+      "value": "Messaggio per Emanuele Filipponi"
+  } ]
+}
+
+<> 2018-08-21T085431.301.html
+
+###
+
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=58&langcode=en
 
 <> 2018-08-20T032827.200.json
@@ -509,18 +561,6 @@ GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
 GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
 
 <> 2018-07-18T125958.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T125841.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T125004.200.json
 
 ###
 

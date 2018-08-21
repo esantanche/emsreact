@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: home/HomeScreen.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: home/HomeScreen.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+
+// Material UI components
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Button from '@material-ui/core/Button';
+
+// From components library
+import FrontGridPane from '../components_library/panes/FrontGridPane';
+import ColouredCard from '../components_library/cards/ColouredCard';
+import MasterAvatar from "../components_library/avatars/MasterAvatar";
+
+// Shows lists of articles
+import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
+
+// The injector allows this component to use services, see README.md in folder 'services'
+//import { injector } from 'react-services-injector';
+
+import AppContext from '../AppContext';
+
+// import TopicService from '../services/topic/TopicService';
+
+/**
+ * Home Screen. Header and Footer are not here.
+ *
+ * Here you find the presentation text ("Hello, my name is Emanuele Santanché.
+ * I am a Web Developer and build websites and web applications using JavaScript,
+ * React, Angular, WordPress, Drupal, HTML5, CSS3, CSSinJS.")
+ * and the lists of articles separated by topic.
+ *
+ * The TopicService provides details about each topic.
+ *
+ * These details are used to show the avatar for each list of articles, the title, the subtitle
+ * and the link to more articles for the same topic.
+ *
+ * On the home page only sticky articles are shown. Articles are flagged as sticky in the backend.
+ */
+class HomeScreen extends Component {
+
+    constructor(props) {
+
+        super(props);
+
+        this.state = { articles: [ ], topics: [ ] };
+
+    }
+
+    /**
+     * Fetching details about the topics to show on the home page (How I work, The tools I use, etc.).
+     */
+    componentDidMount() {
+
+        // console.log('HomeScreen::componentDidMount');
+        // console.log(this.props.services);
+
+        const { TopicService } = this.props.services;
+
+        this.TopicService = TopicService;
+
+        var self = this;
+
+        this.TopicService.get_topics(function(topics) {
+
+            self.setState({ topics: topics });
+
+        });
+
+    }
+
+    render() {
+
+        return (
+
+            &lt;React.Fragment>
+
+                &lt;FrontGridPane>
+
+                    &lt;ColouredCard>
+
+                        &lt;CardContent>
+
+                            &lt;Typography variant="title" >
+
+                                Hello, my name is Emanuele Santanché. I am a Web Developer and build websites and web applications
+                                using JavaScript, React, Angular, WordPress, Drupal, HTML5, CSS3, CSSinJS.
+
+                            &lt;/Typography>
+
+                        &lt;/CardContent>
+
+                    &lt;/ColouredCard>
+
+                &lt;/FrontGridPane>
+
+                { this.state.topics.length > 0 ?
+
+                    this.state.topics.map((topic, index) => {
+
+                        return (
+
+                            &lt;React.Fragment key={index}>
+
+                                &lt;FrontGridPane>
+
+                                    &lt;Card>
+                                        &lt;CardHeader
+                                            avatar={
+
+                                                &lt;MasterAvatar color={topic.color_for_avatar}
+                                                              letter={topic.letter_for_avatar}
+                                                              label={topic.name} />
+
+
+                                            }
+
+                                            title={topic.name}
+                                            subheader={topic.subheader}
+                                        />
+
+                                        &lt;ListOfArticlesScreen topic={topic.name} sticky={true}/>
+
+                                        &lt;CardActions>
+                                            &lt;Button size="small"
+                                                    href={"/articles/" + topic.name_for_url}>{topic.more_articles_button_label}&lt;/Button>
+                                        &lt;/CardActions>
+
+                                    &lt;/Card>
+
+                                &lt;/FrontGridPane>
+
+                            &lt;/React.Fragment>
+
+                        );
+
+                    })
+
+                    :
+
+                    ( &lt;React.Fragment>&lt;/React.Fragment> )
+
+                }
+
+            &lt;/React.Fragment>
+
+        );
+    }
+}
+
+export default props => (
+    &lt;AppContext.Consumer>
+        {services => &lt;HomeScreen {...props} services={services} />}
+    &lt;/AppContext.Consumer>
+);
+
+//export default injector.connect(HomeScreen);
+
+// export default injector.connect(HomeScreen, {
+//     toRender: ['TopicService']
+// });
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AlignedGridPane.html">AlignedGridPane</a></li><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ArticleService.html">ArticleService</a></li><li><a href="BodyPane.html">BodyPane</a></li><li><a href="BottomGridPane.html">BottomGridPane</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="FooterScreen.html">FooterScreen</a></li><li><a href="FrontGridPane.html">FrontGridPane</a></li><li><a href="HeaderMenu.html">HeaderMenu</a></li><li><a href="HeaderScreen.html">HeaderScreen</a></li><li><a href="HomeButtonPane.html">HomeButtonPane</a></li><li><a href="HomeButtonText.html">HomeButtonText</a></li><li><a href="HomeScreen.html">HomeScreen</a></li><li><a href="InnerGridPane.html">InnerGridPane</a></li><li><a href="ListOfArticlesScreen.html">ListOfArticlesScreen</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="MasterAvatar.html">MasterAvatar</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MessageDialog.html">MessageDialog</a></li><li><a href="PickMyBrainDialog.html">PickMyBrainDialog</a></li><li><a href="PickMyBrainMessageService.html">PickMyBrainMessageService</a></li><li><a href="PickMyBrainScreen.html">PickMyBrainScreen</a></li><li><a href="SeparatorPane.html">SeparatorPane</a></li><li><a href="SocialCard.html">SocialCard</a></li><li><a href="SocialScreen.html">SocialScreen</a></li><li><a href="TopicScreen.html">TopicScreen</a></li><li><a href="TopicService.html">TopicService</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#title_to_slug">title_to_slug</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Aug 21 2018 07:30:21 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

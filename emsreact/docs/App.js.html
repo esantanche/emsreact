@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: App.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: App.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { Component } from 'react';
+
+// React Router
+import { BrowserRouter, Route } from 'react-router-dom';
+
+// Material UI normalization component
+import CssBaseline from '@material-ui/core/CssBaseline';
+
+// Material UI theme
+import theme from './MuiTheme';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+
+// Screens used here
+import HomeScreen from './home/HomeScreen';
+import ArticleScreen from './article/ArticleScreen';
+import TopicScreen from './list_of_articles/TopicScreen';
+import HeaderScreen from './header/HeaderScreen';
+import FooterScreen from './footer/FooterScreen';
+
+// From components library
+import BodyPane from './components_library/panes/BodyPane';
+
+// FIXME!
+import AppContext from './AppContext';
+
+// FIXME clean again!!
+
+import TopicService from "./services/topic/TopicService";
+import ArticleService from "./services/article/ArticleService";
+import PickMyBrainMessageService from "./services/pick_my_brain_message/PickMyBrainMessageService";
+
+const AppTopicService = new TopicService();
+const AppArticleService = new ArticleService();
+const AppPickMyBrainMessageService = new PickMyBrainMessageService();
+
+// FIXME!
+const Services = { TopicService: AppTopicService,
+                   ArticleService: AppArticleService,
+                   PickMyBrainMessageService: AppPickMyBrainMessageService};
+
+// FIXME uninstall react service injector
+
+/**
+ * This is the starting point for the application.
+ * It's rendered in index.js.
+ *
+ * The component MuiThemeProvider makes the theme available to the entire application.
+ *
+ * CssBaseline normalises css for all browsers.
+ *
+ * BodyPane is a pane. You find it in the component library (src/components_library/panes).
+ *
+ * As you can see the header and the footer are always present.
+ *
+ * The exact path "/" is the home page.
+ *
+ * The route /article/:articlenid shows a single article. The route /articles/:topic shows
+ * all articles related to the given topic.
+ *
+ */
+class App extends Component {
+
+    render() {
+
+        // Using BrowserRouter because this isn't a static website.
+        // For static websites use HashRouter
+
+        // CssBaseline is like normalize.css. It normalizes differences between browsers
+
+        return (
+            &lt;AppContext.Provider value={Services}>
+                &lt;BrowserRouter>
+                    &lt;MuiThemeProvider theme={theme}>
+                        &lt;CssBaseline />
+                        &lt;BodyPane>
+
+                            &lt;HeaderScreen />
+
+                            &lt;Route exact path="/" component={HomeScreen} />
+                            &lt;Route path="/article/:articlenid" component={ArticleScreen} />
+                            &lt;Route path="/articles/:topic" component={TopicScreen} />
+
+                            &lt;FooterScreen />
+
+                        &lt;/BodyPane>
+                    &lt;/MuiThemeProvider>
+                &lt;/BrowserRouter>
+            &lt;/AppContext.Provider>
+        );
+    }
+}
+
+export default App;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AlignedGridPane.html">AlignedGridPane</a></li><li><a href="App.html">App</a></li><li><a href="ArticleCard.html">ArticleCard</a></li><li><a href="ArticleScreen.html">ArticleScreen</a></li><li><a href="ArticleService.html">ArticleService</a></li><li><a href="BodyPane.html">BodyPane</a></li><li><a href="BottomGridPane.html">BottomGridPane</a></li><li><a href="ColouredCard.html">ColouredCard</a></li><li><a href="FooterScreen.html">FooterScreen</a></li><li><a href="FrontGridPane.html">FrontGridPane</a></li><li><a href="HeaderMenu.html">HeaderMenu</a></li><li><a href="HeaderScreen.html">HeaderScreen</a></li><li><a href="HomeButtonPane.html">HomeButtonPane</a></li><li><a href="HomeButtonText.html">HomeButtonText</a></li><li><a href="HomeScreen.html">HomeScreen</a></li><li><a href="InnerGridPane.html">InnerGridPane</a></li><li><a href="ListOfArticlesScreen.html">ListOfArticlesScreen</a></li><li><a href="MasterAppBar.html">MasterAppBar</a></li><li><a href="MasterAvatar.html">MasterAvatar</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MessageDialog.html">MessageDialog</a></li><li><a href="PickMyBrainDialog.html">PickMyBrainDialog</a></li><li><a href="PickMyBrainMessageService.html">PickMyBrainMessageService</a></li><li><a href="PickMyBrainScreen.html">PickMyBrainScreen</a></li><li><a href="SeparatorPane.html">SeparatorPane</a></li><li><a href="SocialCard.html">SocialCard</a></li><li><a href="SocialScreen.html">SocialScreen</a></li><li><a href="TopicScreen.html">TopicScreen</a></li><li><a href="TopicService.html">TopicService</a></li></ul><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#title_to_slug">title_to_slug</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Aug 21 2018 07:30:21 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
