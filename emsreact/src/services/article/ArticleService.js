@@ -1,6 +1,3 @@
-// FIXME
-// import { Service } from 'react-services-injector';
-
 // App configuration
 import { APP_CONFIGURATION } from '../../appConfiguration';
 
@@ -63,9 +60,5 @@ class ArticleService {
             });
     };
 }
-
-// FIXME!!!
-// "publicName" property is important if you use any kind of minimization on your JS
-// ArticleService.publicName = 'ArticleService';
 
 export default ArticleService;

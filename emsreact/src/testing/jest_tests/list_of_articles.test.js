@@ -1,5 +1,4 @@
-// FIXME docs? anything to do?
-// Testing everything in folder list_of_articles
+// Here we test components in the folder list_of_articles
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -11,24 +10,22 @@ import TopicScreen from "../../list_of_articles/TopicScreen";
 import ArticleService from "../../services/article/ArticleService";
 import TopicService from "../../services/topic/TopicService";
 
+// To provide this component with the application context
+// See AppContext.js
 import AppContext from "../../AppContext";
 
 const AppArticleService = new ArticleService();
 const AppTopicService = new TopicService();
 
 const Services = { TopicService: AppTopicService,
-    ArticleService: AppArticleService,
-    PickMyBrainMessageService: null };
+                   ArticleService: AppArticleService,
+                   PickMyBrainMessageService: null };
 
 const list_of_articles_screen_to_be_tested = ( <AppContext.Provider value={Services}>
                                                     <ListOfArticlesScreen topic="How I work"
                                                                           sticky={true}
                                                     />
                                                </AppContext.Provider> );
-
-// FIXME here I could mock the fetch in ArticleService
-
-// FIXME clean up
 
 const json_response_rest_api_call = [ {
         "nid": "8",

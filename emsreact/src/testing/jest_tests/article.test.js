@@ -1,33 +1,18 @@
-// FIXME docs? anything to do?
-// Testing everything in folder article
-// fixme fix docs
-
+// Here we test components in the folder article
 
 import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
 
-import ListOfArticlesScreen from "../../list_of_articles/ListOfArticlesScreen";
-import TopicScreen from "../../list_of_articles/TopicScreen";
-
 import ArticleService from "../../services/article/ArticleService";
-import TopicService from "../../services/topic/TopicService";
-
 import AppContext from "../../AppContext";
 import ArticleScreen from "../../article/ArticleScreen";
 
 const AppArticleService = new ArticleService();
-// const AppTopicService = new TopicService();
 
 const Services = { TopicService: null,
     ArticleService: AppArticleService,
     PickMyBrainMessageService: null };
-
-
-// FIXME clean up
-
-
-
 
 const json_response_rest_api_call = [
     {

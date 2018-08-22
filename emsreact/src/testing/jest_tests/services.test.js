@@ -1,48 +1,19 @@
-// FIXME docs? anything to do?
-// Testing everything in folder article
-// fixme fix docs
-
+// Here we test services, see folder services
 
 import React from "react";
-import ReactDOM from "react-dom";
-import renderer from "react-test-renderer";
-
-import ListOfArticlesScreen from "../../list_of_articles/ListOfArticlesScreen";
-import TopicScreen from "../../list_of_articles/TopicScreen";
 
 import ArticleService from "../../services/article/ArticleService";
 import TopicService from "../../services/topic/TopicService";
-
-import AppContext from "../../AppContext";
-import ArticleScreen from "../../article/ArticleScreen";
 import PickMyBrainMessageService from "../../services/pick_my_brain_message/PickMyBrainMessageService";
 
-const AppArticleService = new ArticleService();
-// const AppTopicService = new TopicService();
-
-const Services = { TopicService: null,
-    ArticleService: AppArticleService,
-    PickMyBrainMessageService: null };
-
-
-// FIXME services
-
-// FIXME clean up
-
-
-
-
-
-
-// const article_screen_to_be_tested = ( <AppContext.Provider value={Services}>
-//                                          <ArticleScreen match={{ params: { articlenid: 58 } }}
-//                                          />
-//                                       </AppContext.Provider> );
+import red from "@material-ui/core/colors/red";
+import lightBlue from "@material-ui/core/colors/lightBlue";
+import orange from "@material-ui/core/colors/orange";
+import lightGreen from "@material-ui/core/colors/lightGreen";
+import yellow from "@material-ui/core/colors/yellow";
+import indigo from "@material-ui/core/colors/indigo";
 
 describe('Testing ArticleService', function() {
-
-    // FIXME
-
 
     const json_response_rest_api_call = [
         {
@@ -58,95 +29,32 @@ describe('Testing ArticleService', function() {
 
     const AppArticleService = new ArticleService();
 
-
-    // test('the data is peanut butter', done => {
-    //     function callback(data) {
-    //         expect(data).toBe('peanut butter');
-    //         done();
-    //     }
-    //
-    //     fetchData(callback);
-    // });
-
     it('ArticleService test a fetch', done => {
 
         const mockCallBack = jest.fn();
 
         mockCallBack.mockImplementation(data => {
-            //console.log('inside mockCallBack mockImplementation');
-            //console.log(data);
+
             expect(data).toEqual(json_response_rest_api_call);
             done();
         });
-
-        // function callback(data) {
-        //             //expect(data).toBe('peanut butter');
-        //             done();
-        //         }
 
         fetch.resetMocks();
 
         fetch.mockResponseOnce(JSON.stringify(json_response_rest_api_call));
 
-
-
         AppArticleService.fetch_articles({ nid: 45 }, mockCallBack);
-
 
         expect(fetch.mock.calls.length).toEqual(1);
         expect(fetch.mock.calls[0][0]).toMatch(/rest\/EMS\/view\/articles/);
-        //expect(mockCallBack.mock.calls.length).toEqual(1);
 
-
-
-        // const div = document.createElement('div');
-        // ReactDOM.render(article_screen_to_be_tested , div);
-        // ReactDOM.unmountComponentAtNode(div);
     });
-
-    // it('ArticleScreen mocking fetch call', () => {
-    //
-    //     fetch.resetMocks();
-    //
-    //     fetch.mockResponseOnce(JSON.stringify(json_response_rest_api_call));
-    //
-    //     const div = document.createElement('div');
-    //     ReactDOM.render(article_screen_to_be_tested, div);
-    //     ReactDOM.unmountComponentAtNode(div);
-    //
-    //     // There has to be one fetch call only
-    //     expect(fetch.mock.calls.length).toEqual(1);
-    //
-    //     // The first argument in the fetch call has to be a string
-    //     // containing rest/EMS/view/articles
-    //     // The first argument is the rest api url
-    //     expect(fetch.mock.calls[0][0]).toMatch(/rest\/EMS\/view\/articles/);
-    //
-    // });
-    //
-    // // This test is supposed to return a snapshot with no article because the
-    // // component ArticleScreen will be rendered before it updates with
-    // // the response of the fetch
-    // it('ArticleScreen renders no article before receiving fetch response', () => {
-    //
-    //     fetch.resetMocks();
-    //
-    //     fetch.mockResponseOnce(JSON.stringify(json_response_rest_api_call));
-    //
-    //     const tree = renderer
-    //         .create(article_screen_to_be_tested)
-    //         .toJSON();
-    //     expect(tree).toMatchSnapshot();
-    //
-    // });
 
 });
 
 describe('Testing PickMyBrainMessageService', function() {
 
-    // FIXME
-
-
+    // This is the response the mock rest api call will return
     const json_response_rest_api_call = {
         "nid": [
             {
@@ -269,26 +177,12 @@ describe('Testing PickMyBrainMessageService', function() {
 
     const AppPickMyBrainMessageService = new PickMyBrainMessageService();
 
-    //const AppArticleService = new ArticleService();
-
-    // test('the data is peanut butter', done => {
-    //     function callback(data) {
-    //         expect(data).toBe('peanut butter');
-    //         done();
-    //     }
-    //
-    //     fetchData(callback);
-    // });
-
     it('PickMyBrainMessageService test creating a message', done => {
-
-        // FIXME this is to be written
 
         const mockCallBack = jest.fn();
 
         mockCallBack.mockImplementation(data => {
-            //console.log('inside mockCallBack mockImplementation');
-            //console.log(data);
+
             // We expect null to be returned because, in case of no error,
             // that's what the api create_pick_my_brain_message is supposed to return
             expect(data).toEqual(null);
@@ -301,40 +195,102 @@ describe('Testing PickMyBrainMessageService', function() {
             message: "Just a test message"
         };
 
-        // function callback(data) {
-        //             //expect(data).toBe('peanut butter');
-        //             done();
-        //         }
-
         fetch.resetMocks();
 
         fetch.mockResponseOnce(JSON.stringify(json_response_rest_api_call));
 
-
         AppPickMyBrainMessageService.create_pick_my_brain_message(message_details, mockCallBack);
 
-        //AppArticleService.fetch_articles({ nid: 4555 }, mockCallBack);
-
-
-        // expect(fetch.mock.calls.length).toEqual(1);
-        // expect(fetch.mock.calls[0][0]).toMatch(/rest\/EMS\/view\/articles/);
-        //expect(mockCallBack.mock.calls.length).toEqual(1);
-
-
-
-        // const div = document.createElement('div');
-        // ReactDOM.render(article_screen_to_be_tested , div);
-        // ReactDOM.unmountComponentAtNode(div);
     });
 
 });
 
 describe('Testing TopicService', function() {
 
-// FIXME
+    const result_when_getting_all_topics = [
 
+        {
+            name: "How I work",
+            name_for_url: "how-i-work",
+            subheader: "There is value in doing things properly first time",
+            letter_for_avatar: "W",
+            color_for_avatar: red[500],
+            more_articles_button_label: "More about how I work"
+        },
+        {
+            name: "The tools I use",
+            name_for_url: "the-tools-i-use",
+            subheader: "Modern technology making writing code more productive, fun and easy",
+            letter_for_avatar: "T",
+            color_for_avatar: lightBlue[400],
+            more_articles_button_label: "More about the tools I use"
+        },
+        {
+            name: "Success stories",
+            name_for_url: "success-stories",
+            subheader: "From Intel Corporation to video streaming of classical music",
+            letter_for_avatar: "S",
+            color_for_avatar: orange[400],
+            more_articles_button_label: "More success stories"
+        },
+        {
+            name: "Testimonials",
+            name_for_url: "testimonials",
+            subheader: "Happy clients and happy managers",
+            letter_for_avatar: "T",
+            color_for_avatar: lightGreen[500],
+            more_articles_button_label: "More testimonials"
+        },
+        {
+            name: "Talking about my experiences",
+            name_for_url: "talking-about-my-experiences",
+            subheader: "Sharing my knowledge with the world",
+            letter_for_avatar: "E",
+            color_for_avatar: yellow[600],
+            more_articles_button_label: "More knowledge"
+        },
+        {
+            name: "Where? How?",
+            name_for_url: "where-how",
+            subheader: "Where do I work? How do I work with you?",
+            letter_for_avatar: "W",
+            color_for_avatar: indigo[300],
+            more_articles_button_label: "More about where and how I work with you"
+        }
+    ];
+
+    const AppTopicService = new TopicService();
+
+    it('TopicService getting all topics', done => {
+
+        const mockCallBack = jest.fn();
+
+        mockCallBack.mockImplementation(data => {
+
+            // We expect null to be returned because, in case of no error,
+            // that's what the api create_pick_my_brain_message is supposed to return
+            expect(data).toEqual(result_when_getting_all_topics);
+            done();
+        });
+
+        AppTopicService.get_topics(mockCallBack);
+
+    });
+
+    it('TopicService getting one topic only', done => {
+
+        const mockCallBack = jest.fn();
+
+        mockCallBack.mockImplementation(data => {
+
+            // We expect null to be returned because, in case of no error,
+            // that's what the api create_pick_my_brain_message is supposed to return
+            expect(data).toEqual(result_when_getting_all_topics.find(topic => topic.name_for_url === "talking-about-my-experiences"));
+            done();
+        });
+
+        AppTopicService.get_topic_from_url("talking-about-my-experiences", mockCallBack);
+
+    });
 });
 
-
-
-// FIXME now the other services!

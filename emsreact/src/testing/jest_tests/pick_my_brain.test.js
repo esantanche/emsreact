@@ -1,15 +1,16 @@
-// FIXME docs? anything to do?
-// Testing everything in folder list_of_articles
+// Here we test components in the folder pick_my_brain
 
 import React from "react";
 import ReactDOM from "react-dom";
 
+// To provide this component with the application context
+// See AppContext.js
 import AppContext from "../../AppContext";
+
 import PickMyBrainScreen from "../../pick_my_brain/PickMyBrainScreen";
 import PickMyBrainMessageService from "../../services/pick_my_brain_message/PickMyBrainMessageService";
+
 import { mount } from "enzyme/build/index";
-
-
 
 describe('Testing PickMyBrainScreen', function() {
 
@@ -18,8 +19,8 @@ describe('Testing PickMyBrainScreen', function() {
     const AppPickMyBrainMessageService = new PickMyBrainMessageService();
 
     const Services = { TopicService: null,
-        ArticleService: null,
-        PickMyBrainMessageService: AppPickMyBrainMessageService };
+                       ArticleService: null,
+                       PickMyBrainMessageService: AppPickMyBrainMessageService };
 
     const pick_my_brain_screen_to_be_tested = ( <AppContext.Provider value={Services}>
                                                     <PickMyBrainScreen onclick={mockCallBack}/>
@@ -39,14 +40,10 @@ describe('Testing PickMyBrainScreen', function() {
 
         const submit_button = dialog.findWhere(node => node.is('button'));
 
-        //expect(dialog.is('.some-class')).to.equal(true);
-        //dialog.find('button').simulate('click');
-
         expect(submit_button).toHaveLength(1);
-        //expect(mockCallBack.mock.calls.length).toEqual(1);
+
     });
 
-    // FIXME is this working?
     it('PickMyBrainScreen, should find the fields', () => {
 
         const dialog = mount(pick_my_brain_screen_to_be_tested);
@@ -93,10 +90,4 @@ describe('Testing PickMyBrainScreen', function() {
 
     });
 
-
-    // console.log('PickMyBrainScreen, test click event');
-    // console.log(submit_button);
-    //
-    // submit_button.simulate('click');
-    //
 });

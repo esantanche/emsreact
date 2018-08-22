@@ -1,6 +1,4 @@
-// FIXME
-//import { Service } from 'react-services-injector';
-
+// App configuration
 import { APP_CONFIGURATION } from '../../appConfiguration';
 
 /**
@@ -68,9 +66,5 @@ class PickMyBrainMessageService {
     }
 
 }
-
-// FIXME!!!
-// "publicName" property is important if you use any kind of minimization on your JS
-// PickMyBrainMessageService.publicName = 'PickMyBrainMessageService';
 
 export default PickMyBrainMessageService;

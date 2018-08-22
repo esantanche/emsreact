@@ -1,21 +1,16 @@
-// FIXME docs? anything to do?
-// Testing everything in folder article
-// fixme fix docs
+// Here we test components in the folder home
 
 import React from "react";
-import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
 
-import HeaderScreen from "../../header/HeaderScreen";
-import {BrowserRouter} from "react-router-dom";
+// To provide this component with the application context
+// See AppContext.js
 import AppContext from "../../AppContext";
+
 import HomeScreen from "../../home/HomeScreen";
-import PickMyBrainMessageService from "../../services/pick_my_brain_message/PickMyBrainMessageService";
-import FooterScreen from "../../footer/FooterScreen";
+
 import TopicService from "../../services/topic/TopicService";
 import ArticleService from "../../services/article/ArticleService";
-
-// FIXME this is for the home
 
 describe('Testing HomeScreen', function() {
 

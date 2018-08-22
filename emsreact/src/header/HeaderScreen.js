@@ -20,7 +20,6 @@ import {withRouter} from "react-router-dom";
 
 // Material UI function that make width available
 import withWidth from "@material-ui/core/withWidth/withWidth";
-// import AppContext from "../AppContext";
 
 /**
  * This is the header always present at the top of the page.

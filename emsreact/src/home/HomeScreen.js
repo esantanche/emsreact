@@ -16,9 +16,8 @@ import MasterAvatar from "../components_library/avatars/MasterAvatar";
 // Shows lists of articles
 import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 
-// The injector allows this component to use services, see README.md in folder 'services'
-//import { injector } from 'react-services-injector';
-
+// To provide this component with the application context
+// See AppContext.js
 import AppContext from '../AppContext';
 
 // import TopicService from '../services/topic/TopicService';

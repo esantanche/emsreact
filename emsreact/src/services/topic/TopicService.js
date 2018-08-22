@@ -1,6 +1,3 @@
-// FIXME
-//import { Service } from 'react-services-injector';
-
 // Material UI colors
 import red from "@material-ui/core/colors/red";
 import lightBlue from "@material-ui/core/colors/lightBlue";
@@ -108,9 +105,5 @@ class TopicService {
     }
 
 }
-
-// FIXME
-// "publicName" property is important if you use any kind of minimization on your JS
-//TopicService.publicName = 'TopicService';
 
 export default TopicService;

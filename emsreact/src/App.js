@@ -20,10 +20,12 @@ import FooterScreen from './footer/FooterScreen';
 // From components library
 import BodyPane from './components_library/panes/BodyPane';
 
-// FIXME!
+// This is the application context we are going to populate below
+// See AppContext.js
 import AppContext from './AppContext';
 
-// FIXME clean again!!
+// Building the context by creating the services that will passed
+// to the entire application for the components which need them to use
 
 import TopicService from "./services/topic/TopicService";
 import ArticleService from "./services/article/ArticleService";
@@ -33,12 +35,9 @@ const AppTopicService = new TopicService();
 const AppArticleService = new ArticleService();
 const AppPickMyBrainMessageService = new PickMyBrainMessageService();
 
-// FIXME!
 const Services = { TopicService: AppTopicService,
                    ArticleService: AppArticleService,
                    PickMyBrainMessageService: AppPickMyBrainMessageService};
-
-// FIXME uninstall react service injector
 
 /**
  * This is the starting point for the application.

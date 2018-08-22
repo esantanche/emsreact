@@ -18,7 +18,8 @@ import * as EmailValidator from 'email-validator';
 // From components library
 import MessageDialog from "../components_library/dialogs/MessageDialog";
 
-// FIXME document this
+// To provide this component with the application context
+// See AppContext.js
 import AppContext from "../AppContext";
 
 /**

@@ -1,4 +1,4 @@
-// FIXME docs
+// Here we test components in components_library/cards
 
 import ReactDOM from "react-dom";
 import ArticleCard from "../../../components_library/cards/ArticleCard";
@@ -7,11 +7,6 @@ import renderer from 'react-test-renderer';
 import ColouredCard from "../../../components_library/cards/ColouredCard";
 import SocialCard from "../../../components_library/cards/SocialCard";
 import GitHub_logo from "../../../images/GitHub_Logo.png";
-import Grid from "@material-ui/core/Grid/Grid";
-
-// Here we test components in components_library/cards
-
-// FIXME is this complete?
 
 // Testing ArticleCard
 

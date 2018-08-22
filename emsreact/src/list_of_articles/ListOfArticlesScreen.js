@@ -8,6 +8,8 @@ import Card from '@material-ui/core/Card';
 import InnerGridPane from '../components_library/panes/InnerGridPane';
 import ArticleCard from '../components_library/cards/ArticleCard';
 
+// To provide this component with the application context
+// See AppContext.js
 import AppContext from "../AppContext";
 
 /**

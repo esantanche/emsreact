@@ -1,17 +1,10 @@
-// FIXME docs? anything to do?
-// Testing everything in folder article
-// fixme fix docs
+// Here we test helper functions in the folder helpers
 
 import React from "react";
 
-import {title_to_slug} from "../../helpers/title_to_slug";
-
-// FIXME this is for the helpers
-
+import { title_to_slug } from "../../helpers/title_to_slug";
 
 describe('Testing title_to_slug.js', function() {
-
-    // const slug_for_link_to_article = title_to_slug(title);
 
     const test_cases = [
         [ 'How I work', 'how-i-work' ],
