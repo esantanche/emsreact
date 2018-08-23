@@ -1,3 +1,9 @@
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en
+
+<> 2018-08-23T054815.200.json
+
+###
+
 POST https://backend.emanuelesantanche.com/node?_format=json
 Content-Type: application/json
 Accepts: application/json
@@ -555,12 +561,6 @@ GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
 GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
 
 <> 2018-07-18T010152.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T125958.200.json
 
 ###
 
