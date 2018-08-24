@@ -24,6 +24,9 @@ import BodyPane from './components_library/panes/BodyPane';
 // See AppContext.js
 import AppContext from './AppContext';
 
+// To set Google Analytics tracking code
+import ReactGA from 'react-ga';
+
 // Building the context by creating the services that will passed
 // to the entire application for the components which need them to use
 
@@ -38,6 +41,10 @@ const AppPickMyBrainMessageService = new PickMyBrainMessageService();
 const Services = { TopicService: AppTopicService,
                    ArticleService: AppArticleService,
                    PickMyBrainMessageService: AppPickMyBrainMessageService};
+
+// Setting Google Analytics tracking code
+ReactGA.initialize('UA-71688245-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 /**
  * This is the starting point for the application.

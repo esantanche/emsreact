@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e276e9-a457-4c03-8331-cc12411e868c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T125958.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/container-git-tasks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/container-git-tasks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,42 +78,44 @@
     <session id="-1361174222">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="5" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="http" value="4" />
-          <entry key="js" value="144" />
-          <entry key="md" value="2" />
+          <entry key="js" value="145" />
+          <entry key="md" value="4" />
           <entry key="snap" value="32" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTTP Request" value="4" />
-          <entry key="JavaScript" value="144" />
+          <entry key="JavaScript" value="145" />
           <entry key="Jest Snapshot" value="32" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="4" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="http" value="3" />
-          <entry key="js" value="6592" />
-          <entry key="md" value="28" />
+          <entry key="js" value="6678" />
+          <entry key="md" value="209" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTTP Request" value="3" />
-          <entry key="JavaScript" value="6592" />
-          <entry key="Markdown" value="28" />
+          <entry key="JavaScript" value="6678" />
+          <entry key="Markdown" value="209" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -132,11 +135,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view.http">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-290">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#959#1016#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emsreact/public/sitemap.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="180">
+                <caret line="12" selection-start-line="12" selection-end-line="12" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -207,7 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/emsreact/src/footer/FooterScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/list_of_articles/README.md" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/buttons/README.md" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/buttons/MenuButton.js" />
@@ -239,7 +286,6 @@
         <option value="$PROJECT_DIR$/emsreact/src/services/topic/TopicService.js" />
         <option value="$PROJECT_DIR$/emsreact/src/list_of_articles/TopicScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js" />
-        <option value="$PROJECT_DIR$/emsreact/src/App.js" />
         <option value="$PROJECT_DIR$/emsreact/src/index.js" />
         <option value="$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library/avatars.test.js" />
         <option value="$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library/bars.test.js" />
@@ -258,6 +304,8 @@
         <option value="$PROJECT_DIR$/emsreact/src/testing/jest_tests/pick_my_brain.test.js" />
         <option value="$PROJECT_DIR$/emsreact/src/testing/jest_tests/services.test.js" />
         <option value="$PROJECT_DIR$/emsreact/src/testing/jest_tests/social.test.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/App.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -300,6 +348,12 @@
               <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
               <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -371,17 +425,17 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests" />
-      <recent name="$PROJECT_DIR$/emsreact/src/testing" />
-      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library" />
-      <recent name="$PROJECT_DIR$/emsreact/src/components_library/avatars" />
-      <recent name="$PROJECT_DIR$/emsreact/src/components_library/buttons" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests" />
       <recent name="$PROJECT_DIR$/emsreact/src/components_library" />
       <recent name="$PROJECT_DIR$/emsreact/src/components_library/panes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/emsreact/public" />
+      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests" />
+      <recent name="$PROJECT_DIR$/emsreact/src/testing" />
+      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library" />
+      <recent name="$PROJECT_DIR$/emsreact/src/components_library/avatars" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1183,11 +1237,12 @@
       <workItem from="1534925420207" duration="8721000" />
       <workItem from="1535018794134" duration="2662000" />
       <workItem from="1535039282444" duration="1452000" />
+      <workItem from="1535097694245" duration="3581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366434000" />
+    <option name="totallyTimeSpent" value="370015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1201,7 +1256,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22468354" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22468354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1237,27 +1292,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library/__snapshots__/panes.test.js.snap">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/BottomGridPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/BodyPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/AlignedGridPane.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -1453,13 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library/avatars.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1572,16 +1599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/testing/jest_tests/home.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1596,9 +1613,56 @@
     <entry file="file://$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view.http">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#959#1016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/public/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

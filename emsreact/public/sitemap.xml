@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated at http://www.timestampgenerator.com/tools/xml-sitemap-from-list/ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://emanuelesantanche.com/</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/articles/how-i-work</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/64/how-do-i-make-my-application-secure</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/63/how-do-i-make-my-application-fast</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/13/how-do-i-make-my-application-easy-to-troubleshoot</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/8/how-do-i-protect-my-investment-in-bespoke-software</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/7/how-do-i-create-my-application</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/6/how-do-i-make-my-application-easy-to-manage-in-production</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/articles/the-tools-i-use</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/68/compasssass</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/67/wordpress</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/66/drupal</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/65/angular</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/14/php</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/12/css-in-js</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/11/javascript</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/10/html-5</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/9/react</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/articles/success-stories</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/78/iclassix</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/77/my-own-database-application</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/76/my-degree-in-electronic-engineering</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/75/ibm-for-government</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/74/google-maps-sort-of</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/73/finding-your-way-in-the-railway-network</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/72/billions-of-phone-calls-a-month</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/71/a-datacentre-with-hundreds-of-servers</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/70/virtual-internet-service-provider</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/69/plc-programming</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/48/making-earth-satellite-communications-better</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/47/a-laser-eye-for-robots</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/46/intel-corporation-and-its-thousands-of-servers</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/articles/testimonials</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/51/unicredit</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/50/ibm-for-government-prefecture</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/49/ibm--intel-corporation</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/articles/talking-about-my-experiences</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/90/php-tutorial-how-to-make-your-code-beautiful-using-photography-composition-rules</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/89/php-editor-an-indispensable-tool</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/88/php-ide-comprehensive-facilities-for-php-programmers</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/87/php-frameworks-how-to-choose</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/86/bounce-processing-when-smtp-server-doesnt-return-bounces-properly</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/85/configuring-postfix-to-relay-email-through-zoho-mail</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/84/impossible-to-login-to-wordpress-website</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/83/installing-open-project-on-debian-8-server</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/82/use-your-smart-phone-as-webcam-and-keep-enjoying-enhanced-security-as-well</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/81/wysiwyg-editor-for-mediawiki</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/80/installing-react-application</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/79/serving-static-files-in-react</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/52/installing-drupal-8-alongside-react</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/articles/where-how</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/62/paris-and-worldwide</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/61/30-days-money-back-guarantee</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/60/i-fix-your-problem-or-you-pay-nothing</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/59/making-business-human</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://emanuelesantanche.com/article/58/privacy-policy</loc>
+	<priority>.5</priority>
+	<changefreq>weekly</changefreq>
+</url>
+
+</urlset>
