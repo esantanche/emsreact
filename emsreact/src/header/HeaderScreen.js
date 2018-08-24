@@ -156,9 +156,6 @@ class HeaderScreen extends Component {
 
 }
 
-
-
-
 // withRouter is needed to be able to use the history
 // like in:
 //    this.props.history.push(url_to_go_to);

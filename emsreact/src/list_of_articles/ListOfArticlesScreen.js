@@ -144,5 +144,3 @@ export default props => (
         {services => <ListOfArticlesScreen {...props} services={services} />}
     </AppContext.Consumer>
 );
-
-// export default injector.connect(ListOfArticlesScreen);

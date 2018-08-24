@@ -20,8 +20,6 @@ import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 // See AppContext.js
 import AppContext from '../AppContext';
 
-// import TopicService from '../services/topic/TopicService';
-
 /**
  * Home Screen. Header and Footer are not here.
  *
@@ -51,9 +49,6 @@ class HomeScreen extends Component {
      * Fetching details about the topics to show on the home page (How I work, The tools I use, etc.).
      */
     componentDidMount() {
-
-        // console.log('HomeScreen::componentDidMount');
-        // console.log(this.props.services);
 
         const { TopicService } = this.props.services;
 
@@ -153,9 +148,3 @@ export default props => (
         {services => <HomeScreen {...props} services={services} />}
     </AppContext.Consumer>
 );
-
-//export default injector.connect(HomeScreen);
-
-// export default injector.connect(HomeScreen, {
-//     toRender: ['TopicService']
-// });

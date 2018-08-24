@@ -116,5 +116,3 @@ export default props => (
         {services => <ArticleScreen {...props} services={services} />}
     </AppContext.Consumer>
 );
-
-// export default injector.connect(ArticleScreen);
