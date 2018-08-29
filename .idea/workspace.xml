@@ -2,10 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e276e9-a457-4c03-8331-cc12411e868c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/home/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/home/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/AlignedGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/AlignedGridPane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/App.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/App.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/App.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/ArticleCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ArticleCard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/ArticleScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ArticleScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/ArticleService.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ArticleService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/BodyPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/BodyPane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/BottomGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/BottomGridPane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/ColouredCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ColouredCard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/FooterScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/FooterScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/FrontGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/FrontGridPane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/HeaderMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HeaderMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/HeaderScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HeaderScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/HomeButtonPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HomeButtonPane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/HomeButtonText.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HomeButtonText.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/HomeScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HomeScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/InnerGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/InnerGridPane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/ListOfArticlesScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ListOfArticlesScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/MasterAppBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MasterAppBar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/MasterAvatar.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MasterAvatar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/MenuButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MenuButton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/MessageDialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MessageDialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/MuiTheme.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MuiTheme.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/PickMyBrainDialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/PickMyBrainDialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/PickMyBrainMessageService.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/PickMyBrainMessageService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/PickMyBrainScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/PickMyBrainScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/SeparatorPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/SeparatorPane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/SocialCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/SocialCard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/SocialScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/SocialScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/TopicScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/TopicScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/TopicService.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/TopicService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/article_ArticleScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/article_ArticleScreen.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_avatars_MasterAvatar.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_avatars_MasterAvatar.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_bars_MasterAppBar.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_bars_MasterAppBar.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_buttons_MenuButton.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_buttons_MenuButton.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ArticleCard.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ArticleCard.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ColouredCard.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ColouredCard.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_cards_SocialCard.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_cards_SocialCard.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_MessageDialog.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_MessageDialog.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_PickMyBrainDialog.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_PickMyBrainDialog.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_menus_HeaderMenu.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_menus_HeaderMenu.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_AlignedGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_AlignedGridPane.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BodyPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BodyPane.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BottomGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BottomGridPane.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_FrontGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_FrontGridPane.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_HomeButtonPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_HomeButtonPane.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_InnerGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_InnerGridPane.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_SeparatorPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_SeparatorPane.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_texts_HomeButtonText.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_texts_HomeButtonText.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/footer_FooterScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/footer_FooterScreen.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/global.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/global.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/header_HeaderScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/header_HeaderScreen.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/helpers_title_to_slug.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/helpers_title_to_slug.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/home_HomeScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/home_HomeScreen.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/list_of_articles_ListOfArticlesScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/list_of_articles_ListOfArticlesScreen.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/list_of_articles_TopicScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/list_of_articles_TopicScreen.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/pick_my_brain_PickMyBrainScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/pick_my_brain_PickMyBrainScreen.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/services_article_ArticleService.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/services_article_ArticleService.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/services_pick_my_brain_message_PickMyBrainMessageService.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/services_pick_my_brain_message_PickMyBrainMessageService.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/services_topic_TopicService.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/services_topic_TopicService.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emsreact/docs/social_SocialScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/social_SocialScreen.js.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,18 +136,19 @@
     <session id="-1361174222">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="6" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="http" value="4" />
-          <entry key="js" value="157" />
+          <entry key="js" value="160" />
+          <entry key="json" value="1" />
           <entry key="md" value="4" />
           <entry key="snap" value="32" />
           <entry key="xml" value="1" />
@@ -97,7 +157,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTTP Request" value="4" />
-          <entry key="JavaScript" value="157" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="160" />
           <entry key="Jest Snapshot" value="32" />
           <entry key="Markdown" value="4" />
           <entry key="XML" value="1" />
@@ -122,11 +183,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="105">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#176#246#0" expanded="true" />
@@ -135,11 +196,47 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/services/article/ArticleService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#235#266#0" expanded="true" />
+                <element signature="e#350#393#0" expanded="true" />
+                <element signature="e#1033#1090#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2145">
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
+              <folding>
+                <element signature="e#69#123#0" expanded="true" />
+                <element signature="e#411#481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/TopicScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1580">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="60">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#69#111#0" expanded="true" />
                 <element signature="e#365#435#0" expanded="true" />
@@ -307,57 +404,6 @@
               <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
               <item name="emsreact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="article" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components_library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components_library" type="462c0819:PsiDirectoryNode" />
-              <item name="avatars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components_library" type="462c0819:PsiDirectoryNode" />
-              <item name="bars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -365,20 +411,6 @@
               <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
               <item name="emsreact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="list_of_articles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pick_my_brain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -388,45 +420,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="article" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="jest_tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="jest_tests" type="462c0819:PsiDirectoryNode" />
-              <item name="components_library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="REST apis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1259,11 +1252,14 @@
       <workItem from="1535039282444" duration="1452000" />
       <workItem from="1535097694245" duration="3581000" />
       <workItem from="1535113545489" duration="999000" />
+      <workItem from="1535363843154" duration="1142000" />
+      <workItem from="1535377667516" duration="2593000" />
+      <workItem from="1535543772600" duration="506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371014000" />
+    <option name="totallyTimeSpent" value="375255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1313,13 +1309,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/menus/HeaderMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/SeparatorPane.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1401,13 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="68" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/services/article/ArticleService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1588,10 +1570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#47#73#0" expanded="true" />
-            <element signature="e#198#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1609,27 +1587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#235#266#0" expanded="true" />
-            <element signature="e#350#393#0" expanded="true" />
-            <element signature="e#1033#1090#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/pick_my_brain/PickMyBrainScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4655">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#105#167#0" expanded="true" />
-            <element signature="e#370#415#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1637,20 +1598,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#143#195#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/avatars/MasterAvatar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/bars/MasterAppBar.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1663,10 +1615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#69#125#0" expanded="true" />
-            <element signature="e#341#411#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1674,17 +1622,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
           <caret line="156" column="1" lean-forward="true" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="e#69#111#0" expanded="true" />
-            <element signature="e#256#323#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#176#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#235#266#0" expanded="true" />
+            <element signature="e#350#393#0" expanded="true" />
+            <element signature="e#1033#1090#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="2145">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
           <folding>
             <element signature="e#69#123#0" expanded="true" />
             <element signature="e#411#481#0" expanded="true" />
@@ -1694,8 +1668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/TopicScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1580">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="60">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#69#111#0" expanded="true" />
             <element signature="e#365#435#0" expanded="true" />
@@ -1703,14 +1677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
+    <entry file="file://$PROJECT_DIR$/emsreact/src/services/article/ArticleService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#176#246#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
