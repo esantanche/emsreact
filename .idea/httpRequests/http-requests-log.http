@@ -1,3 +1,87 @@
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=hal_json
+
+<> 2018-09-27T065742.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=hal_json
+
+<> 2018-09-27T065722.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=hal_json
+
+<> 2018-09-27T065048.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=hal_json&page=1
+
+<> 2018-09-27T065031.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&page=1
+
+<> 2018-09-27T064930.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&page=1
+
+<> 2018-09-27T052652.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&page=1
+
+<> 2018-09-27T051305.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&page=1
+
+<> 2018-09-27T050714.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&page=0
+
+<> 2018-09-27T050655.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&page=1
+
+<> 2018-09-27T050610.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&page=2
+
+<> 2018-09-27T050557.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json
+
+<> 2018-09-27T045906.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json
+
+<> 2018-09-27T045643.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json
+
+<> 2018-09-27T045620.404.json
+
+###
+
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&langcode=en
 
 <> 2018-08-23T054815.200.json
@@ -477,90 +561,6 @@ Accepts: application/json
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
 
 <> 2018-07-18T042440.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-18T034348.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json&langcode=en
-
-<> 2018-07-18T032926.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T032903.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T032505.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T032217.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T031614.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T022138.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T022023.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T021910.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json
-
-<> 2018-07-18T021852.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T011200.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T011011.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T010249.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/rest/EMS/taxonomy/topics?_format=json
-
-<> 2018-07-18T010152.200.json
 
 ###
 

@@ -2,69 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e276e9-a457-4c03-8331-cc12411e868c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T010152.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T010249.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T011011.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T011200.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T021852.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T021910.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T022023.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T022138.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T031614.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T032217.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T032505.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T032903.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T032926.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-07-18T034348.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/AlignedGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/AlignedGridPane.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/App.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/App.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/ArticleCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ArticleCard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/ArticleScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ArticleScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/ArticleService.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ArticleService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/BodyPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/BodyPane.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/BottomGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/BottomGridPane.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/ColouredCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ColouredCard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/FooterScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/FooterScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/FrontGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/FrontGridPane.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/HeaderMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HeaderMenu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/HeaderScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HeaderScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/HomeButtonPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HomeButtonPane.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/HomeButtonText.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HomeButtonText.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/HomeScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/HomeScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/InnerGridPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/InnerGridPane.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/ListOfArticlesScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/ListOfArticlesScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/MasterAppBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MasterAppBar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/MasterAvatar.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MasterAvatar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/MenuButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MenuButton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/MessageDialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MessageDialog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/MuiTheme.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/MuiTheme.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/PickMyBrainDialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/PickMyBrainDialog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/PickMyBrainMessageService.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/PickMyBrainMessageService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/PickMyBrainScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/PickMyBrainScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/SeparatorPane.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/SeparatorPane.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/SocialCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/SocialCard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/SocialScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/SocialScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/TopicScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/TopicScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/TopicService.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/TopicService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/article_ArticleScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/article_ArticleScreen.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_avatars_MasterAvatar.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_avatars_MasterAvatar.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_bars_MasterAppBar.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_bars_MasterAppBar.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_buttons_MenuButton.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_buttons_MenuButton.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ArticleCard.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ArticleCard.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ColouredCard.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_cards_ColouredCard.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_cards_SocialCard.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_cards_SocialCard.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_MessageDialog.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_MessageDialog.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_PickMyBrainDialog.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_dialogs_PickMyBrainDialog.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_menus_HeaderMenu.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_menus_HeaderMenu.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_AlignedGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_AlignedGridPane.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BodyPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BodyPane.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BottomGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_BottomGridPane.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_FrontGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_FrontGridPane.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_HomeButtonPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_HomeButtonPane.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_InnerGridPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_InnerGridPane.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_panes_SeparatorPane.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_panes_SeparatorPane.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/components_library_texts_HomeButtonText.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/components_library_texts_HomeButtonText.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/footer_FooterScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/footer_FooterScreen.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/global.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/global.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/header_HeaderScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/header_HeaderScreen.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/helpers_title_to_slug.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/helpers_title_to_slug.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/home_HomeScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/home_HomeScreen.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/list_of_articles_ListOfArticlesScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/list_of_articles_ListOfArticlesScreen.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/list_of_articles_TopicScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/list_of_articles_TopicScreen.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/pick_my_brain_PickMyBrainScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/pick_my_brain_PickMyBrainScreen.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/services_article_ArticleService.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/services_article_ArticleService.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/services_pick_my_brain_message_PickMyBrainMessageService.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/services_pick_my_brain_message_PickMyBrainMessageService.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/services_topic_TopicService.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/services_topic_TopicService.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emsreact/docs/social_SocialScreen.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/emsreact/docs/social_SocialScreen.js.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -136,17 +89,19 @@
     <session id="-1361174222">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="7" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="http" value="4" />
+          <entry key="http" value="6" />
           <entry key="js" value="160" />
           <entry key="json" value="1" />
           <entry key="md" value="4" />
@@ -156,7 +111,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTTP Request" value="4" />
+          <entry key="HTTP Request" value="6" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="160" />
           <entry key="Jest Snapshot" value="32" />
@@ -166,81 +121,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="http" value="3" />
+          <entry key="http" value="61" />
           <entry key="js" value="6678" />
           <entry key="md" value="209" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTTP Request" value="3" />
+          <entry key="HTTP Request" value="61" />
           <entry key="JavaScript" value="6678" />
           <entry key="Markdown" value="209" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view.http">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#176#246#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/emsreact/src/services/article/ArticleService.js">
+        <entry file="file://$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view_playground.http">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#235#266#0" expanded="true" />
-                <element signature="e#350#393#0" expanded="true" />
-                <element signature="e#1033#1090#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2145">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
-              <folding>
-                <element signature="e#69#123#0" expanded="true" />
-                <element signature="e#411#481#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/TopicScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#69#111#0" expanded="true" />
-                <element signature="e#365#435#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -298,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/emsreact/src/list_of_articles/README.md" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/buttons/README.md" />
         <option value="$PROJECT_DIR$/emsreact/src/components_library/buttons/MenuButton.js" />
         <option value="$PROJECT_DIR$/emsreact/src/helpers/title_to_slug.js" />
@@ -349,6 +260,7 @@
         <option value="$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/header/HeaderScreen.js" />
         <option value="$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js" />
+        <option value="$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view_playground.http" />
       </list>
     </option>
   </component>
@@ -367,10 +279,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-620" />
-    <option name="y" value="140" />
-    <option name="width" value="1918" />
-    <option name="height" value="1029" />
+    <option name="x" value="118" />
+    <option name="y" value="241" />
+    <option name="width" value="1908" />
+    <option name="height" value="763" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -380,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -421,15 +332,31 @@
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="article" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactemswebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactemswebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="emsreact" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="REST apis" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/mnt/DigitalOceanSshfs/srv/sites/sitomichele.emanuelesantanche.com/Test" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -438,22 +365,134 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/emsreact/src/testing/REST apis" />
+      <recent name="$PROJECT_DIR$/emsreact/public" />
+      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests" />
+      <recent name="$PROJECT_DIR$/emsreact/src/testing" />
+      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests" />
       <recent name="$PROJECT_DIR$/emsreact/src/components_library" />
       <recent name="$PROJECT_DIR$/emsreact/src/components_library/panes" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/emsreact/public" />
-      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests" />
-      <recent name="$PROJECT_DIR$/emsreact/src/testing" />
-      <recent name="$PROJECT_DIR$/emsreact/src/testing/jest_tests/components_library" />
-      <recent name="$PROJECT_DIR$/emsreact/src/components_library/avatars" />
-    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="_format" />
+                <option name="value" value="hal_json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="_format" />
+                <option name="value" value="hal_json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="_format" />
+                <option name="value" value="json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="_format" />
+                <option name="value" value="json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="_format" />
+                <option name="value" value="json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="_format" />
+                <option name="value" value="json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://backend.emanuelesantanche.com/rest/EMS/view/articles" />
@@ -1255,11 +1294,14 @@
       <workItem from="1535363843154" duration="1142000" />
       <workItem from="1535377667516" duration="2593000" />
       <workItem from="1535543772600" duration="506000" />
+      <workItem from="1537623187528" duration="636000" />
+      <workItem from="1538060061814" duration="2350000" />
+      <workItem from="1538066962096" duration="1107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375255000" />
+    <option name="totallyTimeSpent" value="379348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1273,12 +1315,12 @@
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22468354" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22468354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.38356164" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.80365294" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.64269406" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.453125" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1309,13 +1351,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/SeparatorPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/components_library/panes/InnerGridPane.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1573,13 +1608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/article/ArticleScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="730">
@@ -1632,37 +1660,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#176#246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#235#266#0" expanded="true" />
-            <element signature="e#350#393#0" expanded="true" />
-            <element signature="e#1033#1090#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/services/article/ArticleService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/list_of_articles/ListOfArticlesScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emsreact/src/home/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
+        <state relative-caret-position="790">
           <caret line="150" selection-start-line="150" selection-end-line="150" />
-          <folding>
-            <element signature="e#69#123#0" expanded="true" />
-            <element signature="e#411#481#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1670,17 +1692,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#69#111#0" expanded="true" />
-            <element signature="e#365#435#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emsreact/src/services/article/ArticleService.js">
+    <entry file="file://$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view.http">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="375">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emsreact/src/testing/REST apis/EMS_Articles_view_playground.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
