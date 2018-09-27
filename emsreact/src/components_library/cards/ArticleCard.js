@@ -174,7 +174,7 @@ class ArticleCard extends Component {
                     />
 
                     <Typography variant="body2" component="div"
-                                style={{ flex: "1", height: image_fixed_size_according_to_width[width], marginLeft: "10px" }}>
+                                style={{ flex: "1", width: "1px", height: image_fixed_size_according_to_width[width], marginLeft: "10px" }}>
 
                         <Dotdotdot clamp={image_fixed_size_according_to_width[width]}
                                    style={{ height: image_fixed_size_according_to_width[width] }}>
