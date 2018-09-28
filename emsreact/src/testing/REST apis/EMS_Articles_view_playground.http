@@ -8,7 +8,7 @@
 # FIXME this is an experiment
 
 # Articles all languages
-GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=hal_json
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json
 
 ###
 
@@ -24,5 +24,24 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=hal_json
 
 # &nid=4 single article and language
 GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=58&langcode=en
+
+###
+
+
+# test of view with json api
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json
+
+###
+
+#
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&field_ems_topic_target_id="Talking about my experiences"&page=2
+
+###
+
+# test json api
+# fields[node--ems_article]=title,body,sticky,field_ems_topic
+# filter[field_name]=value
+# &include=field_ems_topic
+#GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body,sticky,field_ems_topic,field_image&include=field_ems_topic&page[limit]=6&page[offset]=0
 
 ###

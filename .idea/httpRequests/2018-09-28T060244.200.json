@@ -1,0 +1,75 @@
+{
+  "results": [
+    {
+      "nid": "64",
+      "title": "How do I make my application secure?",
+      "body": "<p>I have worked for many years in a bank. There were 300+ servers providing internet services. Security was a top priority as you can imagine.<\/p>\n\n<p>Every incoming or outgoing communication was carefully inspected and needed authorization.<\/p>\n\n<p>A day the Shark begun to send distress signals. The Shark has nothing to do with the fish. It’s the codename of the IBM ESS, Enterprise Storage Server, which is a SAN system offering, in our installation, 600 GB of storage over fibre optic.<\/p>\n\n<p>The Shark was getting broken and sending diagnostic messages to Montpellier, France where IBM has a centralised remote support for SAN systems.<\/p>\n\n<p>The problem was that those messages weren’t reaching their destination because the authorization to send them hadn’t been given yet.<\/p>\n\n<p>The bank’s data-centre was a goldmine of security solutions: firewalls, intrusion detectors, anti-virus scanners, passwords changing every minute, permission policies, and cryptography to protect credit card numbers.<\/p>\n\n<p>Wifi was forbidden because it didn’t satisfy the high security levels required by the bank even if protected by security protocols like WPA and WPA2.<\/p>\n\n<p>More recently, I use Drupal’s solutions for security and apply security patches to the operating system. I prefer Linux to Windows for servers because it’s much safer.<\/p>\n\n<p>When I connect to a server I never use ftp, only sftp, and ssh instead of telnet.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/how-do-i-make-my-application-secure.jpg"
+    },
+    {
+      "nid": "63",
+      "title": "How do I make my application fast?",
+      "body": "<p>When I was at the University, I wrote a programme to analyse data collected by a radar. My programme was quite slow. It needed 30 hours to generate just one view of the data.<\/p>\n\n<p>30 hours of processing time of an IBM mainframe are expensive, very expensive. Happily I could rewrite the programme making it faster. It needed only one hour after the change.<\/p>\n\n<p>The language used was the exotic APL. You need terminals with special keyboards to write software in APL. It’s like a set of mathematical symbols. This was making things more difficult.While creating a system intended to send production orders to an industrial plant, I needed to write my own database application because the ones available at that time were too slow.<\/p>\n\n<p>I had to write my own algorithms to manage tables, build and rebuild indexes, search and write information.<\/p>\n\n<p>Creating a data-warehouse which purpose was to study billions of telephonic calls, I had to be very careful not to write slow queries. Every one of them was lasting many hours. Some of them were lasting for a whole day or two. I had to optimise them carefully because we had “only” a month to provide the final result.<\/p>\n\n<p>One of them went from 20-30 hours of execution time to 30 minutes.<\/p>\n\n<p>I have written a server process to collect information from thousands of computers and form a distributed database. The information was about events and you could either slow down the event influx or put them in a queue. The process had to be very fast in order for it not to lose events. The server process was part of a project for Intel Corporation.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/6735947-xsmall.jpg"
+    },
+    {
+      "nid": "13",
+      "title": "How do I make my application easy to troubleshoot?",
+      "body": "<p>This was my graduation thesis. I created a laser sensor which allowed a robot to determine the position of an object more accurately and avoid dropping it. It was based on the same technology used to make laser light shows. The program architecture was based on components.<\/p>\n\n<p>This component architecture was what today is called object-oriented programming. You can benefit from it even if your programming language is not object-oriented.<\/p>\n\n<p>It made the software much easier to troubleshoot and to expand.<\/p>\n\n<p>Working for Intel Corporation, I structured the application so well that very few errors were found at testing time. Structure is everything to create an easy-to-troubleshoot application.<\/p>\n\n<p>I have written a lot of PLC software. You can’t even test it but in production, when you have only 15 minutes to fix any error or the industrial plant has to be stopped.<\/p>\n\n<p>Sure I had to make the application easy to troubleshoot.<\/p>\n\n<p>Working in Camberley, UK, to create a prototype and having only 2 months to make it, I had to give the prototype a good structure in order for it to be quickly built without renouncing to quality.<\/p>\n\n<p>I have worked for years in a production environment and I know what an application has to look like for it to easy to troubleshoot when you have stringent SLAs to respect.<\/p>\n\n<p>Structure, documentation and good error handling make an application easy to troubleshoot and I have dealt with them many times.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-07\/5267178-xsmall.jpg"
+    },
+    {
+      "nid": "8",
+      "title": "How do I protect my investment in bespoke software?",
+      "body": "<p>It’s not about money only. When we create something, we would like it not to go down the sink too quickly. Sure nothing lasts forever, but if what we create shows to be useful for as long as it can, all the better.<\/p>\n\n<p>How to do this when technologies crop up as quickly as mushrooms after a rain storm and disappear as quickly?<\/p>\n\n<p><strong>Software development is about problem solving<\/strong>. It isn’t about technologies.<\/p>\n\n<p>When you write a piece of software, you are describing a way to solve a problem.<\/p>\n\n<p>If you document it well and your description of how to solve a problem is clear enough, when you have to change programming language, framework, libraries, or need to use the newest flavour of JavaScript, you have documented solutions that you can reuse.<\/p>\n\n<p>You don’t need to throw everything away.<\/p>\n\n<p>A well-documented and well-structured software not only is easier to modify, adapt and troubleshoot. It protects your investment because it documents a solution that is technology independent.<\/p>\n\n<p>When you switch to a new technology, that solution comes with you.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-07\/How_do_I_protect_my_investment_in_bespoke_software.jpg"
+    },
+    {
+      "nid": "7",
+      "title": "How do I create my application?",
+      "body": "<p>What if you ask for my help? I created applications for: IBM, Intel Corporation, the Olympus satellite project, major telecommunication and energy companies, industrial plants, Virtual ISPs, banks and credit card companies.<\/p>\n\n<p>Sure, keep in mind that the age of the requirements sculpted in stone has long gone.<\/p>\n\n<p>Even before the <a href="
+      http:
+      \
+      /
+      \
+      /agilemanifesto.org
+      \
+      /
+      ">agile manifesto<\/a> I was changing, re-writing or even ignoring analysis documents written by world-renowned consulting firms.<\/p>\n\n<p>Now you write a page of requirements and create a working prototype. That prototype will inspire you to make changes or add functions that you couldn’t even think of when you were writing the requirements.<\/p>\n\n<p>Get inspired by <a href="
+      http:
+      \
+      /
+      \
+      /gettingreal.37signals.com
+      \
+      /
+      ">Getting Real<\/a> for your next application. There you find a modern way of making software.<\/p>\n\n<p>Software creation is problem solving. When you solve a problem you end up with a sequence of steps to be followed to solve the problem. The programming language you use doesn’t matter. What matters is something that matters every time you want to solve a problem. The sequence of steps has to be very clear and easy to understand.<\/p>\n\n<p>If I want to solve the problem of going to Paris, I may say:<\/p>\n\n<ol><li>go to the St. Pancreas railway station<\/li>\n\t<li>take the train<\/li>\n<\/ol><p>You may say that something is missing, I need a ticket.<\/p>\n\n<p>And I reply that this is implied in the step no. 1. You will say that this can’t be. Step no. 1 is only about going to the railway station. The purchase of a ticket can’t be implied. You are right. Step no. 1 can’t include something that is not explicitly declared otherwise it’s a mess.<\/p>\n\n<p>The problem solving sequence gets confusing and improvements and troubleshooting gets hard to do. Unfortunately this scenario happens very often when writing software.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-07\/How%20do%20I%20create%20my%20application%3F.jpg"
+    },
+    {
+      "nid": "6",
+      "title": "How do I make my application easy to manage in production?",
+      "body": "<p>When you are in production, you don’t have much time to fix bugs. If you are slow, you lose money and people remember that your website didn’t work and don’t come back.<\/p>\n\n<p><strong>You don’t have time to understand cryptic error messages or to guess what to do to fix them<\/strong>.<\/p>\n\n<p>You don’t have time to understand what a function does or what a variable contains. The original developer may be on holiday or she may not be able to remember what that variable was about if its name doesn’t help.<\/p>\n\n<p>A good structure helps too. If the software is easy to browse, errors are easier to find.<\/p>\n\n<p>A production manual is a good idea.<\/p>\n\n<p>I was managing a team whose goal was to design the production activities to be performed on a group of servers delivering virtual ISP services.<\/p>\n\n<p>I knew that a production manual was what we needed to ensure a smooth operation.<\/p>\n\n<p>Every event was documented in the manual along with it’s troubleshooting measures and the log of every case of occurrence.<\/p>\n\n<p>In many cases I have written such a high quality software that production was going on event-less. This is the case of my PLC software and the software I have written for Intel Corporation.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-07\/How_do_I_make_my_application_easy_to_manage_in_production.jpg"
+    }
+  ],
+  "count": "6"
+}

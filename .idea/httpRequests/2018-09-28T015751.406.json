@@ -1,0 +1,13 @@
+{
+  "errors": [
+    {
+      "title": "Not Acceptable",
+      "status": 406,
+      "detail": "No route found for the specified format api_json. Supported formats: hal_json, json.",
+      "links": {
+        "info": "http:\/\/www.w3.org\/Protocols\/rfc2616\/rfc2616-sec10.html#sec10.4.7"
+      },
+      "code": 0
+    }
+  ]
+}

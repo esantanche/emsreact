@@ -1,0 +1,59 @@
+{
+  "results": [
+    {
+      "nid": "66",
+      "title": "Drupal",
+      "body": "<p>Drupal is content management software. It's used to make many of the websites and applications you use every day. Drupal has great standard features, like easy content authoring, reliable performance, and excellent security. But what sets it apart is its flexibility; modularity is one of its core principles. Its tools help you build the versatile, structured content that dynamic web experiences need.<\/p>\n\n<p>It's also a great choice for creating integrated digital frameworks. You can extend it with any one, or many, of thousands of add-ons. Modules expand Drupal's functionality. Themes let you customize your content's presentation. Distributions are packaged Drupal bundles you can use as starter-kits. Mix and match these components to enhance Drupal's core abilities. Or, integrate Drupal with external services and other applications in your infrastructure. No other content management software is this powerful and scalable.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "The tools I use",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/druplicon.png"
+    },
+    {
+      "nid": "65",
+      "title": "Angular",
+      "body": "<p>Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "The tools I use",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/Angular_0.png"
+    },
+    {
+      "nid": "64",
+      "title": "How do I make my application secure?",
+      "body": "<p>I have worked for many years in a bank. There were 300+ servers providing internet services. Security was a top priority as you can imagine.<\/p>\n\n<p>Every incoming or outgoing communication was carefully inspected and needed authorization.<\/p>\n\n<p>A day the Shark begun to send distress signals. The Shark has nothing to do with the fish. It’s the codename of the IBM ESS, Enterprise Storage Server, which is a SAN system offering, in our installation, 600 GB of storage over fibre optic.<\/p>\n\n<p>The Shark was getting broken and sending diagnostic messages to Montpellier, France where IBM has a centralised remote support for SAN systems.<\/p>\n\n<p>The problem was that those messages weren’t reaching their destination because the authorization to send them hadn’t been given yet.<\/p>\n\n<p>The bank’s data-centre was a goldmine of security solutions: firewalls, intrusion detectors, anti-virus scanners, passwords changing every minute, permission policies, and cryptography to protect credit card numbers.<\/p>\n\n<p>Wifi was forbidden because it didn’t satisfy the high security levels required by the bank even if protected by security protocols like WPA and WPA2.<\/p>\n\n<p>More recently, I use Drupal’s solutions for security and apply security patches to the operating system. I prefer Linux to Windows for servers because it’s much safer.<\/p>\n\n<p>When I connect to a server I never use ftp, only sftp, and ssh instead of telnet.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/how-do-i-make-my-application-secure.jpg"
+    },
+    {
+      "nid": "63",
+      "title": "How do I make my application fast?",
+      "body": "<p>When I was at the University, I wrote a programme to analyse data collected by a radar. My programme was quite slow. It needed 30 hours to generate just one view of the data.<\/p>\n\n<p>30 hours of processing time of an IBM mainframe are expensive, very expensive. Happily I could rewrite the programme making it faster. It needed only one hour after the change.<\/p\u003E\n\n<p>The language used was the exotic APL. You need terminals with special keyboards to write software in APL. It’s like a set of mathematical symbols. This was making things more difficult.While creating a system intended to send production orders to an industrial plant, I needed to write my own database application because the ones available at that time were too slow.<\/p>\n\n<p>I had to write my own algorithms to manage tables, build and rebuild indexes, search and write information.<\/p>\n\n<p>Creating a data-warehouse which purpose was to study billions of telephonic calls, I had to be very careful not to write slow queries. Every one of them was lasting many hours. Some of them were lasting for a whole day or two. I had to optimise them carefully because we had “only” a month to provide the final result.<\/p>\n\n<p>One of them went from 20-30 hours of execution time to 30 minutes.<\/p>\n\n<p>I have written a server process to collect information from thousands of computers and form a distributed database. The information was about events and you could either slow down the event influx or put them in a queue. The process had to be very fast in order for it not to lose events. The server process was part of a project for Intel Corporation.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "How I work",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/6735947-xsmall.jpg"
+    },
+    {
+      "nid": "62",
+      "title": "Paris and worldwide",
+      "body": "<p>I work with you in Paris, France and, remotely worldwide.<\/p>\n\n<p>Communication and cooperation tools I use are:<\/p>\n\n<ul><li>Skype<\/li>\n\t<li>Google Hangouts<\/li>\n\t<li>Appear.in<\/li>\n\t<li>Slack<\/li>\n\t<li>Email<\/li>\n\t<li>Mediawiki<\/li>\n\t<li>Github<\/li>\n\t<li>Confluence<\/li>\n<\/ul>",
+      "langcode": "English",
+      "field_ems_topic": "Where? How?",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-07\/ParisAndWordwide400x400.png"
+    },
+    {
+      "nid": "61",
+      "title": "30 days money back guarantee",
+      "body": "<p>Will we end up paying for useless software?<\/p>\n\n<p>Will we like it?<\/p>\n\n<p>This guy wants to be paid in advance! What if we waste money with him?<\/p>\n\n<p>Will we be able to work with him? What if we can’t understand each other?<\/p>\n\n<p>What if we discover that we wanted something completely different?<\/p>\n\n<p>Anything familiar?<\/p>\n\n<p>I know that software projects can be complex and misunderstandings are frequent.<\/p>\n\n<p>That’s why I offer a 30 days guarantee.<\/p>\n\n<p>I will work with you on your project for 30 days.<\/p>\n\n<p>I will build your application on my own server. You will be able to use it, but I will keep the source code.<\/p>\n\n<p>At the end of the 30 days period, you will evaluate the application.<\/p>\n\n<p>If you like it, you pay for that first 30 days period of work.<\/p>\n\n<p>If you don’t like it, you pay nothing. No questions asked!<\/p>\n\n<p>If you pay and decide to go on working on the application with me, I’ll give you the code and, from that point on, I’ll give you updated code every day.<\/p>\n\n<p>If your project is shorter than 30 days, it’s the same.<\/p>\n\n<p>You pay for the entire project if you like it. If you don’t, you pay nothing.<\/p>\n\n<p>This guarantee applies only to the first project I work on with you.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "Where? How?",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-07\/30-day-money-back1-scaled-down-centered-600x500.png"
+    }
+  ],
+  "count": "50"
+}

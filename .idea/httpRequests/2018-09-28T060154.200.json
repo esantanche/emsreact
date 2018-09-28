@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "nid": "72",
+      "title": "Billions of phone calls a month",
+      "body": "<p>Yes, the major Italian telecommunications company stores information about every call made. There are more than one billion of them per month.<\/p>\n\n<p>To treat this enormous quantity of data you need a mainframe and not a small one. It was an S\/390 and used terabytes of storage.<\/p>\n\n<p>When a program stops working and you can’t even kill it, if your computer is a desktop you just shut the computer down and restart it.<\/p>\n\n<p>Don’t think that you can do the same with an S\/390. To shutdown and restart it you have to wait an entire week. Not something to do very easily.<\/p>\n\n<p>It’s a completely different way to work when you have to design and run “just” 20 queries when each query runs for many days and you have only one month to run them all.<\/p>\n\n<p>If you make a mistake, you have to wait many days before you can correct it. You can’t afford mistakes.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "Success stories",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/Cisco_phone600-600x500.jpg"
+    },
+    {
+      "nid": "71",
+      "title": "A datacentre with hundreds of servers",
+      "body": "<p>When you buy hosting for your website, a server in a datacentre will run your website.<\/p>\n\n<p>I worked in such a datacentre for many years. There were 300 servers and a lot of other hardware.<\/p>\n\n<p>We needed to write a lot of software to monitor these servers and to manage the information about them.<\/p>\n\n<p>There was all the hardware and software you can imagine: databases, application servers, front-end servers, routers, load balancers, firewalls, mail servers, authorization servers and so on.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "Success stories",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-08\/datacentre600-600x500.jpg"
+    },
+    {
+      "nid": "70",
+      "title": "Virtual Internet Service Provider",
+      "body": "<p>If you want a free email address, you can find a lot of them on the web.<\/p>\n\n<p>Many of these websites offering free email don’t actually do the job. There is another company behind the scenes doing it for them. They just put their name on the package.<\/p>\n\n<p>I worked for one of those companies behind the scenes.<\/p>\n\n<p>It’s where I’ve came to know about an object-oriented database for the first time in my life.<\/p>\n\n<p>It was a quite complex architecture with many servers involved.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "Success stories",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-08\/broadband-world-600-600x500.png"
+    },
+    {
+      "nid": "69",
+      "title": "PLC programming",
+      "body": "<p>Imagine having a big <a href="
+      http:
+      \
+      /
+      \
+      /www.meccano.com
+      \
+      /
+      ">Meccano<\/a> set with thousands of moving parts which you control using a computer.<\/p>\n\n<p>I have played with Meccano toys. They are fun. They have been around for more than a century. I am pleased to live, now, in the homeland of Meccano toys.<\/p>\n\n<p>When I was doing PLC programming, my Meccano was an industrial plant featuring more than two thousands devices to control such as balances, pumps, valves, mixers, coolers and more.<\/p>\n\n<p>Ten times per second my software had to compute opening or closing orders to send to those devices.<\/p>\n\n<p>Sure, it’s no game. You make a mistake and maybe you hurt someone. Or you stop production or make a lot of product go to waste.<\/p>\n\n<p>You can’t test this sort of software. You can only test it in production and have less than 15 minutes to fix any error, otherwise production stops.<\/p>\n\n<p>This is extreme programming!<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "Success stories",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/control_room600-600x500.jpg"
+    },
+    {
+      "nid": "68",
+      "title": "Compass\/Sass",
+      "body": "<p>Compass helps Sass authors write smarter stylesheets and empowers a community of designers and developers to create and share powerful frameworks. Put simply, <strong>Compass is a Sass framework<\/strong>, designed to make the work of styling the web smooth and efficient. Much like Rails as a web application framework for Ruby, <strong>Compass is a collection of helpful tools and battle-tested best practices for Sass<\/strong>.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "The tools I use",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/CompassSass.png"
+    },
+    {
+      "nid": "67",
+      "title": "WordPress",
+      "body": "<p>What is WordPress? At its core, <strong>WordPress is the simplest, most popular way to create your own website or blog. <\/strong>In fact, WordPress powers <a href="
+      https:
+      \
+      /
+      \
+      /kinsta.com
+      \
+      /wordpress-market-share
+      \
+      /
+      ">over 29%<\/a> of all the websites on the Internet. Yes – more than one in four websites that you visit are likely powered by WordPress.<\/p>\n\n<p>On a slightly more technical level, WordPress is an open-source content management system licensed under GPLv2, which means that anyone can use or modify the WordPress software for free. A content management system is basically a tool that makes it easy to manage important aspects of your website – like content – without needing to know anything about programming.<\/p>\n\n<p>The end result is that WordPress makes building a website accessible to anyone – even people who aren’t developers.<\/p>",
+      "langcode": "English",
+      "field_ems_topic": "The tools I use",
+      "sticky": "Off",
+      "field_image": "\/sites\/default\/files\/2018-08\/WordPress-logotype-wmark.png"
+    }
+  ],
+  "count": "50"
+}
