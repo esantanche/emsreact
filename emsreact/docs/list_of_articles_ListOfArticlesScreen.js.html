@@ -75,7 +75,7 @@ class ListOfArticlesScreen extends Component {
 
         var self = this;
 
-        this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
+        this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
             function (articles) {
 
                 self.setState({ articles: articles });
@@ -96,7 +96,7 @@ class ListOfArticlesScreen extends Component {
         if (prevProps.topic !== this.props.topic ||
             prevProps.sticky !== this.props.sticky) {
 
-            this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
+            this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
                 function (articles) {
 
                     self.setState({ articles: articles });

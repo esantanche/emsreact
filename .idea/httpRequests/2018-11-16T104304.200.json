@@ -1,0 +1,67 @@
+{
+  "results": [
+    {
+      "nid": "52",
+      "title": "Installing Drupal 8 alongside React",
+      "body": "<h2>What do I want to achieve?<\/h2>\n\n<p>I want to install Drupal 8 alongside my existing installation of React Application Server.<\/p>\n\n<h2>What is Drupal 8 for?<\/h2>\n\n<p>Drupal 8 will work as backend for my React application.<\/p>\n\n<h2>What is my React application about?<\/h2>\n\n<p>It’s about demonstrating the use of React to fetch information about products from a Drupal backend and show it.<\/p>\n\n<p>The React application will demonstrate the possibility to rank products by dragging and dropping their images.<\/p>\n\n<p>You can see the application at work here: <a href="
+      http:
+      \
+      /
+      \
+      /rankit.emanuelesantanche.com
+      \
+      /
+      ">Rankit!<\/a><\/p>\n\n<h2>What is the architecture like?<\/h2>\n\n<p>There are many ways to describe it.<\/p>\n\n<p>I’m going to focus on how the web server processes the requests coming from the browser.<\/p>\n<img alt="
+      Architecture
+      Rankit
+      Http
+      Queries
+      " data-entity-type="
+      file
+      " data-entity-uuid="
+      85ef5eb7-2cd9-41bf-984a-cebf6cc5ada6
+      " src="
+      \
+      /
+      \
+      /backend.emanuelesantanche.com
+      \
+      /sites
+      \
+      /default
+      \
+      /files
+      \
+      /inline-images
+      \
+      /ArchitectureRankitHttpQueries-1024x724_0.png
+      " width="
+      100
+      %
+      " class="
+      align-center
+      " \/><p>As the application runs, there will be requests to the React Application Server meant to tell the browser what to display and how to interact with the user.<\/p>\n\n<p>There will be requests to the same server to know how to fetch information about products from the Drupal backend.<\/p>\n\n<p>When fulfilling these requests, the React Application Server will tell the browser that it has to send requests to the Drupal backend directly and will instruct the browser to do so.<\/p>\n\n<p>The browser will send these requests to the Drupal backend following the instructions the React Application Server gave it.<\/p>\n\n<p>From the image above you see that the web server forwards requests for the backend to the Php Application Server. This is due to Drupal being written in PHP. The Php Application Server runs every PHP file that needs to be executed.<\/p>\n\n<h2>The environment<\/h2>\n\n<p>Web server, Php Application Server and React Application Server run on a Debian 8 server. There is a MySQL server as well because Drupal needs it.<\/p>\n\n<p>The web server root folder is \/srv\/sites\/rankit.emanuelesantanche.com\/.<\/p>\n\n<p>The subfolder rankitapp contains everything the React Application Server needs to run.<\/p>\n\n<p>The subfolder backend will contain the installation of Drupal 8 I’m going to perform.<\/p>\n\n<h2>Configure Nginx to run the Drupal backend<\/h2>\n\n<p>As I said above, the web server, in my case Nginx, will forward requests meant for Drupal to the Php Application server, which will run the php files containing Drupal’s logic.<\/p>\n\n<p>I have to configure Nginx for it to do this.<\/p>\n\n<p>The main part of the Nginx configuration I need is this one:<\/p>\n\n<blockquote>\n<p><code>location \/backend {<\/code><br \/><code>    if (!-e $request_filename) {<\/code><br \/><code>        # We need \/backend here because the root is \/srv\/sites\/rankit.emanuelesantanche.com\/<\/code><br \/><code>        # The rewrite pattern strips "
+      \
+      /backend
+      " away because Drupal<\/code><br \/>\u003Ccode>        # wouldn't find a page like "
+      \
+      /backend
+      \
+      /user
+      " in the database<\/code><br \/><code>        # The rewrite pattern will transform "
+      \
+      /backend
+      \
+      /user
+      " into<\/code><br \/><code>        # "
+      \
+      /user
+      " and Drupal will find it<\/code><br \/><code>        rewrite ^\/backend(.*)$ \/backend\/index.php?q=$1 last;<\/code><br \/><code>    }<\/code><br \/><code>}<\/code><\/p>\n<\/blockquote>",
+      "langcode": "English",
+      "field_ems_topic": "Talking about my experiences",
+      "sticky": "On",
+      "field_image": "\/sites\/default\/files\/2018-07\/ArchitectureRankitHttpQueries-1123x500.png"
+    }
+  ],
+  "count": "13"
+}

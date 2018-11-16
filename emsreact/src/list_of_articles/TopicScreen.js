@@ -19,6 +19,8 @@ import ListOfArticlesScreen from '../list_of_articles/ListOfArticlesScreen';
 // To provide this component with the application context
 // See AppContext.js
 import AppContext from '../AppContext';
+import CardActions from "@material-ui/core/CardActions";
+import Button from "@material-ui/core/Button";
 
 /**
  * This screen shows a list of articles for a given topic.
@@ -135,6 +137,13 @@ class TopicScreen extends Component {
                     />
 
                     <ListOfArticlesScreen topic={topic_details.name} sticky={false}/>
+
+                    {/*FIXME cleanup*/}
+
+                    {/*<CardActions>*/}
+                        {/*<Button size="small"*/}
+                                {/*href={"/articles/" + topic.name_for_url}>{topic.more_articles_button_label}</Button>*/}
+                    {/*</CardActions>*/}
 
                     <SeparatorPane/>
 

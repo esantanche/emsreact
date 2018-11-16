@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 // Material UI components
 import Card from '@material-ui/core/Card';
+import Button from "@material-ui/core/Button/Button";
 
 // From components library
 import InnerGridPane from '../components_library/panes/InnerGridPane';
@@ -11,6 +12,9 @@ import ArticleCard from '../components_library/cards/ArticleCard';
 // To provide this component with the application context
 // See AppContext.js
 import AppContext from "../AppContext";
+import SeparatorPane from "../components_library/panes/SeparatorPane";
+import Grid from "@material-ui/core/Grid";
+import CardActions from "@material-ui/core/CardActions";
 
 /**
  * This Screen shows a list of articles. It's supposed to use the service ArticleService
@@ -28,7 +32,7 @@ class ListOfArticlesScreen extends Component {
     constructor() {
         super();
 
-        this.state = { articles: [] }
+        this.state = { articles: [], more: undefined }
 
     }
 
@@ -45,20 +49,16 @@ class ListOfArticlesScreen extends Component {
 
         this.ArticleService = ArticleService;
 
-        var self = this;
+        this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
+            (response) => {
 
-        this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
-            function (articles) {
-
-                self.setState({ articles: articles });
+                this.setState({ articles: response.articles, more: response.more });
 
             }
         )
     }
 
     componentDidUpdate(prevProps) {
-
-        var self = this;
 
         // When the topic changes, the props to this component change as well
         // We need to fetch the articles related to the new topic
@@ -68,10 +68,10 @@ class ListOfArticlesScreen extends Component {
         if (prevProps.topic !== this.props.topic ||
             prevProps.sticky !== this.props.sticky) {
 
-            this.ArticleService.fetch_articles({ topic: this.props.topic, sticky: this.props.sticky },
-                function (articles) {
+            this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
+                (response) => {
 
-                    self.setState({ articles: articles });
+                    this.setState({ articles: response.articles, more: response.more });
 
                 }
             )
@@ -79,6 +79,32 @@ class ListOfArticlesScreen extends Component {
         }
 
     }
+
+    /**
+     * FIXME fix the doc When the menu button, the button made of three lines, il clicked,
+     * this function is called and we have to show the menu
+     *
+     * @param {object} event Click event for menu button
+     */
+    handleLoadMoreButtonClick = event => {
+
+        // By setting the anchor element for the menu to the menu button
+        // the user has just clicked, we show the menu
+
+
+
+        // FIXME I called this many times here, maybe I make a function?
+
+        this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
+            (response) => {
+
+                this.setState({ articles: response.articles, more: response.more });
+
+            }
+        )
+
+        // this.setState({ anchorElement: event.currentTarget });
+    };
 
     render() {
 
@@ -97,43 +123,147 @@ class ListOfArticlesScreen extends Component {
 
         }, []);
 
-        return articles_pairs.map((pair_of_articles, index) => {
+
+
+        const fixme_jsx = articles_pairs.map((pair_of_articles, index) => {
 
             return (
 
                 <InnerGridPane key={index}
 
-                    leftComponent={ (
+                               leftComponent={(
 
-                            <ArticleCard image={pair_of_articles[0].field_image}
-                                         title={pair_of_articles[0].title}
-                                         text_content={pair_of_articles[0].body}
-                                         article_node_id={Number(pair_of_articles[0].nid)}>
+                                   <ArticleCard image={pair_of_articles[0].field_image}
+                                                title={pair_of_articles[0].title}
+                                                text_content={pair_of_articles[0].body}
+                                                article_node_id={Number(pair_of_articles[0].nid)}>
 
-                            </ArticleCard>
+                                   </ArticleCard>
 
-                    ) }
+                               )}
 
-                    rightComponent={ pair_of_articles.length === 2 ? (
+                               rightComponent={pair_of_articles.length === 2 ? (
 
-                            <ArticleCard image={pair_of_articles[1].field_image}
-                                         title={pair_of_articles[1].title}
-                                         text_content={pair_of_articles[1].body}
-                                         article_node_id={Number(pair_of_articles[1].nid)}>
+                                   <ArticleCard image={pair_of_articles[1].field_image}
+                                                title={pair_of_articles[1].title}
+                                                text_content={pair_of_articles[1].body}
+                                                article_node_id={Number(pair_of_articles[1].nid)}>
 
-                            </ArticleCard>
+                                   </ArticleCard>
 
-                    ) : (
+                               ) : (
 
-                        <Card></Card>
+                                   <Card></Card>
 
-                    )}
+                               )}
 
                 />
 
             )
 
-        })
+        });
+
+        let more_button;
+
+        if (this.state.more && this.props.sticky !== true) {
+
+            // FIXME this button goes to components library of course
+
+            {/*<Grid container spacing={0} className={classes.AlignedGridPane}>*/}
+
+                {/*{this.props.children}*/}
+
+            {/*</Grid>*/}
+
+            {/*<CardActions>*/}
+                {/*<Button size="small"*/}
+                        {/*href={"/articles/" + topic.name_for_url}>{topic.more_articles_button_label}</Button>*/}
+            {/*</CardActions>*/}
+
+            more_button = ( <React.Fragment>
+                               <SeparatorPane />
+                                <CardActions>
+                                    <Button size="small" onClick={this.handleLoadMoreButtonClick.bind(this)}>LOAD MORE</Button>
+                                </CardActions>
+                               {/*<Button variant="contained">MORE</Button>*/}
+                            </React.Fragment> );
+
+        }
+
+        return [ fixme_jsx, more_button ];
+
+
+        // return articles_pairs.map((pair_of_articles, index) => {
+        //
+        //     return (
+        //
+        //         <InnerGridPane key={index}
+        //
+        //                        leftComponent={(
+        //
+        //                            <ArticleCard image={pair_of_articles[0].field_image}
+        //                                         title={pair_of_articles[0].title}
+        //                                         text_content={pair_of_articles[0].body}
+        //                                         article_node_id={Number(pair_of_articles[0].nid)}>
+        //
+        //                            </ArticleCard>
+        //
+        //                        )}
+        //
+        //                        rightComponent={pair_of_articles.length === 2 ? (
+        //
+        //                            <ArticleCard image={pair_of_articles[1].field_image}
+        //                                         title={pair_of_articles[1].title}
+        //                                         text_content={pair_of_articles[1].body}
+        //                                         article_node_id={Number(pair_of_articles[1].nid)}>
+        //
+        //                            </ArticleCard>
+        //
+        //                        ) : (
+        //
+        //                            <Card></Card>
+        //
+        //                        )}
+        //
+        //         />
+        //
+        //     )
+        //
+        // });
+
+        // });
+
+        // if (this.state.more) {
+        //
+        //     articles_list_grid += (
+        //         <Button size="small"
+        //                 >FIXMEMORE</Button>
+        //     );
+        //
+        // }
+
+        // return articles_list_grid;
+
+
+        // {/* FIXME */
+        // }
+        //
+        // {
+        //     this.state.more ?
+        //         <Button variant="contained">
+        //             MORE
+        //         </Button> : <React.Fragment></React.Fragment>
+        // }
+
+
+        // {/*<Button size="small"*/
+        // }
+        // {/*href={"/articles/" + topic.name_for_url}>{topic.more_articles_button_label}</Button>*/
+        // }
+        //
+        //
+        // {/*<Button size="big">MORE</Button>*/
+        // }
 
     }
 

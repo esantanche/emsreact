@@ -43,7 +43,7 @@ describe('Testing ArticleService', function() {
 
         fetch.mockResponseOnce(JSON.stringify(json_response_rest_api_call));
 
-        AppArticleService.fetch_articles({ nid: 45 }, mockCallBack);
+        AppArticleService.get_articles({ nid: 45 }, mockCallBack);
 
         expect(fetch.mock.calls.length).toEqual(1);
         expect(fetch.mock.calls[0][0]).toMatch(/rest\/EMS\/view\/articles/);

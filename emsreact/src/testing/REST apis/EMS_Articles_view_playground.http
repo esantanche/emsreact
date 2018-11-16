@@ -34,7 +34,7 @@ GET http://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_forma
 ###
 
 #
-GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&field_ems_topic_target_id="Talking about my experiences"&page=2
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&field_ems_topic_target_id="Talking about my experiences"&page=0
 
 ###
 

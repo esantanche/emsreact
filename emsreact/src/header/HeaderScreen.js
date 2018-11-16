@@ -14,6 +14,7 @@ import HeaderMenu from "../components_library/menus/HeaderMenu";
 import PickMyBrainDialog from "../components_library/dialogs/PickMyBrainDialog";
 import MenuButton from "../components_library/buttons/MenuButton";
 import FrontGridPane from "../components_library/panes/FrontGridPane";
+import MenuButtonPane from "../components_library/panes/MenuButtonPane";
 
 // Needed to use history and move to other url
 import {withRouter} from "react-router-dom";
@@ -134,7 +135,9 @@ class HeaderScreen extends Component {
                             </Grid>
 
                             <Grid item xs={1}>
-                                <MenuButton onclick={this.handleMenuButtonClick.bind(this)} />
+                                <MenuButtonPane>
+                                    <MenuButton onclick={this.handleMenuButtonClick.bind(this)} />
+                                </MenuButtonPane>
                                 <ClickAwayListener onClickAway={this.handleClickAwayFromMenu.bind(this)}>
                                     <HeaderMenu anchorElement={this.state.anchorElement}
                                                 handleMenuClose={this.handleMenuClose.bind(this)}/>

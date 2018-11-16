@@ -59,7 +59,7 @@ class ArticleScreen extends Component {
 
         var self = this;
 
-        this.ArticleService.fetch_articles({ nid: this.props.match.params.articlenid },
+        this.ArticleService.get_articles({ nid: this.props.match.params.articlenid },
             function (article) {
 
                 self.setState({ article: article });

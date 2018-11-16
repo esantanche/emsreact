@@ -50,7 +50,7 @@ class ArticleService {
      * @param {object} filters Filters to use when fetching articles
      * @param {function} callback_to_return_articles Function to call to return the fetched articles
      */
-    fetch_articles(filters, callback_to_return_articles) {
+    get_articles(filters, callback_to_return_articles) {
 
         let filter_query_string = "";
 
@@ -81,7 +81,7 @@ class ArticleService {
             })
             .catch(function(error) {
 
-                console.error("ArticleService::fetch_articles");
+                console.error("ArticleService::get_articles");
                 console.error(error);
 
                 callback_to_return_articles(null);

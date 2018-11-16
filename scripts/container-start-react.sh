@@ -5,6 +5,8 @@ if [ `basename ${PWD}` != "scripts" ] ; then
 	exit
 fi
 
+echo "When using the app on local container, go to http://127.0.0.1:3001/"
+
 # Making the script to send to the container to run
 cat <<EOF >/tmp/container-start-react-script-to-run.sh
 #!/bin/sh
