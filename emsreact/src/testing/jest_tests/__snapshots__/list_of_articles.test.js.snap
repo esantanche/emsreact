@@ -4,26 +4,26 @@ exports[`Testing ListOfArticlesScreen ListOfArticlesScreen renders nothing befor
 
 exports[`Testing TopicScreen TopicScreen renders nothing before receiving fetch response 1`] = `
 <div
-  className="MuiGrid-container-2 MuiGrid-spacing-xs-16-24"
+  className="MuiGrid-container-363 MuiGrid-spacing-xs-16-385"
 >
   <div
-    className="MuiGrid-item-3 MuiGrid-grid-md-1-58 MuiGrid-grid-lg-2-73"
+    className="MuiGrid-item-364 MuiGrid-grid-md-1-419 MuiGrid-grid-lg-2-434"
   />
   <div
-    className="MuiGrid-item-3 MuiGrid-grid-xs-12-41 MuiGrid-grid-md-10-67 MuiGrid-grid-lg-8-79"
+    className="MuiGrid-item-364 MuiGrid-grid-xs-12-402 MuiGrid-grid-md-10-428 MuiGrid-grid-lg-8-440"
   >
     <div
-      className="MuiPaper-root-99 MuiPaper-elevation1-102 MuiPaper-rounded-100 MuiCard-root-98"
+      className="MuiPaper-root-460 MuiPaper-elevation1-463 MuiPaper-rounded-461 MuiCard-root-459"
     >
       <div
-        className="MuiCardHeader-root-202"
+        className="MuiCardHeader-root-487"
       >
         <div
-          className="MuiCardHeader-avatar-203"
+          className="MuiCardHeader-avatar-488"
         >
           <div
             aria-label="How I work"
-            className="MuiAvatar-root-208 MuiAvatar-colorDefault-209"
+            className="MuiAvatar-root-493 MuiAvatar-colorDefault-494"
             style={
               Object {
                 "backgroundColor": "#f44336",
@@ -34,24 +34,24 @@ exports[`Testing TopicScreen TopicScreen renders nothing before receiving fetch 
           </div>
         </div>
         <div
-          className="MuiCardHeader-content-205"
+          className="MuiCardHeader-content-490"
         >
           <span
-            className="MuiTypography-root-130 MuiTypography-body2-138 MuiCardHeader-title-206"
+            className="MuiTypography-root-496 MuiTypography-body2-504 MuiCardHeader-title-491"
           >
             How I work
           </span>
           <span
-            className="MuiTypography-root-130 MuiTypography-body2-138 MuiTypography-colorTextSecondary-152 MuiCardHeader-subheader-207"
+            className="MuiTypography-root-496 MuiTypography-body2-504 MuiTypography-colorTextSecondary-518 MuiCardHeader-subheader-492"
           >
             There is value in doing things properly first time
           </span>
         </div>
         <div
-          className="MuiCardHeader-action-204"
+          className="MuiCardHeader-action-489"
         >
           <a
-            className="MuiButtonBase-root-165 MuiIconButton-root-159"
+            className="MuiButtonBase-root-526 MuiIconButton-root-520"
             href="/"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -67,11 +67,11 @@ exports[`Testing TopicScreen TopicScreen renders nothing before receiving fetch 
             tabIndex="0"
           >
             <span
-              className="MuiIconButton-label-164"
+              className="MuiIconButton-label-525"
             >
               <svg
                 aria-hidden="true"
-                className="MuiSvgIcon-root-168"
+                className="MuiSvgIcon-root-529"
                 color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -84,20 +84,20 @@ exports[`Testing TopicScreen TopicScreen renders nothing before receiving fetch 
               </svg>
             </span>
             <span
-              className="MuiTouchRipple-root-175"
+              className="MuiTouchRipple-root-536"
             />
           </a>
         </div>
       </div>
       <div
-        className="SeparatorPane-separatorPane-211"
+        className="SeparatorPane-separatorPane-543"
       >
          
       </div>
     </div>
   </div>
   <div
-    className="MuiGrid-item-3 MuiGrid-grid-md-1-58 MuiGrid-grid-lg-2-73"
+    className="MuiGrid-item-364 MuiGrid-grid-md-1-419 MuiGrid-grid-lg-2-434"
   />
 </div>
 `;

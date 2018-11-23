@@ -20,10 +20,10 @@ exports[`Testing HeaderScreen HeaderScreen renders correctly 1`] = `
           className="MuiGrid-item-2 MuiGrid-grid-xs-11-39"
         >
           <div
-            className="HomeButtonPane-HomeButtonPane-180 HomeButtonPane-TopAndBottomMargins-181"
+            className="HomeButtonPane-HomeButtonPane-181 HomeButtonPane-TopAndBottomMargins-182"
           >
             <a
-              className="MuiButtonBase-root-159 MuiButton-root-135 MuiButton-text-137 MuiButton-flat-140"
+              className="MuiButtonBase-root-160 MuiButton-root-136 MuiButton-text-138 MuiButton-flat-141"
               href="/"
               onBlur={[Function]}
               onFocus={[Function]}
@@ -39,16 +39,16 @@ exports[`Testing HeaderScreen HeaderScreen renders correctly 1`] = `
               tabIndex="0"
             >
               <span
-                className="MuiButton-label-136"
+                className="MuiButton-label-137"
               >
                 <h1
-                  className="MuiTypography-root-195 MuiTypography-headline-200 HomeButtonText-HomeButtonText-194"
+                  className="MuiTypography-root-196 MuiTypography-headline-201 HomeButtonText-HomeButtonText-195"
                 >
                   Emanuele Santanché, Web Developer
                 </h1>
               </span>
               <span
-                className="MuiTouchRipple-root-169"
+                className="MuiTouchRipple-root-170"
               />
             </a>
           </div>
@@ -56,44 +56,48 @@ exports[`Testing HeaderScreen HeaderScreen renders correctly 1`] = `
         <div
           className="MuiGrid-item-2 MuiGrid-grid-xs-1-29"
         >
-          <button
-            className="MuiButtonBase-root-159 MuiButton-root-135 MuiButton-text-137 MuiButton-flat-140 MenuButton-button-134"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex="0"
-            type="button"
+          <div
+            className="MenuButtonPane-MenuButtonPane-134"
           >
-            <span
-              className="MuiButton-label-136"
+            <button
+              className="MuiButtonBase-root-160 MuiButton-root-136 MuiButton-text-138 MuiButton-flat-141 MenuButton-button-135"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
+              type="button"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-162"
-                color={undefined}
-                focusable="false"
-                viewBox="0 0 24 24"
+              <span
+                className="MuiButton-label-137"
               >
-                <g>
-                  <path
-                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <span
-              className="MuiTouchRipple-root-169"
-            />
-          </button>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root-163"
+                  color={undefined}
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g>
+                    <path
+                      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                    />
+                  </g>
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root-170"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </header>

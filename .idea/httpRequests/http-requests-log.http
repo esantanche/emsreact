@@ -1,3 +1,45 @@
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&nid=58
+
+<> 2018-11-23T064522.200.json
+
+###
+
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&nid=58
+
+<> 2018-11-23T061413.200.json
+
+###
+
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en
+
+<> 2018-11-23T061107.200.json
+
+###
+
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&nid=58
+
+<> 2018-11-23T060648.200.json
+
+###
+
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&nid=45
+
+<> 2018-11-23T060621.200.json
+
+###
+
+GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&nid=58
+
+<> 2018-11-23T060608.200.json
+
+###
+
+GET http://backend.emanuelesantanche.com/rest/EMS/view/articles?_format=json&nid=45&langcode=en
+
+<> 2018-11-23T060454.200.json
+
+###
+
 GET https://backend.emanuelesantanche.com/rest/EMS/view/articlesplayground?_format=json&langcode=en&field_ems_topic_target_id="Talking about my experiences"&page=0
 
 <> 2018-11-16T034128.200.json
@@ -251,44 +293,6 @@ GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--e
 GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body,sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
 
 <> 2018-09-28T012510.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body,sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
-
-<> 2018-09-28T012435.404.html
-
-###
-
-GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body,sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
-
-###
-
-GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body,sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
-
-###
-
-GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body,sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
-
-<> 2018-09-28T012121.404.html
-
-###
-
-GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body,sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
-
-<> 2018-09-28T011417.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body.value,sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
-
-<> 2018-09-28T011340.200.json
-
-###
-
-GET http://backend.emanuelesantanche.com/jsonapi/node/ems_article?fields[node--ems_article]=title,body[value],sticky,field_ems_topic,field_image&page[limit]=6&page[offset]=0
-
-<> 2018-09-28T121220.200.json
 
 ###
 

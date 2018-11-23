@@ -13,7 +13,6 @@ import ArticleCard from '../components_library/cards/ArticleCard';
 // See AppContext.js
 import AppContext from "../AppContext";
 import SeparatorPane from "../components_library/panes/SeparatorPane";
-import Grid from "@material-ui/core/Grid";
 import CardActions from "@material-ui/core/CardActions";
 
 /**
@@ -49,13 +48,8 @@ class ListOfArticlesScreen extends Component {
 
         this.ArticleService = ArticleService;
 
-        this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
-            (response) => {
+        this.get_articles_from_article_service();
 
-                this.setState({ articles: response.articles, more: response.more });
-
-            }
-        )
     }
 
     componentDidUpdate(prevProps) {
@@ -68,32 +62,26 @@ class ListOfArticlesScreen extends Component {
         if (prevProps.topic !== this.props.topic ||
             prevProps.sticky !== this.props.sticky) {
 
-            this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
-                (response) => {
-
-                    this.setState({ articles: response.articles, more: response.more });
-
-                }
-            )
+            this.get_articles_from_article_service();
 
         }
 
     }
 
     /**
-     * FIXME fix the doc When the menu button, the button made of three lines, il clicked,
-     * this function is called and we have to show the menu
+     * Fetching more articles when the user clicks on "LOAD MORE"
      *
-     * @param {object} event Click event for menu button
      */
-    handleLoadMoreButtonClick = event => {
+    handleLoadMoreButtonClick = () => {
 
-        // By setting the anchor element for the menu to the menu button
-        // the user has just clicked, we show the menu
+        this.get_articles_from_article_service();
+    };
 
-
-
-        // FIXME I called this many times here, maybe I make a function?
+    /**
+     * Function that calls the article service to fetch more articles or just the first time
+     * to fetch the first page
+     */
+    get_articles_from_article_service() {
 
         this.ArticleService.get_articles({ topic: this.props.topic, sticky: this.props.sticky },
             (response) => {
@@ -103,8 +91,7 @@ class ListOfArticlesScreen extends Component {
             }
         )
 
-        // this.setState({ anchorElement: event.currentTarget });
-    };
+    }
 
     render() {
 
@@ -123,9 +110,7 @@ class ListOfArticlesScreen extends Component {
 
         }, []);
 
-
-
-        const fixme_jsx = articles_pairs.map((pair_of_articles, index) => {
+        const jsx_for_list_of_articles = articles_pairs.map((pair_of_articles, index) => {
 
             return (
 
@@ -165,105 +150,22 @@ class ListOfArticlesScreen extends Component {
 
         let more_button;
 
+        // Only if there are more articles to fetch we show the LOAD MORE button
+        // If we are fetching sticky articles, we fetch only the first page because
+        // we don't want more than one page of articles to be sticky.
+        // Sticky articles are what you see on the home page
         if (this.state.more && this.props.sticky !== true) {
-
-            // FIXME this button goes to components library of course
-
-            {/*<Grid container spacing={0} className={classes.AlignedGridPane}>*/}
-
-                {/*{this.props.children}*/}
-
-            {/*</Grid>*/}
-
-            {/*<CardActions>*/}
-                {/*<Button size="small"*/}
-                        {/*href={"/articles/" + topic.name_for_url}>{topic.more_articles_button_label}</Button>*/}
-            {/*</CardActions>*/}
 
             more_button = ( <React.Fragment>
                                <SeparatorPane />
                                 <CardActions>
                                     <Button size="small" onClick={this.handleLoadMoreButtonClick.bind(this)}>LOAD MORE</Button>
                                 </CardActions>
-                               {/*<Button variant="contained">MORE</Button>*/}
                             </React.Fragment> );
 
         }
 
-        return [ fixme_jsx, more_button ];
-
-
-        // return articles_pairs.map((pair_of_articles, index) => {
-        //
-        //     return (
-        //
-        //         <InnerGridPane key={index}
-        //
-        //                        leftComponent={(
-        //
-        //                            <ArticleCard image={pair_of_articles[0].field_image}
-        //                                         title={pair_of_articles[0].title}
-        //                                         text_content={pair_of_articles[0].body}
-        //                                         article_node_id={Number(pair_of_articles[0].nid)}>
-        //
-        //                            </ArticleCard>
-        //
-        //                        )}
-        //
-        //                        rightComponent={pair_of_articles.length === 2 ? (
-        //
-        //                            <ArticleCard image={pair_of_articles[1].field_image}
-        //                                         title={pair_of_articles[1].title}
-        //                                         text_content={pair_of_articles[1].body}
-        //                                         article_node_id={Number(pair_of_articles[1].nid)}>
-        //
-        //                            </ArticleCard>
-        //
-        //                        ) : (
-        //
-        //                            <Card></Card>
-        //
-        //                        )}
-        //
-        //         />
-        //
-        //     )
-        //
-        // });
-
-        // });
-
-        // if (this.state.more) {
-        //
-        //     articles_list_grid += (
-        //         <Button size="small"
-        //                 >FIXMEMORE</Button>
-        //     );
-        //
-        // }
-
-        // return articles_list_grid;
-
-
-        // {/* FIXME */
-        // }
-        //
-        // {
-        //     this.state.more ?
-        //         <Button variant="contained">
-        //             MORE
-        //         </Button> : <React.Fragment></React.Fragment>
-        // }
-
-
-        // {/*<Button size="small"*/
-        // }
-        // {/*href={"/articles/" + topic.name_for_url}>{topic.more_articles_button_label}</Button>*/
-        // }
-        //
-        //
-        // {/*<Button size="big">MORE</Button>*/
-        // }
+        return [ jsx_for_list_of_articles, more_button ];
 
     }
 

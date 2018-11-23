@@ -38,6 +38,7 @@ exports[`ArticleCard renders correctly 1`] = `
             "flex": "1",
             "height": "150px",
             "marginLeft": "10px",
+            "width": "1px",
           }
         }
       >

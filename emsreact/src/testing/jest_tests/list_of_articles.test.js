@@ -55,7 +55,6 @@ const json_response_rest_api_call = [ {
         "field_image": "\/sites\/default\/files\/2018-07\/How_do_I_make_my_application_easy_to_manage_in_production.jpg"
     } ];
 
-
 const json_response_rest_api_call_including_non_sticky = [ {
         "nid": "8",
         "title": "How do I protect my investment in bespoke software?",

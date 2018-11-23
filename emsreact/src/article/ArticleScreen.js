@@ -60,9 +60,9 @@ class ArticleScreen extends Component {
         var self = this;
 
         this.ArticleService.get_articles({ nid: this.props.match.params.articlenid },
-            function (article) {
+            (response) => {
 
-                self.setState({ article: article });
+                self.setState({ article: response.articles });
 
             }
 
@@ -108,7 +108,6 @@ class ArticleScreen extends Component {
     }
 
 }
-
 
 
 export default props => (

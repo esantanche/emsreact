@@ -5,9 +5,3 @@ exports[`MasterAppBar renders correctly 1`] = `
   className="MuiPaper-root-10 MuiPaper-elevation4-16 MuiAppBar-root-2 MuiAppBar-positionSticky-5 MuiAppBar-colorPrimary-8 MasterAppBar-MasterAppBar-1"
 />
 `;
-
-exports[`MasterAvatar renders correctly 1`] = `
-<header
-  className="MuiPaper-root-10 MuiPaper-elevation4-16 MuiAppBar-root-2 MuiAppBar-positionSticky-5 MuiAppBar-colorPrimary-8 MasterAppBar-MasterAppBar-1"
-/>
-`;

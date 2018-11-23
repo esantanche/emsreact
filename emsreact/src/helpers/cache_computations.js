@@ -1,8 +1,12 @@
 /**
- * FIXME
- * @param count_of_articles_in_cache
- * @param count_of_articles
- * @param page_size
+ * This helper function calculates the number of the next page to fetch.
+ * If we have 30 articles to fetch and we already have 12 articles in cache,
+ * we need to fetch page 2. We already fetched two pages, page 0 and page 1.
+ * In this example a page is 6 articles.
+ *
+ * @param {number} count_of_articles_in_cache How many articles there already are in cache
+ * @param {number} count_of_articles Total number of articles available to fetch (for a given query)
+ * @param {number} page_size Number of article in a page
  * @returns {number} Number of the next page to fetch with zero being the first page
  */
 export function number_of_page_to_fetch(count_of_articles_in_cache, count_of_articles, page_size) {
@@ -34,6 +38,8 @@ export function number_of_page_to_fetch(count_of_articles_in_cache, count_of_art
         return number_of_full_pages_in_cache;
 
     } else {
+
+        // No more pages to fetch
 
         return -1;
     }
