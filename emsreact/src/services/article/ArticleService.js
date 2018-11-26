@@ -106,7 +106,7 @@ class ArticleService {
             else
                 page_number = number_of_page_to_fetch(count_of_articles_in_cache, count_of_articles, APP_CONFIGURATION.fetchPageSize);
 
-            fetch(APP_CONFIGURATION.backendUrl + "/rest/EMS/view/articlesplayground?_format=json&langcode=en" +
+            fetch(APP_CONFIGURATION.backendUrl + "/rest/EMS/view/articles?_format=json&langcode=en" +
                         filter_query_string + "&page=" + page_number, {
                 method: 'GET',
             })
@@ -118,7 +118,7 @@ class ArticleService {
 
                     this.add_results_to_cache(filter_query_string, response.results);
 
-                    this.update_count_of_articles_for_query(filter_query_string, parseInt(response.count));
+                    this.update_count_of_articles_for_query(filter_query_string, parseInt(response.count, 10));
 
                     callback(true);
                 })

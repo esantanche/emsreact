@@ -1,6 +1,6 @@
 # My new website based on React
 
-This is my own website. It's now live at http://emanuelesantanche.com.
+This is my own website. It's live at http://emanuelesantanche.com.
 
 Technologies used:
 * React
@@ -11,6 +11,8 @@ Technologies used:
 
 ## Release History
 
+* 1.1
+    * Added pagination
 * 1.0
     * First release in production
 * 0.1

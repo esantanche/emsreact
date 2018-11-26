@@ -2,26 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-// https://github.com/joernroeder/piwik-react-router/issues/48
+describe('Testing App.js', function() {
 
-// FIXME fix this test
+    it('renders without crashing', () => {
 
-import ReactGA from 'react-ga';
+        const appDiv = document.createElement('div');
 
+        ReactDOM.render(<App/>, appDiv);
+        ReactDOM.unmountComponentAtNode(appDiv);
+    });
 
-it('renders without crashing', () => {
-
-  // FIXME
-
-
-
-  const body = document.createElement('body');
-  const rootDiv = document.createElement('div');
-  body.appendChild(rootDiv);
-
-    ReactGA.initialize('UA-71688245-1');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-
-  ReactDOM.render(<App />, rootDiv);
-  ReactDOM.unmountComponentAtNode(div);
 });

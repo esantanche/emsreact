@@ -43,7 +43,15 @@ const Services = { TopicService: AppTopicService,
                    PickMyBrainMessageService: AppPickMyBrainMessageService};
 
 // Setting Google Analytics tracking code
-ReactGA.initialize('UA-71688245-1');
+
+// We initialize ReactGA in test mode when we are running automated tests with Jest
+// because it wouldn't work otherwise
+// process.env.NODE_ENV will be 'test' when testing and 'production' or 'development'
+// when in production or development
+ReactGA.initialize('UA-71688245-1', {
+    testMode: process.env.NODE_ENV === "test",
+});
+
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 /**

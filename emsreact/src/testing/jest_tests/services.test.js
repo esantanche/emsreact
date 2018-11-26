@@ -50,10 +50,6 @@ describe('Testing ArticleService', function() {
 
         mockCallBack.mockImplementation(data => {
 
-            console.log("mockCallBack.mockImplementation");
-            // console.log(data);
-            // console.log(json_response_rest_api_call);
-
             expect(data).toEqual(response_for_article_views);
             done();
         });
