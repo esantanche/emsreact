@@ -28,7 +28,7 @@ class PickMyBrainMessageService {
 
         const message_node_details = {
             type: [{"target_id": "ems_pick_my_brain_message"}],
-            title: [{"value": "New Message " + now}],
+            title: [{"value": "New Message EMS " + message_details.name}],
             field_name: [{"value": message_details.name}],
             field_email: [{"value": message_details.email}],
             field_message: [{"value": message_details.message}]
