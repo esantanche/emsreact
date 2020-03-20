@@ -1,6 +1,7 @@
 # My new website based on React
 
-This is my own website. It's live at http://emanuelesantanche.com.
+It's a website I built. The website is no longer live, 
+but the code is interesting. 
 
 Technologies used:
 * React
